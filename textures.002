@@ -1,0 +1,186 @@
+WallTexture BANNER1, 64, 128
+{
+	Patch WALL04, 0, 0
+	Patch WALL522, 11, 12
+}
+WallTexture BANNER2, 64, 128
+{
+	Patch WALL04, 0, 0
+	Patch WALL520, 11, 12
+}
+WallTexture BANNER3, 64, 128
+{
+	Patch WALL06, 0, 0
+	Patch WALL519, 11, 13
+}
+WallTexture BANNER4, 64, 128
+{
+	Patch WALL06, 0, 0
+	Patch WALL523, 11, 13
+}
+WallTexture BANNER5, 64, 128
+{
+	Patch WALL53, 0, 0
+	Patch WALL519, 11, 15
+}
+WallTexture BANNER6, 64, 128
+{
+	Patch WALL53, 0, 0
+	Patch WALL523, 11, 15
+}
+WallTexture BANNER7, 64, 128
+{
+	Patch WALL32, 0, 0
+	Patch WALL522, 11, 15
+}
+WallTexture BANNER8, 64, 128
+{
+	Patch WALL32, 0, 0
+	Patch WALL520, 11, 15
+}
+WallTexture BLUEFRAG, 64, 128
+{
+	Patch WALL508, 0, 64
+	Patch WALL508, 0, 0
+}
+WallTexture BRWNRCKS, 64, 128
+{
+	Patch WALL529, 0, 0
+}
+WallTexture CELTIC, 64, 128
+{
+	Patch WALL512, 0, 0
+}
+WallTexture CSTLMOSS, 64, 128
+{
+	Patch WALL04, 0, 0
+	Patch WALL27, 0, 107
+}
+WallTexture GATMETL, 128, 128
+{
+	Patch WALL524, 0, 0
+}
+WallTexture GATMETL2, 64, 32
+{
+	Patch WALL525, 0, 0
+}
+WallTexture GATMETL3, 64, 32
+{
+	Patch WALL526, 0, 0
+}
+WallTexture GATMETL4, 64, 64
+{
+	Patch WALL527, 0, 0
+}
+WallTexture GATMETL5, 64, 128
+{
+	Patch WALL528, 0, 0
+}
+WallTexture GRNBLOK1, 128, 128
+{
+	Patch WALL515, 0, 0
+}
+WallTexture GRNBLOK2, 128, 128
+{
+	Patch WALL515, 0, 0
+	Patch WALL516, 0, 0
+}
+WallTexture GRNBLOK3, 128, 128
+{
+	Patch WALL515, 0, 0
+	Patch WALL517, 37, 38
+}
+WallTexture GRNBLOK4, 128, 128
+{
+	Patch WALL515, 0, 0
+	Patch WALL516, 0, 0
+	Patch WALL517, 37, 38
+}
+WallTexture HORSES1, 256, 128
+{
+	Patch WALL500, 0, 0
+}
+WallTexture LAVA1, 64, 128
+{
+	Patch WALL511, 0, 0
+}
+WallTexture LAVAFL1, 64, 128
+{
+	Patch WLLLVFL1, 0, 0
+}
+WallTexture LAVAFL2, 64, 128
+{
+	Patch WLLLVFL2, 0, 0
+}
+WallTexture LAVAFL3, 64, 128
+{
+	Patch WLLLVFL3, 0, 0
+}
+WallTexture LOOSERCK, 64, 128
+{
+	Patch WALL509, 0, 0
+}
+WallTexture MOSAIC1, 64, 128
+{
+	Patch WALL501, 0, 0
+}
+WallTexture MOSAIC2, 64, 128
+{
+	Patch WALL501, 0, 0
+	Patch WALL502, 0, 84
+}
+WallTexture MOSAIC3, 64, 128
+{
+	Patch WALL501, 0, 0
+	Patch WALL503, 0, 102
+}
+WallTexture MOSAIC4, 64, 128
+{
+	Patch WALL501, 0, 0
+	Patch WALL504, 0, 104
+}
+WallTexture MOSAIC5, 64, 128
+{
+	Patch WALL501, 0, 0
+	Patch WALL505, 24, 9
+}
+WallTexture ROOTWALL, 128, 128
+{
+	Patch WALL506, 0, 0
+}
+WallTexture SKY2, 256, 128
+{
+	Patch SKY2, 0, 0
+}
+WallTexture SKY3, 256, 128
+{
+	Patch SKY3, 0, 0
+}
+WallTexture SQPEB2, 64, 128
+{
+	Patch WALL530, 0, 0
+}
+WallTexture STNGLS2, 128, 128
+{
+	Patch WALL513, 0, 0
+}
+WallTexture STNGLS3, 128, 128
+{
+	Patch WALL518, 0, 0
+}
+WallTexture TRISTON2, 64, 128
+{
+	Patch WALL510, 0, 0
+}
+WallTexture WATRWAL1, 64, 128
+{
+	Patch WLLWTFL1, 0, 0
+}
+WallTexture WATRWAL2, 64, 128
+{
+	Patch WLLWTFL2, 0, 0
+}
+WallTexture WATRWAL3, 64, 128
+{
+	Patch WLLWTFL3, 0, 0
+}
