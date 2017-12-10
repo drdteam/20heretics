@@ -5968,7 +5968,7 @@ ACTOR DNZHMiningTools 7321
 
 ACTOR DNZHBearskinRug 7322
 {
-	+FLOORSPRITE
+	+FLATSPRITE
 	-SOLID
 	//$Category "Duke Nukem: Zero Hour"
 	States
