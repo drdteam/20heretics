@@ -5846,3 +5846,1091 @@ ACTOR Q2Statue8 7312
 		Stop
 	}
 }
+
+// DUKE NUKEM: ZERO HOUR
+
+ACTOR DNZHSwordsAndShield 7313
+{
+	+WALLSPRITE
+	-SOLID
+	//$Category "Duke Nukem: Zero Hour"
+	States
+	{
+	  Spawn:
+		ZHWS A -1
+		Stop
+	}
+}
+
+ACTOR DNZHAxeAndMace 7314
+{
+	+WALLSPRITE
+	-SOLID
+	//$Category "Duke Nukem: Zero Hour"
+	States
+	{
+	  Spawn:
+		ZHAM A -1
+		Stop
+	}
+}
+
+ACTOR DNZHSwordAndShieldBanner 7315
+{
+	+WALLSPRITE
+	-SOLID
+	//$Category "Duke Nukem: Zero Hour"
+	States
+	{
+	  Spawn:
+		ZHBS A -1
+		Stop
+	}
+}
+
+ACTOR DNZHBanner 7316
+{
+	+WALLSPRITE
+	-SOLID
+	//$Category "Duke Nukem: Zero Hour"
+	States
+	{
+	  Spawn:
+		ZHBN A -1
+		Stop
+	}
+}
+
+ACTOR DNZHTapestry 7317
+{
+	+WALLSPRITE
+	-SOLID
+	//$Category "Duke Nukem: Zero Hour"
+	States
+	{
+	  Spawn:
+		ZHTP A -1
+		Stop
+	}
+}
+
+ACTOR DNZHSpearsWithFlags 7318
+{
+	+WALLSPRITE
+	-SOLID
+	//$Category "Duke Nukem: Zero Hour"
+	States
+	{
+	  Spawn:
+		ZHSF A -1
+		Stop
+	}
+}
+
+ACTOR DNZHTapestriesWithSwords 7319
+{
+	+WALLSPRITE
+	-SOLID
+	//$Category "Duke Nukem: Zero Hour"
+	States
+	{
+	  Spawn:
+		ZHTS A -1
+		Stop
+	}
+}
+
+ACTOR DNZHMiningToolRack 7320
+{
+	+WALLSPRITE
+	-SOLID
+	//$Category "Duke Nukem: Zero Hour"
+	States
+	{
+	  Spawn:
+		ZHTR A -1
+		Stop
+	}
+}
+
+ACTOR DNZHMiningTools 7321
+{
+	+WALLSPRITE
+	-SOLID
+	//$Category "Duke Nukem: Zero Hour"
+	States
+	{
+	  Spawn:
+		ZHMT A -1
+		Stop
+	}
+}
+
+ACTOR DNZHBearskinRug 7322
+{
+	+FLOORSPRITE
+	-SOLID
+	//$Category "Duke Nukem: Zero Hour"
+	States
+	{
+	  Spawn:
+		ZHBR A -1
+		Stop
+	}
+}
+
+// HEXX
+
+ACTOR HexxObelisk1 7323
+{
+	Radius 12
+	Height 64
+	+SOLID
+	//$Category "Hexx"
+	States
+	{
+	  Spawn:
+		HXO1 A -1
+		Stop
+	}
+}
+
+ACTOR HexxPillar1 7324
+{
+	Radius 16
+	Height 64
+	+SOLID
+	//$Category "Hexx"
+	States
+	{
+	  Spawn:
+		HXP1 A -1
+		Stop
+	}
+}
+
+ACTOR HexxOrbPillar 7325
+{
+	Radius 16
+	Height 64
+	+SOLID
+	//$Category "Hexx"
+	States
+	{
+	  Spawn:
+		HXOP A -1
+		Stop
+	}
+}
+
+ACTOR HexxObelisk2 7326
+{
+	Radius 12
+	Height 64
+	+SOLID
+	//$Category "Hexx"
+	States
+	{
+	  Spawn:
+		HXO2 A -1
+		Stop
+	}
+}
+
+ACTOR HexxSpikes 7327
+{
+	Radius 16
+	Height 64
+	+SOLID
+	//$Category "Hexx"
+	States
+	{
+	  Spawn:
+		HXSP A -1
+		Stop
+	}
+}
+
+ACTOR HexxRitualPedestal 7328
+{
+	Radius 12
+	Height 46
+	+SOLID
+	//$Category "Hexx"
+	States
+	{
+	  Spawn:
+		HXB1 A -1
+		Stop
+	}
+}
+
+ACTOR HexxObelisk3 7329
+{
+	Radius 12
+	Height 64
+	+SOLID
+	//$Category "Hexx"
+	States
+	{
+	  Spawn:
+		HXO3 A -1
+		Stop
+	}
+}
+
+ACTOR HexxStoneSpike 7330
+{
+	Radius 12
+	Height 64
+	+SOLID
+	//$Category "Hexx"
+	States
+	{
+	  Spawn:
+		HXSS A -1
+		Stop
+	}
+}
+
+ACTOR HexxObelisk4 7331
+{
+	Radius 16
+	Height 64
+	+SOLID
+	//$Category "Hexx"
+	States
+	{
+	  Spawn:
+		HXO4 A -1
+		Stop
+	}
+}
+
+ACTOR HexxReceptacle 7332
+{
+	Radius 16
+	Height 46
+	+SOLID
+	//$Category "Hexx"
+	States
+	{
+	  Spawn:
+		HXB2 A -1
+		Stop
+	}
+}
+
+// SHADOW WARRIOR BETA
+
+ACTOR Crab 7333
+{
+	-SOLID
+	//$Category "Shadow Warrior Beta"
+	States
+	{
+	  Spawn:
+		CRAB ABC 4
+		Loop
+	}
+}
+
+ACTOR SWBurntBody 7334
+{
+	Radius 12
+	Height 94
+	+SOLID
+	//$Category "Shadow Warrior Beta"
+	States
+	{
+	  Spawn:
+		SWBR A -1
+		Stop
+	}
+}
+
+ACTOR CrystalBall 7335
+{
+	-SOLID
+	//$Category "Shadow Warrior Beta"
+	States
+	{
+	  Spawn:
+		CRBL A -1
+		Stop
+	}
+}
+
+ACTOR SWCrystal1 7336
+{
+	Radius 6
+	Height 12
+	+SOLID
+	//$Category "Shadow Warrior Beta"
+	States
+	{
+	  Spawn:
+		CRY1 A -1
+		Stop
+	}
+}
+
+ACTOR SWCrystal2 7337
+{
+	Radius 24
+	Height 39
+	+SOLID
+	//$Category "Shadow Warrior Beta"
+	States
+	{
+	  Spawn:
+		CRY2 A -1
+		Stop
+	}
+}
+
+ACTOR SWCrystal3 7338
+{
+	Radius 20
+	Height 30
+	+SOLID
+	//$Category "Shadow Warrior Beta"
+	States
+	{
+	  Spawn:
+		CRY3 A -1
+		Stop
+	}
+}
+
+// ZXD EDITS
+
+ACTOR DyingMan 7339
+{
+	Radius 20
+	Height 40
+	+SOLID
+	//$Category "ZXD's Edits"
+	States
+	{
+	  Spawn:
+		DYNG ABCD 4
+		Loop
+	}
+}
+
+// CAPTAIN TOENAIL
+
+ACTOR DSparilStatue 7340
+{
+  Radius 16
+  Height 96
+  +SOLID
+  //$Category "Captain Toenail"
+  States
+  {
+  Spawn:
+    STAD ABCDE 3 Bright
+    Loop
+  }
+}
+
+ACTOR GoldStandGizmoYellow 7341
+{
+  Radius 16
+  Height 50
+  +SOLID
+  //$Category "Captain Toenail"
+  States
+  {
+  Spawn:
+    GSTD A 0
+    GSTD A 1 A_SpawnItem("YellowStandGizmoOrb", 0, 34)
+    GSTD A -1
+    Stop
+  }
+}
+
+ACTOR GoldStandGizmoBlue 7342
+{
+  Radius 16
+  Height 50
+  +SOLID
+  //$Category "Captain Toenail"
+  States
+  {
+  Spawn:
+    GSTD A 0
+    GSTD A 1 A_SpawnItem("BlueStandGizmoOrb", 0, 34)
+    GSTD A -1
+    Stop
+  }
+}
+
+ACTOR GoldStandGizmoGreen 7343
+{
+  Radius 16
+  Height 50
+  +SOLID
+  //$Category "Captain Toenail"
+  States
+  {
+  Spawn:
+    GSTD A 0
+    GSTD A 1 A_SpawnItem("GreenStandGizmoOrb", 0, 34)
+    GSTD A -1
+    Stop
+  }
+}
+
+ACTOR GoldStandGizmoRed 7344
+{
+  Radius 16
+  Height 50
+  +SOLID
+  //$Category "Captain Toenail"
+  States
+  {
+  Spawn:
+    GSTD A 0
+    GSTD A 1 A_SpawnItem("RedStandGizmoOrb", 0, 34)
+    GSTD A -1
+    Stop
+  }
+}
+
+ACTOR YellowStandGizmoOrb
+{
+  +NOINTERACTION
+  States
+  {
+  Spawn:
+    YORB A -1 bright
+	stop
+  }
+}
+
+ACTOR BlueStandGizmoOrb
+{
+  +NOINTERACTION
+  States
+  {
+  Spawn:
+    BORB A -1 bright
+	stop
+  }
+}
+
+ACTOR GreenStandGizmoOrb
+{
+  +NOINTERACTION
+  States
+  {
+  Spawn:
+    GORB A -1 bright
+	stop
+  }
+}
+
+ACTOR RedStandGizmoOrb
+{
+  +NOINTERACTION
+  States
+  {
+  Spawn:
+    RORB A -1 bright
+	stop
+  }
+}
+
+ACTOR SerpentBrazierBronze 7345
+{
+  Radius 16
+  Height 56
+  +SOLID
+  //$Category "Captain Toenail"
+  States
+  {
+  Spawn:
+    BNAK ABCDEFG 3 Bright
+    Loop
+  }
+}
+
+ACTOR SerpentBrazierGreen 7346
+{
+  Radius 16
+  Height 56
+  +SOLID
+  //$Category "Captain Toenail"
+  States
+  {
+  Spawn:
+    GNAK ABCDEFG 3 Bright
+    Loop
+  }
+}
+
+ACTOR SerpentBrazierGold 7347
+{
+  Radius 16
+  Height 56
+  +SOLID
+  //$Category "Captain Toenail"
+  States
+  {
+  Spawn:
+    YNAK ABCDEFG 3 Bright
+    Loop
+  }
+}
+
+// GOTHIC
+
+ACTOR GoldenEagle1 7348
+{
+Radius 16
+Height 50
++SOLID
+//$Category "Gothic"
+States
+{
+Spawn:
+	EAGL A -1
+	Stop
+}
+}
+
+ACTOR GoldenEagle2 7349
+{
+Radius 16
+Height 60
++SOLID
+//$Category "Gothic"
+States
+{
+Spawn:
+	EAG2 A -1
+	Stop
+}
+}
+
+ACTOR GoldenEagle3 7350
+{
+Radius 16
+Height 50
++SOLID
+//$Category "Gothic"
+States
+{
+Spawn:
+	EAG3 A -1
+	Stop
+}
+}
+
+// ETTINGRINDER
+
+Actor ZCorpseBurning 7351
+{
+	+SOLID
+	Radius 8
+	Height 100
+	//$Category "ETTiNGRiNDER"
+
+	States
+	{
+	Spawn:
+		WBRN ABCDEFG 4 Bright
+		Loop
+	}
+}
+
+ACTOR ZCorpseCrucified : ZBannerTattered 7352
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		CRUX A -1
+		Stop
+	}
+}
+
+ACTOR ZCorpseCrucifiedBloody : ZBannerTattered 7353
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		CRUX B -1
+		Stop
+	}
+}
+
+ACTOR ZCorpseCrucifiedSword : ZBannerTattered 7354
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		CRUX C -1
+		Stop
+	}
+}
+
+Actor Bust1 7355
+{
+	+SOLID
+	//$Category "ETTiNGRiNDER"
+	Radius 8
+	Height 32
+
+	States
+	{
+	Spawn:
+		BUST A -1
+		Stop
+	}
+}
+
+Actor Bust2 : Bust1 7356
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		BUST B -1
+		Stop
+	}
+}
+
+Actor Bust3 : Bust1 7357
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		BUST C -1
+		Stop
+	}
+}
+
+Actor Bust4 : Bust1 7358
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		BUST D -1
+		Stop
+	}
+}
+
+Actor Bust5 : Bust1 7359
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		BUST E -1
+		Stop
+	}
+}
+
+Actor Bust1Pillar1 : ZVasePillar 7360
+{
+	Height 64
+	//$Category "ETTiNGRiNDER"
+
+	States
+	{
+	Spawn:
+		PBUS A -1
+		Stop
+	}
+}
+
+Actor Bust2Pillar1 : Bust1Pillar1 7361
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		PBUS B -1
+		Stop
+	}
+}
+
+Actor Bust3Pillar1 : Bust1Pillar1 7362
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		PBUS C -1
+		Stop
+	}
+}
+
+Actor Bust4Pillar1 : Bust1Pillar1 7363
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		PBUS D -1
+		Stop
+	}
+}
+
+Actor Bust5Pillar1 : Bust1Pillar1 7364
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		PBUS E -1
+		Stop
+	}
+}
+
+Actor Bust1Pillar2 : Bust1Pillar1 7365
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		PBUS F -1
+		Stop
+	}
+}
+
+Actor Bust2Pillar2 : Bust1Pillar1 7366
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		PBUS G -1
+		Stop
+	}
+}
+
+Actor Bust3Pillar2 : Bust1Pillar1 7367
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		PBUS H -1
+		Stop
+	}
+}
+
+Actor Bust4Pillar2 : Bust1Pillar1 7368
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		PBUS I -1
+		Stop
+	}
+}
+
+Actor Bust5Pillar2 : Bust1Pillar1 7369
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		PBUS J -1
+		Stop
+	}
+}
+
+actor CleanLog : ZLog 7370
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+		Spawn:
+			LOG2 A -1
+			Stop
+	}
+}
+
+actor CharredLog : ZLog 7371
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+		Spawn:
+			LOG2 B -1
+			Stop
+	}
+}
+
+actor BurningLog : ZLog 7372
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+		Spawn:
+			LOG2 CDE 4 Bright
+			Loop
+	}
+}
+
+actor EmberLog : ZLog 7373
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+		Spawn:
+			LOG2 FGH 4 Bright
+			Loop
+	}
+}
+
+actor CutLog : ZLog 7374
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+		Spawn:
+			LOG2 I -1
+			Stop
+	}
+}
+
+Actor ZCorpseImpaled1 7375
+{
+	+SOLID
+	Radius 8
+	Height 100
+	//$Category "ETTiNGRiNDER"
+
+	States
+	{
+	Spawn:
+		CPSI A -1
+		Stop
+	}
+}
+
+Actor ZCorpseImpaled2 7376
+{
+	+SOLID
+	Radius 8
+	Height 100
+	//$Category "ETTiNGRiNDER"
+
+	States
+	{
+	Spawn:
+		CPSI B -1
+		Stop
+	}
+}
+
+Actor ZCorpseImpaled3 7377
+{
+	+SOLID
+	Radius 8
+	Height 100
+	//$Category "ETTiNGRiNDER"
+
+	States
+	{
+	Spawn:
+		CPSI C -1
+		Stop
+	}
+}
+
+Actor ZCorpseImpaled4 7378
+{
+	+SOLID
+	Radius 8
+	Height 100
+	//$Category "ETTiNGRiNDER"
+
+	States
+	{
+	Spawn:
+		CPSI D -1
+		Stop
+	}
+}
+
+Actor ZCorpseImpaled5 7379
+{
+	+SOLID
+	Radius 8
+	Height 100
+	//$Category "ETTiNGRiNDER"
+
+	States
+	{
+	Spawn:
+		CPSI E -1
+		Stop
+	}
+}
+
+Actor ZCorpseUpsideDown1 : ZCorpseLynched 7380
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		UPSC A -1
+		Stop
+	}
+}
+
+Actor ZCorpseUpsideDown2 : ZCorpseLynchedNoHeart 7381
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		UPSC B 140 A_SpawnItemEx("CorpseBloodDrip", 0, 0, 24, 0, 0, 0, 0, SXF_CLIENTSIDE, 192)
+		Loop
+	}
+}
+
+Actor ZCorpseUpsideDown3 : ZCorpseLynchedNoHeart 7382
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		UPSC C 140 A_SpawnItemEx("CorpseBloodDrip", 0, 0, 24, 0, 0, 0, 0, SXF_CLIENTSIDE, 192)
+		Loop
+	}
+}
+
+Actor ZCorpseUpsideDown4 : ZCorpseLynched 7383
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		UPSC D -1
+		Stop
+	}
+}
+
+Actor ZCorpseUpsideDown5 : ZCorpseLynchedNoHeart 7384
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		UPSC E 140 A_SpawnItemEx("CorpseBloodDrip", 0, 0, 20, 0, 0, 0, 0, SXF_CLIENTSIDE, 192)
+		Loop
+	}
+}
+
+actor WarriorStatueGold 7385
+{
+	+SOLID
+	Radius 8
+	Height 64
+	//$Category "ETTiNGRiNDER"
+	
+	States
+	{
+		Spawn:
+			WSTA A -1
+			Stop
+	}
+}
+
+actor WarriorStatueGold2 : WarriorStatueGold 7386
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+		Spawn:
+			WSTA B -1
+			Stop
+	}
+}
+
+actor WarriorStatueStone : WarriorStatueGold 7387
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+		Spawn:
+			WSTA C -1
+			Stop
+	}
+}
+
+actor WarriorStatueStone2 : WarriorStatueGold 7388
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+		Spawn:
+			WSTA D -1
+			Stop
+	}
+}
+
+actor WarriorStatueIron : WarriorStatueGold 7389
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+		Spawn:
+			WSTA E -1
+			Stop
+	}
+}
+
+actor WarriorStatueIron2 : WarriorStatueGold 7390
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+		Spawn:
+			WSTA F -1
+			Stop
+	}
+}
+
+ACTOR EGCandleabra : SwitchableDecoration 7391
+{
+	Radius 11
+	Height 65
+	+SOLID
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Active:
+		HSCN A 4 A_PlaySound("Ignite")
+		HSCN BCD 4 Bright
+	Spawn:
+		HSCN BCD 4 Bright
+		Loop
+	Inactive:
+		HSCN A -1
+		Stop
+	}
+}
+
+ACTOR EGCandleabraUnlit : EGCandleabra 7392
+{
+	//$Category "ETTiNGRiNDER"
+	States
+	{
+	Spawn:
+		Goto Super::Inactive
+	}
+}
