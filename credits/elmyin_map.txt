@@ -1,0 +1,23 @@
+****************************************************************
+****************************************************************
+****************20 HERETICS COMMUNITY PROJECT*******************
+********************MALIGNANT BY ELM YIN************************
+******************** DIFFICULTY:MEDIUM *************************
+*******************  CREATED 12/10/12  *************************
+
+Author: ELM YIN (Runsaber 3DGE)
+Game: Heretic: Shadow of the Serpent Riders
+Game Type: Singleplayer
+Addon Type: Level Addon
+Time created: 3-ish days
+
+Malignant is a medium-sized level. The goal is to clear out the 
+enemies while collecting keys to unlock the End Portal. Along
+your way you will fight imps, golems, knights, and disciples 
+accordingly. Not all paths can be unlocked via switch. Some 
+passages are unlocked by stepping onto floor panel switches.
+A powerful weapon awaits the most acrobatic player. 
+
+Other works: Astral Pathfinder for 3DGE Sourceport / 3DGE 64 / 
+DAMNED / Recreant: Unruled Fantasy for 3DGE
+

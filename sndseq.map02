@@ -1,0 +1,5 @@
+:GothicCustomDoor1
+   door 20
+   play GateOpen
+   nostopcutoff
+end
