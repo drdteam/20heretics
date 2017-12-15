@@ -1,3 +1,5 @@
+//Files like this one is why I drink. -Lud
+
 // MOR'LADIM'S HERETIC PROP PACK
 
 ACTOR BrownStonePillar 6250
@@ -6933,4 +6935,18 @@ ACTOR EGCandleabraUnlit : EGCandleabra 7392
 	Spawn:
 		Goto Super::Inactive
 	}
+}
+
+Actor FakeXplosion
+{
++NOINTERACTION
+RenderStyle Translucent
+Alpha 0.7
+States
+{
+	Spawn:
+	XPL1 A 4 Bright A_PlaySound("minotaur/fx2hit",CHAN_BODY)
+	XPL1 BCDEF 4 Bright
+	Stop
+}
 }

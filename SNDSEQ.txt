@@ -1,3 +1,5 @@
+//MAP02
+
 :GothicCustomDoor1
    door 20
    play GateOpen
