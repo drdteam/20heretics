@@ -1,0 +1,12 @@
+[MAP03]
+!! CRITICAL
+
+
+* COSMETIC
+Map could use a bit more decorative clutter in general.
+General misaligns on the outside of the building's brick walls.
+The walls of the archway that leads to the stairs in the room with the poker table has wrong textures on its sides and stair-side
+Water in the bathtub causes the edges of said tub to look all fucky because it uses transfer heights instead of being a 3d floor.
+
+* GAMEPLAY
+Maulotaur area needs a bit of health and a bit of ammo, EPSECIALLY if you missed the phoenix rod and hellstaff..

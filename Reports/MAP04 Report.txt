@@ -1,0 +1,11 @@
+[MAP04]
+!! CRITICAL
+
+
+* COSMETIC
+A brazier alcove next to a bunch of imps and a small waterfall has misaligned textures
+Ladder shaft has misaligned textures on the bricks.
+
+* GAMEPLAY
+The ladder may be a bit counterintuitive?
+Generally feels quite easy.
