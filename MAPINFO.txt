@@ -62,10 +62,10 @@ Map MAP05 "Elementary - by: Rachael"
 	Music = "MUS_E1M7"
 }
 
-Map MAP06 "Idk I haven't decided - by: Gutawer"
+Map MAP06 Holy Water - by: Gutawer"
 {
 	Cluster = 0
 	Next = "MAP07"
 	SecretNext = "MAP07"
-	Music = "MUS_E1M7"
+	Music = "D_MAP06"
 }
