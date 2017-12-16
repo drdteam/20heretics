@@ -30,7 +30,7 @@ Map MAP02 "Night of the Translucent Dead - by: Gothic"
 	Next = "MAP03"
 	SecretNext = "MAP03"
 	Music = "D_MAP02"
-	sky1 = "sky0"
+	sky1 = "blood7"
 }
 
 Map MAP03 "House Cleaning - by: Li'l Devil"
@@ -39,6 +39,7 @@ Map MAP03 "House Cleaning - by: Li'l Devil"
 	Next = "MAP04"
 	SecretNext = "MAP04"
 	Music = "D_MAP03"
+	sky1 = "sky0"
 }
 
 Map MAP04 " - by: lwks"
