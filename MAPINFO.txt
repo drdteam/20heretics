@@ -31,6 +31,10 @@ Map MAP02 "Night of the Translucent Dead - by: Gothic"
 	SecretNext = "MAP03"
 	Music = "D_MAP02"
 	sky1 = "bludsky"
+	IronlichSpecial
+	Special
+	Action_LowerFloor
+
 }
 
 Map MAP03 "House Cleaning - by: Li'l Devil"
