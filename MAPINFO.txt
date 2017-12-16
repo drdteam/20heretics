@@ -1,22 +1,38 @@
 include "MAPINFO.Props.txt"
 
-Map MAP01 "Malignant by Elm Yin"
+defaultmap
+{
+	Name = "Untitled"
+	Sky1 = "sky1"
+	Music = "MUS_E1M1"
+}
+
+clearepisodes
+
+episode MAP01
+{
+	Name = "20 Heretics"
+}
+
+Map MAP01 "Malignant - by: Elm Yin"
 {
 	Cluster = 0
 	Next = "MAP02"
 	SecretNext = "MAP02"
-	Music = "ADDMUSIC"
+	Music = "MUS_E1M3"
+	Sky1 = "sky1"
 }
 
-Map MAP02 "Night of the Translucent Dead by Gothic"
+Map MAP02 "Night of the Translucent Dead - by: Gothic"
 {
 	Cluster = 0
 	Next = "MAP03"
 	SecretNext = "MAP03"
 	Music = "D_MAP02"
+	sky1 = "sky0"
 }
 
-Map MAP03 "House Cleaning by Li'l Devil"
+Map MAP03 "House Cleaning - by: Li'l Devil"
 {
 	Cluster = 0
 	Next = "MAP04"
@@ -24,7 +40,7 @@ Map MAP03 "House Cleaning by Li'l Devil"
 	Music = "D_MAP03"
 }
 
-Map MAP04 "lwks"
+Map MAP04 " - by: lwks"
 {
 	Cluster = 0
 	Next = "MAP05"
@@ -32,10 +48,10 @@ Map MAP04 "lwks"
 	Music = "D_MAP04"
 }
 
-Map MAP05 "Rachael"
+Map MAP05 "Elementary - by: Rachael"
 {
 	Cluster = 0
 	Next = "MAP06"
 	SecretNext = "MAP06"
-	Music = "ADDMUSIC"
+	Music = "MUS_E1M7"
 }
