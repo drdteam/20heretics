@@ -32,9 +32,7 @@ Map MAP02 "Night of the Translucent Dead - by: Gothic"
 	Music = "D_MAP02"
 	sky1 = "bludsky"
 	IronlichSpecial
-	Special
-	Action_LowerFloor
-
+	SpecialAction_LowerFloor
 }
 
 Map MAP03 "House Cleaning - by: Li'l Devil"
