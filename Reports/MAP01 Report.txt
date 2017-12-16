@@ -1,0 +1,31 @@
+[MAP01]
+
+* COSMETIC
+Torches in starting room float in the air, should be closer to the walls.
+Arch that leads outside towards the boxes has a texture mismatch on the inner side (grey bricks instead of green)
+On the right of the grate right after the box when you come out of the first room, there is a texture misalignment on the angled green brick wall.
+Green bricks on the side of the staircase aren't aligned with the rest of the building.
+The pad on which the Morph Ovum is has a badly placed pillar that should be further on the left.
+There is an alcove with a TB of the Ancients which has a decorated part causing a texture alignment mismatch
+Textures on the outer walls of the building where you find the morph ovum seem a bit random with no real reason
+The building with the ghost knight has a TB of the A next to two brazeros, one has a flag and the other doesn't and it looks really jarring imo?
+The exit of the room with the red bridge that leads to the buildings mentioned above has a tons of flags above its exit, I'd make only two columns instead of four
+An alcove near the fountain that has four heretic statues and a wand gem has a green brick pillar that is misaligned
+Another alcove a bit further has the same problem but worse (this one has a TBofA) The metal pillar is also misaligned because it's too wide for its texture
+Directly opposite of that alcove you have a building with a window that gives on a chandelier, the wall under this window is badly misaligned
+The building that has the skullstaff has a misaligned wall right behind said skullstaff
+Maulotaur room has misaligned metal supports on the right of the entrance, metal parts around the stained glass windows could be more elegantly aligned as well
+The water horizon just looks wrong since it suddenly stops into rock with no delineation at all
+The rock formations in the waterfall area, as well as the cliffs that lead into the ponds have misaligned textures
+The green wall around the staircase that leads to the blue key door also has misaligned textures on its outer side, not just the inner
+
+* GAMEPLAY
+The first undead knight on the ledge is easy to fall off.
+The shield should be tagged as secret since getting to it isn't really obvious.
+Why do you have MACE SPHERES in the level, of all things???
+Hellstaff should also be a secret since it requires SOME thinking to get
+Maulotaur is kind of stupidly strong for this early in the pack, I'd use an iron lich instead imo
+the room he's in also needs more health, and the ghost knights are kind of a dick move
+The tome at the end is completely useless since you already killed the maulotaur
+There is a bunch of junk put high up, like a life urn and such, that cannot be obtained and thus serve no purpose at all
+

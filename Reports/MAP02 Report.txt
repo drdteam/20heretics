@@ -1,0 +1,13 @@
+[MAP02]
+!! CRITICAL
+Nothing happens after I kill the iron lich. This means the map can't be completed.
+I also cannot go back up the slope because it's too high.
+* COSMETIC
+Mossy bricks in the small graveyard with the yellow key door are misaligned.
+Same on the other side of the map, with the sloped area.
+And after the yellow gate.
+And the graveyard after it where you meet the ghost knights.
+And the one where the blue key is.
+
+* GAMEPLAY
+The ghost dog needs a health nerf, he takes a ton of shots to kill and is kind of really tough in general.
