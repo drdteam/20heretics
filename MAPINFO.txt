@@ -2,7 +2,6 @@ include "MAPINFO.Props.txt"
 
 defaultmap
 {
-	Name = "Untitled"
 	Sky1 = "sky1"
 	Music = "MUS_E1M1"
 }
