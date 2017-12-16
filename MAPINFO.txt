@@ -61,3 +61,11 @@ Map MAP05 "Elementary - by: Rachael"
 	SecretNext = "MAP06"
 	Music = "MUS_E1M7"
 }
+
+Map MAP06 "Idk I haven't decided - by: Gutawer"
+{
+	Cluster = 0
+	Next = "MAP07"
+	SecretNext = "MAP07"
+	Music = "MUS_E1M7"
+}
