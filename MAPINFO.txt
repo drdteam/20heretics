@@ -62,7 +62,7 @@ Map MAP05 "Elementary - by: Rachael"
 	Music = "MUS_E1M7"
 }
 
-Map MAP06 Holy Water - by: Gutawer"
+Map MAP06 "Holy Water - by: Gutawer"
 {
 	Cluster = 0
 	Next = "MAP07"
