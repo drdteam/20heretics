@@ -59,7 +59,7 @@ Map MAP05 "Elementary - by: Rachael"
 	Next = "MAP06"
 	SecretNext = "MAP06"
 	Music = "MUS_E1M7"
-	Par = 35
+	Par = 25
 }
 
 Map MAP06 "Holy Water - by: Gutawer"
