@@ -1,7 +1,4 @@
 [MAP02]
-!! CRITICAL
-Nothing happens after I kill the iron lich. This means the map can't be completed.
-I also cannot go back up the slope because it's too high.
 * COSMETIC
 Mossy bricks in the small graveyard with the yellow key door are misaligned.
 Same on the other side of the map, with the sloped area.
