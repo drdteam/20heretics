@@ -1,1 +1,41 @@
 include "MAPINFO.Props.txt"
+
+Map MAP01 "Malignant by Elm Yin"
+{
+	Cluster = 0
+	Next = "MAP02"
+	SecretNext = "MAP02"
+	Music = "ADDMUSIC"
+}
+
+Map MAP02 "Night of the Translucent Dead by Gothic"
+{
+	Cluster = 0
+	Next = "MAP03"
+	SecretNext = "MAP03"
+	Music = "D_MAP02"
+}
+
+Map MAP03 "House Cleaning by Li'l Devil"
+{
+	Cluster = 0
+	Next = "MAP04"
+	SecretNext = "MAP04"
+	Music = "D_MAP03"
+}
+
+Map MAP04 "lwks"
+{
+	Cluster = 0
+	Next = "MAP05"
+	SecretNext = "MAP05"
+	Music = "D_MAP04"
+}
+
+Map MAP05 "Rachael"
+{
+	Cluster = 0
+	Next = "MAP06"
+	SecretNext = "MAP06"
+	Music = "ADDMUSIC"
+}
