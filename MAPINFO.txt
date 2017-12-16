@@ -22,6 +22,7 @@ Map MAP01 "Malignant - by: Elm Yin"
 	SecretNext = "MAP02"
 	Music = "MUS_E1M3"
 	Sky1 = "sky1"
+	Par = 40
 }
 
 Map MAP02 "Night of the Translucent Dead - by: Gothic"
@@ -66,4 +67,5 @@ Map MAP06 "Holy Water - by: Gutawer"
 	Next = "MAP07"
 	SecretNext = "MAP07"
 	Music = "D_MAP06"
+	Par = 60
 }
