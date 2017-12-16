@@ -3,9 +3,9 @@
 
 
 * COSMETIC
-Ship could use some visual clutter.
+[Addressed] Ship could use some visual clutter.
 
 * GAMEPLAY
-lootbox lol, but really, they give you a ton of stuff and I think it breaks the balance a bit
+[Not sure what I want to do with this] lootbox lol, but really, they give you a ton of stuff and I think it breaks the balance a bit
 
-The ophidians in their little towers never shoot because they can't find clearance, and they're also really hard to hit.
+[Fixed] The ophidians in their little towers never shoot because they can't find clearance, and they're also really hard to hit.
