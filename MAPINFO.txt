@@ -4,6 +4,7 @@ defaultmap
 {
 	Sky1 = "sky1"
 	Music = "MUS_E1M1"
+	ResetInventory
 }
 
 clearepisodes
