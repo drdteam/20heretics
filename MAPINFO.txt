@@ -34,6 +34,7 @@ Map MAP02 "Night of the Translucent Dead - by: Gothic"
 	sky1 = "bludsky"
 	IronlichSpecial
 	SpecialAction_LowerFloor
+	Par = 120
 }
 
 Map MAP03 "House Cleaning - by: Li'l Devil"
@@ -43,14 +44,16 @@ Map MAP03 "House Cleaning - by: Li'l Devil"
 	SecretNext = "MAP04"
 	Music = "D_MAP03"
 	sky1 = "sky0"
+	Par = 105
 }
 
-Map MAP04 " - by: lwks"
+Map MAP04 "A Hell of a Sewer - by: lwks"
 {
 	Cluster = 0
 	Next = "MAP05"
 	SecretNext = "MAP05"
 	Music = "D_MAP04"
+	Par = 45
 }
 
 Map MAP05 "Elementary - by: Rachael"
@@ -59,7 +62,7 @@ Map MAP05 "Elementary - by: Rachael"
 	Next = "MAP06"
 	SecretNext = "MAP06"
 	Music = "MUS_E1M7"
-	Par = 25
+	Par = 20
 }
 
 Map MAP06 "Holy Water - by: Gutawer"
@@ -68,5 +71,5 @@ Map MAP06 "Holy Water - by: Gutawer"
 	Next = "MAP07"
 	SecretNext = "MAP07"
 	Music = "D_MAP06"
-	Par = 60
+	Par = 50
 }
