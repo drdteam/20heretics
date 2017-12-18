@@ -1,5 +1,3 @@
-//Files like this one is why I drink. -Lud
-
 // MOR'LADIM'S HERETIC PROP PACK
 
 ACTOR BrownStonePillar 6250
@@ -1636,7 +1634,7 @@ ACTOR Seaweed1 7292
 	States
 	{
 	  Spawn:
-		SWD1 ABCD 4
+		SWD1 ABCD 8
 		Loop
 	}
 }
@@ -1648,7 +1646,7 @@ ACTOR Seaweed2 7293
 	States
 	{
 	  Spawn:
-		SWD2 ABCD 4
+		SWD2 ABCD 8
 		Loop
 	}
 }
@@ -2344,7 +2342,7 @@ ACTOR ShadowcasterCauldron2 7191
 	States
 	{
 	  Spawn:
-		SCOL ABC 4 Bright
+		SCOL ABC 8 Bright
 		Loop
 	}
 }
@@ -2981,7 +2979,7 @@ ACTOR SkeletonSpit 7237
 	States
 	{
 	  Spawn:
-		SKSP ABCD 4
+		SKSP ABCD 8
 		Loop
 	}
 }
@@ -6132,7 +6130,7 @@ ACTOR Crab 7333
 	States
 	{
 	  Spawn:
-		CRAB ABC 4
+		CRAB ABC 16
 		Loop
 	}
 }
@@ -6216,7 +6214,8 @@ ACTOR DyingMan 7339
 	States
 	{
 	  Spawn:
-		DYNG ABCD 4
+		DYNG ABCD 8
+		DYNG D 4
 		Loop
 	}
 }
@@ -6917,9 +6916,9 @@ ACTOR EGCandleabra : SwitchableDecoration 7391
 	{
 	Active:
 		HSCN A 4 A_PlaySound("Ignite")
-		HSCN BCD 4 Bright
+		HSCN BCD 8 Bright
 	Spawn:
-		HSCN BCD 4 Bright
+		HSCN BCD 8 Bright
 		Loop
 	Inactive:
 		HSCN A -1
@@ -6935,18 +6934,4 @@ ACTOR EGCandleabraUnlit : EGCandleabra 7392
 	Spawn:
 		Goto Super::Inactive
 	}
-}
-
-Actor FakeXplosion
-{
-+NOINTERACTION
-RenderStyle Translucent
-Alpha 0.7
-States
-{
-	Spawn:
-	XPL1 A 4 Bright A_PlaySound("minotaur/fx2hit",CHAN_BODY)
-	XPL1 BCDEF 4 Bright
-	Stop
-}
 }
