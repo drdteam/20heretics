@@ -6935,3 +6935,15 @@ ACTOR EGCandleabraUnlit : EGCandleabra 7392
 		Goto Super::Inactive
 	}
 }
+
+ACTOR DeadSidhe 7393
+{
+	-SOLID
+	//$Category "Decoration"
+	States
+	{
+	Spawn:
+		PLAY P -1
+		Stop
+	}
+}
