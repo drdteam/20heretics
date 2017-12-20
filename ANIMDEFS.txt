@@ -315,3 +315,57 @@ switch	SCSWPRS0  on  pic SCSWPRS1	tics 0
 switch	SCSWSQR0  on  pic SCSWSQR1	tics 0
 switch	SCSWTRG0  on  pic SCSWTRG1	tics 0
 switch	SCSWTRK0  on  pic SCSWTRK1	tics 0
+
+//-----------------------------------------------
+//
+//Sixth file
+//
+//-----------------------------------------------
+
+//switches
+switch 0BUTTA1 on sound Switch1 pic 0BUTTA2 tics 0
+switch 0BUTTA2 off sound Switch2 pic 0BUTTA1 tics 0
+
+switch 0BUTTB1 on sound Switch1 pic 0BUTTB2 tics 0
+switch 0BUTTB2 off sound Switch2 pic 0BUTTB1 tics 0
+
+switch 0BUTTC1 on sound Switch1 pic 0BUTTC2 tics 0
+switch 0BUTTC2 off sound Switch2 pic 0BUTTC1 tics 0
+
+switch 0BUTTD1 on sound Switch1 pic 0BUTTD2 tics 0
+switch 0BUTTD2 off sound Switch2 pic 0BUTTD1 tics 0
+
+switch 0BUTTE1 on sound Switch1 pic 0BUTTE2 tics 0
+switch 0BUTTE2 off sound Switch2 pic 0BUTTE1 tics 0
+
+
+texture CANDLE_1 range CANDLE_5 rand 3 5
+
+texture CANDLES1
+ pic CANDLES1 tics 8
+ pic CANDLES2 tics 8
+ pic CANDLES3 tics 8
+
+Texture BELT1
+ Pic BELT1 Tics 6
+ Pic BELT2 Tics 6
+ Pic BELT3 Tics 6
+ Pic BELT4 Tics 6
+ Pic BELT5 Tics 6
+ Pic BELT6 Tics 6
+
+texture ELECDOR1
+ pic ELECDOR1 tics 8
+ pic ELECDOR2 tics 8
+ pic ELECDOR3 tics 8
+ 
+ texture ELECDOR4
+ pic ELECDOR4 tics 8
+ pic ELECDOR5 tics 8
+ pic ELECDOR6 tics 8
+
+texture GLAVA1
+ pic GLAVA1 tics 8
+ pic GLAVA2 tics 8 
+ pic GLAVA3 tics 8
+

@@ -79,3 +79,16 @@ Map MAP06 "Holy Water - by: Gutawer"
 	TitlePatch = "LV-GUTAW"
 	Par = 50
 }
+
+map MAP07 "Dead River - by: Impie"
+{
+	nocrouch
+	nojump
+	next = "MAP08"
+	secretnext = "MAP08"
+	sky1 = "SKY1"
+	cluster = 2
+	music = "BGMCHAOS"
+	minotaurspecial
+	SpecialAction_LowerFloor
+}
