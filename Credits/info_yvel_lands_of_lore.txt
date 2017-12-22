@@ -1,0 +1,23 @@
+Archive created by -=MIRSOFT=-
+Look for game MIDs at http://go.to/gamemids
+
+*** Archive info ***
+Archiver: Mirsoft
+Type: Game rip
+Format: MID
+Original Composer: Frank Klepacki
+Sequencer: Frank Klepacki
+Num of tunes: 91
+Complete:
+
+*** Game info ***
+Name: Lands of Lore
+Platform: PC
+Year: 1993
+Genre: RPG
+Publisher: Virgin
+Developer: Westwood
+
+
+This project uses Lands_60.mid and Lands_67.mid from said archive.
+Archive obtained at http://www.mirsoft.info/gmb/music_info.php?id_ele=MTk5NQ==
