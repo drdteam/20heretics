@@ -1,3 +1,11 @@
+/*	
+------------------------------------------------------------
+	20 Heretics Community Project
+	Particle Fountain; ZScript
+	Code © Lud 2017
+------------------------------------------------------------
+*/
+
 class HCPParticleFountain : Actor
 {	
 	Default
