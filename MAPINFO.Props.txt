@@ -135,4 +135,5 @@ DoomEdNums
   7132 = FlameSmall
   7133 = FlameLargeTemp
   7134 = FlameLarge
+  7135 = HCPParticleFountain //Particle fountains. -Lud
 }

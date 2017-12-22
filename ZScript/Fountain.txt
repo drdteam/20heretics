@@ -1,0 +1,23 @@
+class HCPParticleFountain : Actor
+{	
+	Default
+	{
+		//$Title "Particle Fountain"
+		//$Category "Lud"
+		Radius 6;
+		Height 6;
+		+NOINTERACTION
+		+NOGRAVITY
+	}
+	
+	States
+	{
+		Spawn:
+			TNT1 A 1
+			{
+				for (int i = 0; i < 360; i += 90)
+					A_SpawnParticle(fillcolor, SPF_FULLBRIGHT | SPF_RELATIVE, 60, random(16, 24), i, 0, 0, 0, 1.5, 0, 8, 0, 0, -0.5, frandom(0.5, 1.0), -1, frandom(1.0, 1.5));
+			}
+			Loop;
+	}
+}
