@@ -1,2 +1,3 @@
 iwad = "heretic.wad"
 startuptitle = "20 Heretics Community Challenge"
+load = "lights.pk3"
