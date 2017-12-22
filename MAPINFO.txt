@@ -82,13 +82,21 @@ Map MAP06 "Holy Water - by: Gutawer"
 
 map MAP07 "Dead River - by: Impie"
 {
+	Cluster = 0
 	nocrouch
 	nojump
 	next = "MAP08"
 	secretnext = "MAP08"
 	sky1 = "SKY1"
-	cluster = 2
 	music = "BGMCHAOS"
 	minotaurspecial
 	SpecialAction_LowerFloor
+}
+
+map FINAL "You'll Only Live To Twenty - by: Rachael"
+{
+	Cluster = 0
+	next = "ENDGAME"
+	secretnext = "ENDGAME"
+	music = "D_YVEL"
 }
