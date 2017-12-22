@@ -5853,6 +5853,7 @@ ACTOR DNZHSwordsAndShield 7313
 {
 	+WALLSPRITE
 	-SOLID
+	+NOGRAVITY
 	//$Category "Duke Nukem: Zero Hour"
 	States
 	{
@@ -5866,6 +5867,7 @@ ACTOR DNZHAxeAndMace 7314
 {
 	+WALLSPRITE
 	-SOLID
+	+NOGRAVITY
 	//$Category "Duke Nukem: Zero Hour"
 	States
 	{
@@ -5879,6 +5881,7 @@ ACTOR DNZHSwordAndShieldBanner 7315
 {
 	+WALLSPRITE
 	-SOLID
+	+NOGRAVITY
 	//$Category "Duke Nukem: Zero Hour"
 	States
 	{
@@ -5892,6 +5895,7 @@ ACTOR DNZHBanner 7316
 {
 	+WALLSPRITE
 	-SOLID
+	+NOGRAVITY
 	//$Category "Duke Nukem: Zero Hour"
 	States
 	{
@@ -5905,6 +5909,7 @@ ACTOR DNZHTapestry 7317
 {
 	+WALLSPRITE
 	-SOLID
+	+NOGRAVITY
 	//$Category "Duke Nukem: Zero Hour"
 	States
 	{
@@ -5918,6 +5923,7 @@ ACTOR DNZHSpearsWithFlags 7318
 {
 	+WALLSPRITE
 	-SOLID
+	+NOGRAVITY
 	//$Category "Duke Nukem: Zero Hour"
 	States
 	{
@@ -5931,6 +5937,7 @@ ACTOR DNZHTapestriesWithSwords 7319
 {
 	+WALLSPRITE
 	-SOLID
+	+NOGRAVITY
 	//$Category "Duke Nukem: Zero Hour"
 	States
 	{
@@ -5944,6 +5951,7 @@ ACTOR DNZHMiningToolRack 7320
 {
 	+WALLSPRITE
 	-SOLID
+	+NOGRAVITY
 	//$Category "Duke Nukem: Zero Hour"
 	States
 	{
@@ -5957,6 +5965,7 @@ ACTOR DNZHMiningTools 7321
 {
 	+WALLSPRITE
 	-SOLID
+	+NOGRAVITY
 	//$Category "Duke Nukem: Zero Hour"
 	States
 	{
