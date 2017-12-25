@@ -1,5 +1,10 @@
 include "MAPINFO.Props.txt"
 
+gameinfo
+{
+	statusbarclass = "HCPHUD"
+}
+
 defaultmap
 {
 	Sky1 = "sky1"

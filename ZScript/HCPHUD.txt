@@ -1,0 +1,113 @@
+/*	
+------------------------------------------------------------
+	20 Heretics Community Project
+	HUD; ZScript
+	Code © Lud 2017
+------------------------------------------------------------
+*/
+
+class HCPHUD : BaseStatusBar
+{
+	HUDFont mHUDFont;
+	HUDFont mSmallFont;
+	DynamicValueInterpolator mHealthInterpolator;
+    DynamicValueInterpolator mArmorInterpolator;
+	InventoryBarState InvBar;
+	int Health;
+	int MaxHealth;
+	int Armor;
+	int MaxArmor;
+
+	override void Init()
+	{
+		Super.Init();
+		SetSize(0, 320, 200);
+		
+		Font fnt = "HUDFONT_RAVEN";
+		mHUDFont = HUDFont.Create(fnt);
+		fnt = "INDEXFONT_RAVEN";
+		mSmallFont = HUDFont.Create(fnt);
+		InvBar = InventoryBarState.Create(mSmallFont);
+		mHealthInterpolator = DynamicValueInterpolator.Create(0, 0.25, 1, 4);
+		mArmorInterpolator = DynamicValueInterpolator.Create(0, 0.25, 1, 4);
+	}
+	
+	override void Draw (int state, double TicFrac)
+	{
+		Super.Draw (state, TicFrac);
+
+		if (state == HUD_StatusBar)
+		{
+			BeginStatusBar();
+		}
+		else if (state == HUD_Fullscreen)
+		{
+			BeginHUD();
+			DrawFullScreenStuff();
+		}
+	}
+    override void NewGame()
+    {
+        Super.NewGame();
+        mHealthInterpolator.Reset(0);
+        mArmorInterpolator.Reset(0);
+    }
+    
+    override void Tick()
+    {
+        Super.Tick();
+        mHealthInterpolator.Update(CPlayer.Health);
+        mArmorInterpolator.Update(GetAmount("BasicArmor"));
+    }
+	
+	void DrawFullScreenStuff()
+	{
+		
+		//Health and Armor.
+		int Health = mHealthInterpolator.GetValue();
+		int MaxHealth = CPlayer.mo.SpawnHealth();
+		int Armor = mArmorInterpolator.GetValue();
+		int MaxArmor = GetMaxAmount("BasicArmor");
+		int SavePercent = GetArmorSavePercent();
+		
+		bool BlueKey = CheckInventory("KeyBlue");
+		bool GreenKey = CheckInventory("KeyGreen");
+		bool YellowKey = CheckInventory("KeyYellow");
+		
+		DrawImage("HUD_BASE", (0, 0), DI_SCREEN_CENTER_BOTTOM);
+				
+		//Health.
+		DrawBar("HLTHFULL", "HLTHMPTY", Health, MaxHealth, (-89, -20), 0, 3, DI_SCREEN_CENTER_BOTTOM);
+		DrawString(mHUDFont, FormatNumber(Health, 0, 3), (-122, -74), DI_SCREEN_CENTER_BOTTOM | DI_TEXT_ALIGN_RIGHT);
+		
+		//Armor.
+		string ArmorFullImage = SavePercent >= 75 ? "BLUEFULL" : "SLVRFULL";
+		string ArmorEmptyImage = SavePercent >= 75 ? "BLUEMPTY" : "SLVRMPTY";
+		DrawBar(ArmorFullImage, ArmorEmptyImage, Armor, MaxArmor, (90, -20), 0, 3, DI_SCREEN_CENTER_BOTTOM);
+		DrawString(mHUDFont, FormatNumber(Armor, 0, 3), (122, -74), DI_SCREEN_CENTER_BOTTOM | DI_TEXT_ALIGN_LEFT);	
+			
+		//Ammo.
+		Inventory Ammo1 = GetCurrentAmmo();
+		if (Ammo1 != null)
+		{
+			DrawInventoryIcon(Ammo1, (-31, -36), DI_SCREEN_CENTER_BOTTOM | DI_ITEM_CENTER);
+			DrawString(mHUDFont, FormatNumber(Ammo1.Amount, 0, 3), (-31, -29), DI_SCREEN_CENTER_BOTTOM | DI_TEXT_ALIGN_CENTER);
+		}
+			
+		//Keyz.
+		if (BlueKey) DrawImage("BKEYICON", (2, -35), DI_SCREEN_CENTER_BOTTOM);
+		if (GreenKey) DrawImage("GKEYICON", (2, -27), DI_SCREEN_CENTER_BOTTOM);
+		if (YellowKey) DrawImage("YKEYICON", (2, -19), DI_SCREEN_CENTER_BOTTOM);
+		
+		//Inventory.
+		if (CPlayer.mo.InvSel != null)
+		{
+			DrawInventoryIcon(CPlayer.mo.InvSel, (35, -30), DI_SCREEN_CENTER_BOTTOM | DI_ITEM_CENTER, 1.0, (-1, -1), (0.9, 0.9));
+			if (CPlayer.mo.InvSel.Amount > 1)
+				DrawString(mHUDFont, FormatNumber(CPlayer.mo.InvSel.Amount, 3), (46, -29), DI_SCREEN_CENTER_BOTTOM | DI_TEXT_ALIGN_RIGHT);
+		}
+		
+		if (IsInventoryBarVisible())
+			DrawInventoryBar(InvBar, (0, -80), 7, DI_SCREEN_CENTER_BOTTOM, HX_SHADOW);
+	}
+}
