@@ -1,0 +1,50 @@
+Music: "Armadaaar (Dark.s3m)" by Alex Parker
+
+Fence Debris and D'Sparil Banner Sprites edited from Heretic and Hexen by ZXD
+Tall and angled MIDGRW textures edited from texture pack sources by ZXD and Cage
+Cloud layer edited from Quake by ZXD
+Rope bridge textures from Blood with one minor edit by ZXD
+Broken glass from Duke Nukem 3D
+Tent texture recolored from texture pack
+Muckfall recolored from CC4
+Skull wall with big mouth edited from Heretic
+Fence break and fire crackling sounds from Freesound
+Mud bubbling sound from SoundsBoom
+Metal tripping sound from Max Payne 2
+Eye Obelisk ambience from Blood
+
+-----------
+ART CREDITS
+NOTE: Some sources did not credit artists
+-----------
+
+EFLASH01 - Corpse Cave by Acrylicdreams
+EFLASH02 - Tree with ravens, artist unknown
+EFLASH03 - Dark Citadel by highdarktemplar
+EFLASH04 - H!ZONE Box Art
+EFLASH05 - Consecrated In Darkness by Ramses Melendez
+EFLASH06 - Edit of a piece by Alex Konstad
+EFLASH07 - Deep Forest by Artem Demura
+EFLASH08 - Heretic: The Docks by Liamythesh
+EFLASH09 - Dark Riders by Maciej Kuciara
+EFLASH10 - A's Wonderland by douzen
+EFLASH11 - undead warrior with glo by catwell
+EFLASH12 - An untitled piece by Anton Fedotov
+EFLASH13 - Art from Dark Souls 3, artist unknown
+EFLASH14 - Heresiarch's Seminary by highdarktemplar
+EFLASH15 - dead horse by Rostyslav Zagornov
+EFLASH16 - Undead by Horia Dociu
+EFLASH17 - The Cesspool by Liamythesh
+EFLASH18 - An image of Malumax I cobbed together from several sources I neglected to document (like an idiot)
+EFLASH19 - Hexen tribute by highdarktemplar
+EFLASH20 - Unknown, possibly a shot from one of the LOTR movies
+EFLASH21 - Photo of me in my haunted house getup, just because
+EFLASH22 - mirkokosmos by Tianhua Xu More
+EFLASH23 - Precipice The Dark Choir by Dylan Pierpont
+EFLASH24 - D'Sparil original by Liamythesh
+EFLASH25 - Rhogog, artist unknown
+EFLASH26 - Unknown, possibly a shot from LOTR or The Hobbit
+EFLASH27 - Slight edit of Disciple of Khaine by Zacharka
+EFLASH28 - Heretic Box Art
+EFLASH29 - Ruined village with crows, artist unknown
+EFLASH30 - The Iron Lich by Masteroflightnings
