@@ -98,6 +98,19 @@ map MAP07 "Dead River - by: Impie"
 	SpecialAction_LowerFloor
 }
 
+map MAP08 "The Downward Spiral - by: Zero X. Diamond"
+{
+	next = "MAP09"
+	secretnext = "MAP09"
+	sky1 = "SKY1"
+	cluster = 0
+	par = 60
+	music = "DARK"
+	OutsideFog = "ff ff ff"
+	OutsideFogDensity = 156
+	SkyFog = 156
+}
+
 map FINAL "You'll Only Live To Twenty - by: Rachael"
 {
 	Cluster = 0

@@ -7,6 +7,12 @@
 //MAP02
 GateOpen GATESWNG
 
+// MAP08
+FenceBreak				FNCBREAK
+FireCrackle				FIRECRAK
+MudBubbling				MUDGLOOP
+EyeObeliskAmbience		EYEAMB1
+TripOverMetal			TRIPMETL
 
 /***************************************************************************/
 /*									   */

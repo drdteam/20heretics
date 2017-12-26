@@ -369,3 +369,9 @@ texture GLAVA1
  pic GLAVA2 tics 8 
  pic GLAVA3 tics 8
 
+//-----------------------------------------------
+//
+// MAP08
+//
+//-----------------------------------------------
+TEXTURE GRYFALL1 RANGE GRYFALL4 tics 10
