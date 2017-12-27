@@ -21,7 +21,7 @@ class HCPHUD : BaseStatusBar
 	override void Init()
 	{
 		Super.Init();
-		SetSize(68, 320, 200);
+		SetSize(36, 320, 240);
 		
 		Font fnt = "HUDFONT_RAVEN";
 		mHUDFont = HUDFont.Create(fnt);
@@ -74,41 +74,41 @@ class HCPHUD : BaseStatusBar
 		bool GreenKey = CheckInventory("KeyGreen");
 		bool YellowKey = CheckInventory("KeyYellow");
 		
-		DrawImage("SBARBASE", (-29, 132), DI_ITEM_OFFSETS);
+		DrawImage("SBARBASE", (-29, 202), DI_ITEM_OFFSETS);
 		
 		//Health.
-		DrawBar("SBARHFLL", "SBARHMPT", Health, MaxHealth, (36, 143), 0, 3, DI_ITEM_OFFSETS);
-		DrawString(mHUDFont, FormatNumber(Health, 0, 3), (58, 159), DI_ITEM_OFFSETS | DI_TEXT_ALIGN_CENTER);
+		DrawBar("SBARHFLL", "SBARHMPT", Health, MaxHealth, (36, 191), 0, 3, DI_ITEM_OFFSETS);
+		DrawString(mHUDFont, FormatNumber(Health, 0, 3), (58, 2077), DI_ITEM_OFFSETS | DI_TEXT_ALIGN_CENTER);
 		
 		//Armor.
 		string ArmorFullImage = SavePercent >= 75 ? "SBAREFLL" : "SBARSFLL";
 		string ArmorEmptyImage = SavePercent >= 75 ? "SBAREMPT" : "SBARSMPT";
-		DrawBar(ArmorFullImage, ArmorEmptyImage, Armor, MaxArmor, (242, 143), 0, 3, DI_ITEM_OFFSETS);
-		DrawString(mHUDFont, FormatNumber(Armor, 0, 3), (264, 159), DI_ITEM_OFFSETS | DI_TEXT_ALIGN_CENTER);	
+		DrawBar(ArmorFullImage, ArmorEmptyImage, Armor, MaxArmor, (242, 191), 0, 3, DI_ITEM_OFFSETS);
+		DrawString(mHUDFont, FormatNumber(Armor, 0, 3), (264, 207), DI_ITEM_OFFSETS | DI_TEXT_ALIGN_CENTER);	
 		
 		//Ammo.
 		Inventory Ammo1 = GetCurrentAmmo();
 		if (Ammo1 != null)
 		{
-			DrawInventoryIcon(Ammo1, (130, 161), DI_ITEM_CENTER);
-			DrawString(mHUDFont, FormatNumber(Ammo1.Amount, 0, 3), (129, 168), DI_ITEM_OFFSETS | DI_TEXT_ALIGN_CENTER);
+			DrawInventoryIcon(Ammo1, (130, 218), DI_ITEM_CENTER);
+			DrawString(mHUDFont, FormatNumber(Ammo1.Amount, 0, 3), (129, 225), DI_ITEM_OFFSETS | DI_TEXT_ALIGN_CENTER);
 		}
 		
 		//Keyz.
-		if (BlueKey) DrawImage("BKEYICON", (157, 155), DI_ITEM_OFFSETS);
-		if (GreenKey) DrawImage("GKEYICON", (157, 163), DI_ITEM_OFFSETS);
-		if (YellowKey) DrawImage("YKEYICON", (157, 171), DI_ITEM_OFFSETS);
+		if (BlueKey) DrawImage("BKEYICON", (157, 212), DI_ITEM_OFFSETS);
+		if (GreenKey) DrawImage("GKEYICON", (157, 220), DI_ITEM_OFFSETS);
+		if (YellowKey) DrawImage("YKEYICON", (157, 228), DI_ITEM_OFFSETS);
 		
 		//Inventory.
 		if (CPlayer.mo.InvSel != null)
 		{
-			DrawInventoryIcon(CPlayer.mo.InvSel, (195, 166), DI_ITEM_CENTER, 1.0, (-1, -1), (0.9, 0.9));
+			DrawInventoryIcon(CPlayer.mo.InvSel, (195, 221), DI_ITEM_CENTER, 1.0, (-1, -1), (0.9, 0.9));
 			if (CPlayer.mo.InvSel.Amount > 1)
-				DrawString(mHUDFont, FormatNumber(CPlayer.mo.InvSel.Amount, 3), (206, 167), DI_TEXT_ALIGN_RIGHT);
+				DrawString(mHUDFont, FormatNumber(CPlayer.mo.InvSel.Amount, 3), (206, 225), DI_TEXT_ALIGN_RIGHT);
 		}
 		
 		if (IsInventoryBarVisible())
-			DrawInventoryBar(InvBar, (57, 90), 7, DI_ITEM_OFFSETS, HX_SHADOW);
+			DrawInventoryBar(InvBar, (57, 130), 7, DI_ITEM_OFFSETS, HX_SHADOW);
 
 	}
 	

@@ -3,6 +3,7 @@ include "MAPINFO.Props.txt"
 gameinfo
 {
 	statusbarclass = "HCPHUD"
+	borderflat = "BRDRFLAT"
 }
 
 defaultmap
