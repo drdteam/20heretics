@@ -1,0 +1,41 @@
+[MAP07]
+!! CRITICAL !!
+
+** COSMETIC **
+Starting area, far left corner, where the brown rock meets the building and the brown/grey overcrop, the textures are misaligned.
+Idem right side.
+Sky hack on the wedjat decoration above the door means it vanishes behind nothing from certain angles.
+Decorated ceiling overcrops inside the tomb has misaligned texture on the juncture between the pillar room and the sphinx switch room.
+Idem on the other juncture.
+Pillars in the corridor in which you get trapped between two weredragons have misaligned textures.
+Bricks in the mummy ambush room (the big bricks, not the small ones in the closets) are misaligned.
+Bricks in the lava pit room's corridors to the teleport are misaligned.
+
+?? GAMEPLAY ??
+Imo the pattern wall should be displayed closer to the pit puzzle.
+
+[MAP08]
+neat
+
+
+[MAP09]
+!! CRITICAL !!
+
+** COSMETIC **
+Rock walls in the starting area are misaligned.
+The water outside isn't set to have horizon lines, instead it's just a floating square over the world's biggest dirt patch.
+The bungalows need some serious texture variety.
+Rocks in the tunnel you can access from the small well in the final room are misaligned.
+
+?? GAMEPLAY ??
+I'd make the water a bit more transparent becaus I honestly thought it was a hard flat until I accidentally fell into it!
+The message when you try to leave the area is misspelled. It should be "Maybe it's not a good idea to leave this settlement.."
+
+[MAP10]
+!! CRITICAL !!
+
+** COSMETIC **
+Putting a switch inside a flat statue texture in the green key room looks plain weird. I'd use a different tex or put the switch elsewhere.
+
+?? GAMEPLAY ??
+Only one question mark is necessary, pitful mortal!
