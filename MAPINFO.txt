@@ -121,6 +121,14 @@ map MAP09 "Oceania - by: Crazy Toni"
 	music = "LEVELR"
 }
 
+MAP MAP10 "Preserved Catacombs - by: leodoom85"
+{
+	next = "MAP11"
+	secretnext = "MAP11"
+	Music = "TULKU"
+	Sky1 = "SKY1" , 0.0
+}
+
 map FINAL "You'll Only Live To Twenty - by: Rachael"
 {
 	Cluster = 0

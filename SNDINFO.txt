@@ -121,3 +121,8 @@ PeasantPain				PSNTWNCE
 PeasantDeath			PSNTKILL
 MarsFishPain			FISHHURT
 MarsFishDeath			FISHDTH
+
+
+// Leodoom85: Catacomb
+doorslide/start			STNMOV
+doorslide/stop			PSTOP

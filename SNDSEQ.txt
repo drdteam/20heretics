@@ -1,7 +1,15 @@
-//MAP02
+// gothic - transparent dead
 
 :GothicCustomDoor1
    door 20
    play GateOpen
    nostopcutoff
+end
+
+// leodoom85 - catacomb
+:StoneDoor
+	Door 1
+	playuntildone	doorslide/start
+	playrepeat		doorslide/start
+	stopsound		doorslide/stop
 end
