@@ -111,6 +111,15 @@ map MAP08 "The Downward Spiral - by: Zero X. Diamond"
 	SkyFog = 156
 }
 
+map MAP09 "Oceania - by: Crazy Toni"
+{
+	next = "MAP10"
+	secretnext = "MAP10"
+	par = 180
+	sky1 = "SKY1", 0
+	music = "LEVELR"
+}
+
 map FINAL "You'll Only Live To Twenty - by: Rachael"
 {
 	Cluster = 0
