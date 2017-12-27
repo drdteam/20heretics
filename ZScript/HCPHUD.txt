@@ -3,6 +3,10 @@
 	20 Heretics Community Project
 	HUD; ZScript
 	Code © Lud 2017
+	
+	NOTE:
+	You may use this HUD's graphics and code in other projects,
+	as long as you credit the original author.
 ------------------------------------------------------------
 */
 
