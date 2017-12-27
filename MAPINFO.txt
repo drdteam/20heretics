@@ -127,6 +127,8 @@ MAP MAP10 "Preserved Catacombs - by: leodoom85"
 	secretnext = "MAP11"
 	Music = "TULKU"
 	Sky1 = "SKY1" , 0.0
+	nojump
+	nocrouch
 }
 
 map FINAL "You'll Only Live To Twenty - by: Rachael"
