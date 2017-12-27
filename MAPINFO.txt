@@ -2,11 +2,11 @@ include "MAPINFO.Props.txt"
 
 gameinfo
 {
-	statusbarclass = "HCPHUD"
-	borderflat = "BRDRFLAT"
+	StatusbarClass = "HCPHUD"
+	BorderFlat = "BRDRFLAT"
 }
 
-defaultmap
+DefaultMap
 {
 	Sky1 = "sky1"
 	Music = "MUS_E1M1"
@@ -14,7 +14,7 @@ defaultmap
 	ResetHealth
 }
 
-clearepisodes
+ClearEpisodes
 
 episode MAP01
 {
@@ -51,7 +51,7 @@ Map MAP03 "House Cleaning - by: Li'l Devil"
 	Next = "MAP04"
 	SecretNext = "MAP04"
 	Music = "D_MAP03"
-	sky1 = "sky0"
+	Sky1 = "sky0"
 	TitlePatch = "LV-LIL-D"
 	Par = 105
 }
@@ -86,55 +86,62 @@ Map MAP06 "Holy Water - by: Gutawer"
 	Par = 50
 }
 
-map MAP07 "Dead River - by: Impie"
+Map MAP07 "Dead River - by: Impie"
 {
 	Cluster = 0
-	nocrouch
-	nojump
-	next = "MAP08"
-	secretnext = "MAP08"
-	sky1 = "SKY1"
-	music = "BGMCHAOS"
-	minotaurspecial
+	NoCrouch
+	NoJump
+	Next = "MAP08"
+	SecretNext = "MAP08"
+	Sky1 = "SKY1"
+	Music = "BGMCHAOS"
+	MinotaurSpecial
 	SpecialAction_LowerFloor
 }
 
-map MAP08 "The Downward Spiral - by: Zero X. Diamond"
+Map MAP08 "The Downward Spiral - by: Zero X. Diamond"
 {
-	next = "MAP09"
-	secretnext = "MAP09"
-	sky1 = "SKY1"
-	cluster = 0
-	par = 60
-	music = "DARK"
+	Cluster = 0
+	Next = "MAP09"
+	Secretnext = "MAP09"
+	Sky1 = "SKY1"
+	Par = 60
+	Music = "DARK"
 	OutsideFog = "ff ff ff"
 	OutsideFogDensity = 156
 	SkyFog = 156
 }
 
-map MAP09 "Oceania - by: Crazy Toni"
+Map MAP09 "Oceania - by: Crazy Toni"
 {
-	next = "MAP10"
-	secretnext = "MAP10"
-	par = 180
-	sky1 = "SKY1", 0
-	music = "LEVELR"
+	Next = "MAP10"
+	SecretNext = "MAP10"
+	Par = 180
+	Sky1 = "SKY1", 0
+	Music = "LEVELR"
 }
 
-MAP MAP10 "Preserved Catacombs - by: leodoom85"
+Map MAP10 "Preserved Catacombs - by: leodoom85"
 {
-	next = "MAP11"
-	secretnext = "MAP11"
+	Next = "MAP11"
+	SecretNext = "MAP11"
 	Music = "TULKU"
 	Sky1 = "SKY1" , 0.0
-	nojump
-	nocrouch
+	NoJump
+	NoCrouch
 }
 
-map FINAL "You'll Only Live To Twenty - by: Rachael"
+Map MAP11 "Trial of the Maulotaur - by: Zedonk"
+{
+	Next = "MAP12"
+	SecretNext = "MAP12"
+	Sky1 = "SKY1"
+}
+
+Map FINAL "You'll Only Live To Twenty - by: Rachael"
 {
 	Cluster = 0
-	next = "ENDGAME"
-	secretnext = "ENDGAME"
-	music = "D_YVEL"
+	Next = "ENDGAME"
+	SecretNext = "ENDGAME"
+	Music = "D_YVEL"
 }
