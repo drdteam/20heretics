@@ -78,7 +78,7 @@ class HCPHUD : BaseStatusBar
 		
 		//Health.
 		DrawBar("SBARHFLL", "SBARHMPT", Health, MaxHealth, (36, 191), 0, 3, DI_ITEM_OFFSETS);
-		DrawString(mHUDFont, FormatNumber(Health, 0, 3), (58, 2077), DI_ITEM_OFFSETS | DI_TEXT_ALIGN_CENTER);
+		DrawString(mHUDFont, FormatNumber(Health, 0, 3), (58, 207), DI_ITEM_OFFSETS | DI_TEXT_ALIGN_CENTER);
 		
 		//Armor.
 		string ArmorFullImage = SavePercent >= 75 ? "SBAREFLL" : "SBARSFLL";
