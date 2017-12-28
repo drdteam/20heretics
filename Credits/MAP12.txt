@@ -1,0 +1,17 @@
+*All custom content (those created by Mor'ladim) included within the WAD may be used without 
+the need for prior consent or permission, and may be freely modified to suit one's needs with 
+no credit required. (Unless otherwise noted)
+
+Textures:
+Mor'ladim
+MRSKY1 - Alien Vendetta Sky
+HDIRTF - Heretic
+MMTLPLT7/MSTNTILE/MSTNTIL3/MSTNTIL4/MSTNTIL5/MSTNWALL/MBRKBAR1/MBRKBAR2/MSTNPIL2 - Mor'ladim
+
+Sprites:
+Gargoyle Statue - Mor'ladim
+Grass Generator - Mor'ladim
+
+Music:
+"Jewel Master" - Jewel Master (Sega Genesis)
+

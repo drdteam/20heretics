@@ -1,0 +1,137 @@
+ACTOR GrassGenerator 6296
+{
+  Mass 99999
+  Radius 12
+  Height 5
+  +NODAMAGETHRUST
+  ReactionTime 10
+  States
+  {
+  Spawn:
+     MGRS A 0
+	 MGRS A 0 A_Jump(128,"Grass1","Grass2","Grass3","Grass4","Grass5","Grass6")	 
+	 MGRS A 0 A_Jump(80,1)
+	 MGRS A 0 A_CountDown
+	 MGRS A 0
+     Loop
+  Grass1:
+     MGRS A 0 A_SpawnItemEx("MGrass1",random(-30,30),random(-30,30))
+	 Goto Spawn
+  Grass2:
+     MGRS A 0 A_SpawnItemEx("MGrass2",random(-30,30),random(-30,30))
+	 Goto Spawn
+  Grass3:
+     MGRS A 0 A_SpawnItemEx("MGrass3",random(-30,30),random(-30,30))
+	 Goto Spawn
+  Grass4:
+     MGRS A 0 A_SpawnItemEx("MGrass4",random(-30,30),random(-30,30))
+	 Goto Spawn	 
+  Grass5:
+     MGRS A 0 A_SpawnItemEx("MGrass5",random(-30,30),random(-30,30))
+	 Goto Spawn	 
+  Grass6:
+     MGRS A 0 A_SpawnItemEx("MGrass6",random(-30,30),random(-30,30))
+	 Goto Spawn	 	 
+  }
+}
+
+
+Actor MGrass1
+{
+  Mass 99999
+  Radius 12
+  Height 5
+  +NODAMAGETHRUST
+  States
+  {
+  Spawn:
+     MGRS A -1
+     Loop
+  }
+}
+
+Actor MGrass2
+{
+  Mass 99999
+  Radius 12
+  Height 5
+  +NODAMAGETHRUST
+  States
+  {
+  Spawn:
+     MGRS B -1
+     Loop
+  }
+}
+
+Actor MGrass3
+{
+  Mass 99999
+  Radius 12
+  Height 5
+  +NODAMAGETHRUST
+  States
+  {
+  Spawn:
+     MGRS C -1
+     Loop
+  }
+}
+
+Actor MGrass4
+{
+  Mass 99999
+  Radius 12
+  Height 5
+  +NODAMAGETHRUST
+  States
+  {
+  Spawn:
+     MGRS D -1
+     Loop
+  }
+}
+
+Actor MGrass5
+{
+  Mass 99999
+  Radius 12
+  Height 5
+  +NODAMAGETHRUST
+  States
+  {
+  Spawn:
+     MGRS E -1
+     Loop
+  }
+}
+
+Actor MGrass6
+{
+  Mass 99999
+  Radius 12
+  Height 5
+  +NODAMAGETHRUST
+  States
+  {
+  Spawn:
+     MGRS F -1
+     Loop
+  }
+}
+
+ACTOR GargoyleStatue 6297
+{
+  Mass 99999
+  Radius 25
+  Height 65
+  +SOLID
+  +NODAMAGETHRUST
+  +DONTBLAST
+  States
+  {
+  Spawn:
+	 _GGL A -1
+	 Stop
+  }
+}

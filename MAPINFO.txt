@@ -136,6 +136,16 @@ Map MAP11 "Trial of the Maulotaur - by: Zedonk"
 	Sky1 = "SKY1"
 }
 
+map MAP12 "Desecrated Shrines - by: Mor'ladim"
+{
+	Next = "MAP13"
+	SecretNext = "MAP13"
+	sky1 = "AVRSKY1", 0
+	music = "01-SHRIN"
+	IronLichSpecial
+	SpecialAction_LowerFloor
+}
+
 Map FINAL "You'll Only Live To Twenty - by: Rachael"
 {
 	Cluster = 0
