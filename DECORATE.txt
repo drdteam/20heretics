@@ -1,4 +1,5 @@
-#include "map12/decorate.txt"
+#include "decorate/map02.txt"
+#include "decorate/map12.txt"
 // MOR'LADIM'S HERETIC PROP PACK
 
 ACTOR BrownStonePillar 6250
