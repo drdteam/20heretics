@@ -144,4 +144,5 @@ Map FINAL "You'll Only Live To Twenty - by: Rachael"
 	Next = "ENDGAME"
 	SecretNext = "ENDGAME"
 	Music = "D_YVEL"
+	Par = 355
 }
