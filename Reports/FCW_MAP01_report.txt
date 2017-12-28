@@ -82,6 +82,12 @@ And since there is no secret to them I'm guessing this is an oversight.
 and since this map has no official secrets, I suggest setting sector 293
 as secret. (The one right behind the fake wall sector.)
 
+-Linedefs 469 and 471 should be lower unpegged because they are part
+of the blue key door, those walls that usually move when the door opens.
+(Nobody likes that.)
+
+-Same for linedefs 582 and 584, green key door.
+
 =============
 Gameplay exploits
 =============
