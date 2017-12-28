@@ -127,8 +127,6 @@ Map MAP10 "Preserved Catacombs - by: leodoom85"
 	SecretNext = "MAP11"
 	Music = "TULKU"
 	Sky1 = "SKY1" , 0.0
-	NoJump
-	NoCrouch
 }
 
 Map MAP11 "Trial of the Maulotaur - by: Zedonk"
