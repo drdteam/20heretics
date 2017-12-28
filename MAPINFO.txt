@@ -146,6 +146,12 @@ map MAP12 "Desecrated Shrines - by: Mor'ladim"
 	SpecialAction_LowerFloor
 }
 
+map MAP13 "The Best Weapon - by: isaacpop23"
+{
+	Next = "MAP14"
+	SecretNext = "MAP14"
+}
+
 Map FINAL "You'll Only Live To Twenty - by: Rachael"
 {
 	Cluster = 0
