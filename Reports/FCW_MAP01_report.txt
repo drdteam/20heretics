@@ -1,0 +1,89 @@
+Played on skill 4 (smite-meister)
+
+=============
+Texture misalignments
+=============
+-At the start, there are two pillars with all their textures unaligned. It seems
+intentional, though.
+
+-Move outside towards the wooden crates, turn around and look up.
+
+The green brick texture (linedef 72) isn't perfectly aligned with the rest.
+
+-Seems like most of the green bricks around the start aren't perfectly aligned
+horizontally and vertically. I'm not going to pinpoint each end every line
+because it's going to get annoying fast. On the other hand, this might be
+intentional?
+
+-More misalignments around the first brazier, gray bricks, where the blue door
+bridge is. (Start at linedef 488)
+
+-There's even more where the morph ovum can be found. (Start at linedef 647)
+
+-And there's more around linedef 227.
+
+-A little more, linedef 517.
+
+-The well, linedef 212. Both inside and out.
+
+-The little 'house' with no windows nor doors, linedef 150.
+
+-The building with the crossbow, start at linedef 119.
+
+-The other windowless, doorless little 'house', linedef 762. Has another
+building next to it with a switch inside.
+
+-The very same building with the switch also has some naughty misalignments.
+Outside next to the little 'house' roof.
+
+-A third little 'house' with the teleporter on its roof, start at linedef 800.
+(As a side note, I'm also bothered why this one has two SPINE2 textures for
+two of its walls while the other two 'houses' don't.)
+
+-Linedef 403, that brown rock area past the little 'houses'.
+
+-The rock pillars right past the aforementioned brown rock area. All three.
+
+-And around linedef 358, the grey rocks right next to the rock pillars.
+
+-There's more where you fight the maulotaur.
+
+-I probably missed a few more places but overall this map has a lot of
+misaligned textures.
+
+=============
+Missing textures which aren't part of the old F_SKY hack.
+=============
+-The ones you can see during normal gameplay and not using cheats.
+Linedef 910
+
+-The rest:
+Linedef 323
+Linedef 837
+Linedef 838
+Linedef 839
+Linedef 1528
+Linedef 1545
+Linedef 1546
+
+=============
+Other bugs
+=============
+-A disciple (thing 117) has translucency. Which is redundant since thanks
+to the disciple's AI, he ruins it with his flash-before-attack gimmick.
+(It turns off his translucency after attacking.) I suppose you can leave it
+be for folks who play this with monster replacing mods.
+
+-Sectors 267 & 268 don't have appropriate floor textures considering they're
+supposed to be wooden crates. (Imo it should be FLOOR30 or FLAT508).
+And since there is no secret to them I'm guessing this is an oversight.
+
+-Since there is a secret wall that, when lowered, leads to the Mystic Urn
+and since this map has no official secrets, I suggest setting sector 293
+as secret. (The one right behind the fake wall sector.)
+
+=============
+Gameplay exploits
+=============
+When going towards the blue door, you can jump across the left wall closest to
+the door. Is this intentional?
