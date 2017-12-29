@@ -154,6 +154,7 @@ map MAP13 "The Best Weapon - by: isaacpop23"
 {
 	Next = "MAP14"
 	SecretNext = "MAP14"
+	par = 105
 }
 
 map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
