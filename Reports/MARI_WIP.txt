@@ -6,3 +6,13 @@ Stuff left to do:
  - Basement guard barracks (partial), prison, tomb (boss fight arena).
  - Detail area outside map, need more buildings to block the view and make it
    look like an actual town.
+
+Stuff done since last update:
+ - Reduced VM overhead by about 90% by restricting the sound system to just
+   ambience and making many lights and sounds static. Map now runs smoothly
+   even on my puny little GPD Pocket.
+ - Unified normal lights and toggled lights, reducing the number of
+   unique decorative actors.
+ - Added brightmaps.
+ - Louder knock sound.
+ - Readjusted closet setpiece to prevent sequence breaking (hopefully).
