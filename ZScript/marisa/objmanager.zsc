@@ -1,0 +1,186 @@
+/* Intermediate actor for attaching lights to stuff with an offset */
+Class mkLight : Actor
+{
+	default
+	{
+		Radius 0;
+		Height 0;
+		FloatBobPhase 0;
+		+NOGRAVITY
+		+NOBLOCKMAP
+		+NOINTERACTION
+		+DONTSPLASH
+	}
+
+	Vector3 ofs;
+
+	void Detach()
+	{
+		if ( tracer ) tracer.Destroy();
+		Destroy();
+	}
+
+	override void Tick()
+	{
+		if ( !master || !tracer )
+		{
+			if ( tracer ) tracer.Destroy();
+			Destroy();
+			return;
+		}
+		A_Warp(AAPTR_MASTER,ofs.x,ofs.y,ofs.z,0.0,
+			WARPF_NOCHECKPOSITION);
+	}
+}
+
+/*
+   Object Manager - Gives various actors in the map some sounds and lights
+   functions called through ACS (or actors themselves)
+*/
+Class mkObjManager : Actor
+{
+	// Not placeable
+	override void PostBeginPlay()
+	{
+		Destroy();
+	}
+
+	static void AttachLight( Actor a, Color col, float rad,
+		bool attenuated = false, Vector3 ofs = (0,0,0) )
+	{
+		mkLight s = mkLight(Spawn("mkLight"));
+		DynamicLight l;
+		if ( attenuated )
+			l = DynamicLight(Spawn("PointLightAttenuated"));
+		else l = DynamicLight(Spawn("PointLight"));
+		if ( s && l )
+		{
+			s.master = a;
+			s.tracer = l;
+			s.ofs = ofs;
+			l.args[0] = col.r;
+			l.args[1] = col.g;
+			l.args[2] = col.b;
+			l.args[3] = rad;
+			l.target = s;
+		}
+	}
+
+	static void AttachLightByTID( int sourcetid, int r, int g, int b,
+		float rad, bool attn = false, float ofsx = 0.0,
+		float ofsy = 0.0, float ofsz = 0.0 )
+	{
+		ThinkerIterator actorlist = ThinkerIterator.Create("Actor");
+		Actor a;
+		while ( a = Actor(actorlist.Next()) ) if ( a.tid == sourcetid )
+			AttachLight(a,Color(r,g,b),rad,attn,(ofsx,ofsy,ofsz));
+	}
+
+	static void DetachLight( Actor a )
+	{
+		ThinkerIterator llist = ThinkerIterator.Create("mkLight");
+		mkLight s;
+		while ( s = mkLight(llist.Next()) )
+			if ( s.master == a ) s.Detach();
+	}
+
+	static void DetachLightByTID( int sourcetid )
+	{
+		ThinkerIterator llist = ThinkerIterator.Create("mkLight");
+		mkLight s;
+		while ( s = mkLight(llist.Next()) )
+			if ( s.master.tid == sourcetid ) s.Detach();
+	}
+
+	// Called from ACS on map load for starting up handplaced sounds
+	/*
+	   list by tid:
+	    - 706: Fireplace
+	    - 707: Skull lights
+	    - 709: Teleport pads
+	    - 710: Water sounds
+	    - 711: Blue crystal
+	    - 712: Purple crystal
+	    - 714: Blue key pedestal
+	    - 715: "Statue"
+	    - 717: Yellow key pedestal
+	*/
+	static void InitObjSounds()
+	{
+		ThinkerIterator actorlist = ThinkerIterator.Create("Actor");
+		Actor a;
+		while ( a = Actor(actorlist.Next()) )
+		{
+			if ( a.tid == 706 )
+				mkSndManager.StartObjSeq(a,"SndFire");
+			if ( a.tid == 707 )
+				mkSndManager.StartObjSeq(a,"SndHarsh");
+			if ( a.tid == 709 )
+				mkSndManager.StartObjSeq(a,"SndKey");
+			if ( a.tid == 710 )
+				mkSndManager.StartObjSeq(a,"SndWater");
+			if ( a.tid == 711 )
+				mkSndManager.StartObjSeq(a,"SndCrystal");
+			if ( a.tid == 712 )
+				mkSndManager.StartObjSeq(a,"SndCrystalP");
+			if ( a.tid == 714 )
+				mkSndManager.StartObjSeq(a,"SndKey");
+			if ( a.tid == 715 )
+				mkSndManager.StartObjSeq(a,"SndStatue");
+			if ( a.tid == 717 )
+				mkSndManager.StartObjSeq(a,"SndKey");
+		}
+	}
+
+	// Called from ACS on map load for starting up handplaced lights
+	/*
+	   list by tid:
+	    - 701: Yellow key indicator
+	    - 702: Green key indicator
+	    - 703: Blue key indicator
+	    - 704: Gold lights
+	    - 705: Fireplace
+	    - 707: Skull lights
+	    - 708: Teleport pads
+	    - 711: Blue crystal
+	    - 712: Purple crystal
+	    - 713: Small gold lights
+	    - 714: Blue key pedestal
+	    - 716: Hanging corpse in barred room
+	    - 717: Yellow key pedestal
+	*/
+	static void InitObjLights()
+	{
+		ThinkerIterator actorlist = ThinkerIterator.Create("Actor");
+		Actor a;
+		while ( a = Actor(actorlist.Next()) )
+		{
+			if ( a.tid == 701 )
+				AttachLight(a,Color(64,64,0),16);
+			else if ( a.tid == 702 )
+				AttachLight(a,Color(0,64,0),16);
+			else if ( a.tid == 703 )
+				AttachLight(a,Color(0,0,64),16);
+			else if ( a.tid == 704 )
+				AttachLight(a,Color(128,112,32),16);
+			else if ( a.tid == 705 )
+				AttachLight(a,Color(255,204,0),120,true);
+			else if ( a.tid == 707 )
+				AttachLight(a,Color(64,0,32),32,true);
+			else if ( a.tid == 708 )
+				AttachLight(a,Color(255,64,64),96,true);
+			else if ( a.tid == 711 )
+				AttachLight(a,Color(64,128,255),32,true);
+			else if ( a.tid == 712 )
+				AttachLight(a,Color(64,0,128),96,true);
+			else if ( a.tid == 713 )
+				AttachLight(a,Color(128,112,32),8);
+			else if ( a.tid == 714 )
+				AttachLight(a,Color(64,64,255),64,true);
+			else if ( a.tid == 716 )
+				AttachLight(a,Color(32,0,0),192,true,(0,0,56));
+			else if ( a.tid == 717 )
+				AttachLight(a,Color(255,255,64),64,true);
+		}
+	}
+}

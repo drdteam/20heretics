@@ -137,3 +137,19 @@ DoomEdNums
   7134 = FlameLarge
   1000 = HCPParticleFountain //Particle fountains. -Lud
 }
+
+// Marisa Kirisame - Thievery at the Forsaken Manor
+DoomEdNums
+{
+	6400 = mkTFireBrazier
+	6401 = mkTSerpentTorch
+	6402 = mkTWallTorch
+	6403 = mkTChandelier
+	6410 = mkFireBrazier
+	6411 = mkSerpentTorch
+	6412 = mkWallTorch
+	6413 = mkChandelier
+	6414 = mkKeyGizmoYellow
+	6415 = mkKeyGizmoGreen
+	6416 = mkKeyGizmoBlue
+}

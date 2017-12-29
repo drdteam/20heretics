@@ -161,6 +161,15 @@ map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
 	music = "AIENTITY"
 }
 
+map MAP15 "Thievery at the Forsaken Manor - by: Marisa Kirisame"
+{
+	Next = FINAL
+	SecretNext = FINAL
+	Music = ""
+	Sky1 = "SKY1"
+	TitlePatch = "LV-MARI"
+}
+
 Map FINAL "You'll Only Live To Twenty - by: Rachael"
 {
 	Cluster = 0
@@ -179,3 +188,4 @@ map SECRET "Through The Portal Of Time"
 	par = 60
 	music = "PLACHLDR"
 }
+

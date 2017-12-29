@@ -22,3 +22,10 @@ end
 	playrepeat      MetalMove
 	stopsound	DoorCloseMetal
 end
+
+// marisa kirisame - thievery at the forsaken manor
+:GenericPolyobjMove
+	Door 1
+	PlayUntilDone   plats/pt1_strt
+	StopSound	plats/pt1_stop
+End

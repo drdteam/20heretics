@@ -1,0 +1,26 @@
+Thievery at the Forsaken Manor
+
+A spooky map by Marisa Kirisame for the 20 Heretics Challenge.
+
+So, I've decided to go a bit crazy with my submission and make a more
+"atmospheric" sort of map, complete with an ambience system inspired by Thief
+(the original, not the crappy reboot).
+
+I've done more of my fancy ZScript magic here, solely for that.
+
+Also, I'm using mostly vanilla textures, along with some quick and dirty
+TEXTURES hackery because the resource pack crashes SLADE. Shame about that...
+
+Ambient sounds were taken from Thief and Thief 2.
+
+Things that I'll probably do in a "Redux" rerelease after this:
+ - New textures
+ - Advanced enemy AI, more Thief-like
+ - More keys
+ - Extra rooms that were cut from this release, along with the second floor
+ - Actual statues in the hall of statues
+ - Footstep sounds
+ - Light and sound mechanics like in Thief
+ - Loot
+ - Defined objectives
+ - Nonlethal combat, water arrows, and much more like in good ol' Thief

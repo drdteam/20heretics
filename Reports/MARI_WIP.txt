@@ -1,0 +1,8 @@
+As you can see this isn't finished yet. There are still many rooms unfinished.
+
+Stuff left to do:
+ - Ground floor hallways, music room, study, guest bedrooms, servant quarters,
+   kitchen, library, trophy room, vault, storerooms, gardens, chapel.
+ - Basement guard barracks (partial), prison, tomb (boss fight arena).
+ - Detail area outside map, need more buildings to block the view and make it
+   look like an actual town.
