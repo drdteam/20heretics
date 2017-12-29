@@ -1,0 +1,25 @@
+/* Utility actor for spawning lights */
+Class mkLightHelper : Actor
+{
+	static void MakeLight( int tid, int r, int g, int b, float rad,
+		bool attenuated = false, float x = 0.0, float y = 0.0,
+		float z = 0.0 )
+	{
+		ThinkerIterator spotlist = ThinkerIterator.Create("Actor");
+		Actor s;
+		DynamicLight l;
+		string ltype = "PointLight";
+		if ( attenuated ) ltype = "PointLightAttenuated";
+		while ( s = Actor(spotlist.Next()) )
+		{
+			if ( s.tid != tid ) continue;
+			l = DynamicLight(Spawn(ltype,s.pos+(x,y,z)));
+			if ( !l ) continue;
+			l.SetXYZ(s.pos+(x,y,z));
+			l.args[0] = r;
+			l.args[1] = g;
+			l.args[2] = b;
+			l.args[3] = rad;
+		}
+	}
+}

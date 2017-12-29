@@ -6,9 +6,8 @@
 */
 
 /*
-   Attached Sound - Latches onto its tracer and for players warps itself to a
-   specific offset in order to feel like the sound comes from a specific
-   direction at all times
+   Attached Sound - Latches onto its tracer and warps itself to a specific
+   offset in order to feel like the sound comes from a particular direction
 */
 Class mkAttachSnd : Actor
 {
@@ -23,15 +22,14 @@ Class mkAttachSnd : Actor
 		+DONTSPLASH
 	}
 	string name;
-	bool looping, isabsolute, isambient;
+	bool looping, isabsolute;
 	float volume, attenuation;
 	int target_angle;
 	int counter;
-	Vector3 ofs;
 	override void PostBeginPlay()
 	{
 		// don't play sound if we're attached to remote players
-		if ( isambient && CheckClass("PlayerPawn",AAPTR_TRACER,true)
+		if ( CheckClass("PlayerPawn",AAPTR_TRACER,true)
 			&& (players[consoleplayer].mo != PlayerPawn(tracer)) )
 			return;
 		A_PlaySound(name,CHAN_6,volume,looping,attenuation);
@@ -39,11 +37,11 @@ Class mkAttachSnd : Actor
 	override void Tick()
 	{
 		if ( isabsolute )
-			A_Warp(AAPTR_Tracer,ofs.x,ofs.y,ofs.z,target_angle,
+			A_Warp(AAPTR_Tracer,64.0,0,0,target_angle,
 				WARPF_ABSOLUTEANGLE|WARPF_NOCHECKPOSITION
 				|WARPF_INTERPOLATE);
 		else
-			A_Warp(AAPTR_Tracer,ofs.x,ofs.y,ofs.z,target_angle,
+			A_Warp(AAPTR_Tracer,64.0,0,0,target_angle,
 				WARPF_NOCHECKPOSITION|WARPF_INTERPOLATE);
 		if ( !looping && (counter-- <= 0) ) Destroy();
 		Super.Tick();
@@ -63,17 +61,14 @@ Class mkSoundSeq : Actor
 	int panmode; // 0: relative, 1: relative single
 	             // 2: absolute, 3: absolute single
 	float volume; // volume of the sound
-	float attenuation; // for object sounds, if zero, assume ambient
 	Array<String> sounds; // list of sound options to pick at random
 	Array<int> durations; // list of durations for each sound, for cleanup
 	int counter; // internal counter for repeats
 	Actor attachto; // the actor that listens to us
 	float fadetimer, fadevalue; // timer for fading, and per-tic rate
-	Vector3 ofs; // offset from base object at which the sound will play
 	int playcount; // internal counter of sounds played in this sequence
 	int lastindex; // to prevent playing the same sequence twice in a row
 	int target_angle; // picked angle
-	bool isambient; // are we an ambient sequence?
 	default
 	{
 		Radius 0;
@@ -118,15 +113,8 @@ Class mkSoundSeq : Actor
 		snd.target_angle = target_angle;
 		snd.counter = durations[pick];
 		snd.volume = volume*fadetimer;
-		snd.ofs = ofs;
-		snd.isambient = isambient;
-		if ( isambient )
-		{
-			snd.ofs.x += 64.0;
-			if ( panmode == 0 ) snd.attenuation = 0.0;
-			else snd.attenuation = 1.0;
-		}
-		else snd.attenuation = attenuation;
+		if ( panmode == 0 ) snd.attenuation = 0.0;
+		else snd.attenuation = 1.0;
 		playcount++;
 	}
 	void DoFade()
@@ -207,14 +195,8 @@ Class mkSoundSeq : Actor
 */
 Class mkSndManager : Actor
 {
-	// Not placeable
-	override void PostBeginPlay()
-	{
-		Destroy();
-	}
-
 	// Parses the ambient sequence list and creates a sequence if found
-	static void StartAmbSeq( Actor listener, string seqname,
+	static void StartSeq( Actor listener, string seqname,
 		float fade = 0.0 )
 	{
 		int lump;
@@ -270,7 +252,6 @@ Class mkSndManager : Actor
 				seq.sounds.Copy(ssnd);
 				seq.durations.Copy(stim);
 				seq.attachto = listener;
-				seq.isambient = true;
 				if ( fade > 0.0 )
 				{
 					seq.fadetimer = 0.0;
@@ -287,93 +268,6 @@ Class mkSndManager : Actor
 			break;
 		}
 		data.Clear();
-	}
-
-	// Parses the object sequence list and creates a sequence if found
-	static void StartObjSeq( Actor source, string seqname,
-		float fade = 0.0, float ofsx = 0.0, float ofsy = 0.0,
-		float ofsz = 0.0 )
-	{
-		int lump;
-		Array<String> data, line;
-		string sname, stype;
-		int stypei, sdel, smin, smax, snsnd;
-		float svol, satn;
-		Array<String> ssnd;
-		Array<Int> stim;
-		if ( !(lump = Wads.FindLump("OBJSEQ")) ) return;
-		Wads.ReadLump(lump).Split(data,"\n",0);
-		for ( int i=0; i<data.size(); i++ )
-		{
-			if ( (data[i].CharAt(0) == "#")
-				|| (data[i].Length() == 0) ) continue;
-			data[i].Split(line," ",0);
-			sname = line[0];
-			if ( sname != seqname )
-			{
-				line.Clear();
-				continue;
-			}
-			stype = line[1];
-			if ( stype == "Looping" ) stypei = 1;
-			else if ( stype == "Repeating" ) stypei = 2;
-			else if ( stype == "Repeating2" ) stypei = 3;
-			else if ( stype == "Sequential" ) stypei = 4;
-			else if ( stype == "Sequential2" ) stypei = 5;
-			else stypei = 0;
-			sdel = line[2].ToInt();
-			smin = line[3].ToInt();
-			smax = line[4].ToInt();
-			svol = line[5].ToDouble();
-			satn = line[6].ToDouble();
-			snsnd = line[7].ToInt();
-			for ( int j=8; j<(8+snsnd*2); j+=2 )
-			{
-				ssnd.Push(line[j]);
-				stim.Push(line[j+1].ToInt());
-			}
-			mkSoundSeq seq;
-			if ( seq = mkSoundSeq(Spawn("mkSoundSeq")) )
-			{
-				seq.name = sname;
-				seq.type = stypei;
-				seq.counter = sdel;
-				seq.mininterval = smin;
-				seq.maxinterval = smax;
-				seq.panning = 0;
-				seq.panmode = 0;
-				seq.attenuation = satn;
-				seq.volume = svol;
-				seq.sounds.Copy(ssnd);
-				seq.durations.Copy(stim);
-				seq.attachto = source;
-				seq.isambient = false;
-				if ( fade > 0.0 )
-				{
-					seq.fadetimer = 0.0;
-					seq.fadevalue = (fade/35.0);
-				}
-				else
-				{
-					seq.fadetimer = 1.0;
-					seq.fadevalue = 0.0;
-				}
-			}
-			ssnd.Clear();
-			stim.Clear();
-			break;
-		}
-		data.Clear();
-	}
-
-	static void StartObjSeqByTID( string seqname, int sourcetid,
-		float fade = 0.0, float ofsx = 0.0, float ofsy = 0.0,
-		float ofsz = 0.0 )
-	{
-		ThinkerIterator actorlist = ThinkerIterator.Create("Actor");
-		Actor a;
-		while ( a = Actor(actorlist.Next()) ) if ( a.tid == sourcetid )
-			StartObjSeq(a,seqname,fade,ofsx,ofsy,ofsz);
 	}
 
 	// Searches for an active sequence with this name and stops it
@@ -386,27 +280,8 @@ Class mkSndManager : Actor
 				&& (seq.attachto == attached) ) seq.StopSeq();
 	}
 
-	static void StopSeqByTID( string seqname, int sourcetid )
-	{
-		ThinkerIterator seqlist = ThinkerIterator.Create("mkSoundSeq");
-		mkSoundSeq seq;
-		while ( seq = mkSoundSeq(seqlist.Next()) )
-			if ( (seq.name == seqname) && seq.attachto
-				&& (seq.attachto.tid == sourcetid) )
-					seq.StopSeq();
-	}
-
-	static void StopAllSeqByTID( int sourcetid )
-	{
-		ThinkerIterator seqlist = ThinkerIterator.Create("mkSoundSeq");
-		mkSoundSeq seq;
-		while ( seq = mkSoundSeq(seqlist.Next()) )
-			if ( seq.attachto && (seq.attachto.tid == sourcetid) )
-				seq.StopSeq();
-	}
-
 	// Stops all currently active ambient sequences for the current actor
-	static void StopAllAmbSeq( Actor attached )
+	static void StopAllSeq( Actor attached )
 	{
 		ThinkerIterator seqlist = ThinkerIterator.Create("mkSoundSeq");
 		mkSoundSeq seq;
@@ -426,19 +301,8 @@ Class mkSndManager : Actor
 					seq.FadeSeq(fade);
 	}
 
-	static void FadeSeqByTID( string seqname, int sourcetid,
-		float fade = 0.0 )
-	{
-		ThinkerIterator seqlist = ThinkerIterator.Create("mkSoundSeq");
-		mkSoundSeq seq;
-		while ( seq = mkSoundSeq(seqlist.Next()) )
-			if ( (seq.name == seqname) && seq.attachto
-				&& (seq.attachto.tid == sourcetid) )
-					seq.FadeSeq(fade);
-	}
-
 	// Fades all currently active ambient sequences for the current actor
-	static void FadeAllAmbSeq( Actor attached, float fade = 0.0 )
+	static void FadeAllSeq( Actor attached, float fade = 0.0 )
 	{
 		ThinkerIterator seqlist = ThinkerIterator.Create("mkSoundSeq");
 		mkSoundSeq seq;
@@ -447,32 +311,9 @@ Class mkSndManager : Actor
 				seq.FadeSeq(fade);
 	}
 
-	// Searches for an active sequence with this name and fades it in
-	static void RestartSeq( Actor attached, string seqname,
-		float fade = 0.0)
-	{
-		ThinkerIterator seqlist = ThinkerIterator.Create("mkSoundSeq");
-		mkSoundSeq seq;
-		while ( seq = mkSoundSeq(seqlist.Next()) )
-			if ( (seq.name == seqname) && attached
-				&& (seq.attachto == attached) )
-					seq.RestartSeq(fade);
-	}
-
-	static void RestartSeqByTID( string seqname, int sourcetid,
-		float fade = 0.0 )
-	{
-		ThinkerIterator seqlist = ThinkerIterator.Create("mkSoundSeq");
-		mkSoundSeq seq;
-		while ( seq = mkSoundSeq(seqlist.Next()) )
-			if ( (seq.name == seqname) && seq.attachto
-				&& (seq.attachto.tid == sourcetid) )
-					seq.RestartSeq(fade);
-	}
-
 	// Searches for an active ambient sequence with this name and fades it
 	// in, otherwise starts it from scratch
-	static void RestartAmbSeqEx( Actor attached, string seqname,
+	static void RestartSeq( Actor attached, string seqname,
 		float fade = 0.0 )
 	{
 		ThinkerIterator seqlist = ThinkerIterator.Create("mkSoundSeq");
@@ -487,7 +328,7 @@ Class mkSndManager : Actor
 				found++;
 			}
 		}
-		if ( !found ) StartAmbSeq(attached,seqname,fade);
+		if ( !found ) StartSeq(attached,seqname,fade);
 	}
 
 	// Searches for an active sequence with this name and returns 1 if it
@@ -499,16 +340,6 @@ Class mkSndManager : Actor
 		while ( seq = mkSoundSeq(seqlist.Next()) )
 			if ( (seq.name == seqname) && attached
 				&& (seq.attachto == attached) ) return 1;
-		return 0;
-	}
-
-	static int ActiveSeqByTID( string seqname, int sourcetid )
-	{
-		ThinkerIterator seqlist = ThinkerIterator.Create("mkSoundSeq");
-		mkSoundSeq seq;
-		while ( seq = mkSoundSeq(seqlist.Next()) )
-			if ( (seq.name == seqname) && seq.attachto
-				&& (seq.attachto.tid == sourcetid) ) return 1;
 		return 0;
 	}
 }

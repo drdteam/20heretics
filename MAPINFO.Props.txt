@@ -139,16 +139,13 @@ DoomEdNums
 }
 
 // Marisa Kirisame - Thievery at the Forsaken Manor
+
 DoomEdNums
 {
-	6400 = mkTFireBrazier
-	6401 = mkTSerpentTorch
-	6402 = mkTWallTorch
-	6403 = mkTChandelier
-	6410 = mkFireBrazier
-	6411 = mkSerpentTorch
-	6412 = mkWallTorch
-	6413 = mkChandelier
+	6400 = mkFireBrazier
+	6401 = mkSerpentTorch
+	6402 = mkWallTorch
+	6403 = mkChandelier
 	6414 = mkKeyGizmoYellow
 	6415 = mkKeyGizmoGreen
 	6416 = mkKeyGizmoBlue

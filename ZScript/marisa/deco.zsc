@@ -1,99 +1,6 @@
 /* Decorations for my map - MK */
 
 /* Redefined light emitters, for giving them custom lights */
-Class mkFireBrazier : Actor
-{
-	Default
-	{
-		//$Title "Manor Fire Brazier"
-		//$Category "Marisa Kirisame"
-		Radius 16;
-		Height 44;
-		+SOLID
-	}
-	States
-	{
-	Spawn:
-		KFR1 A 0 NoDelay
-		{
-			mkSndManager.StartObjSeq(self,"SndFire");
-			mkObjManager.AttachLight(self,Color(255,204,0),204,
-				true,(0,0,48));
-		}
-		KFR1 ABCDEFGH 3;
-		Goto Spawn+1;
-	}
-}
-Class mkSerpentTorch : Actor
-{
-	Default
-	{
-		//$Title "Manor Serpent Torch"
-		//$Category "Marisa Kirisame"
-		Radius 12;
-		Height 54;
-		+SOLID
-	}
-	States
-	{
-	Spawn:
-		SRTC A 0 NoDelay
-		{
-			mkSndManager.StartObjSeq(self,"SndTorch",ofsz:48.0);
-			mkObjManager.AttachLight(self,Color(192,160,0),144,
-				true,(0,0,48));
-		}
-		SRTC ABC 4;
-		Goto Spawn+1;
-	}
-}
-Class mkWallTorch : Actor
-{
-	Default
-	{
-		//$Title "Manor Wall Torch"
-		//$Category "Marisa Kirisame"
-		Radius 6;
-		Height 16;
-		+NOGRAVITY
-		+FIXMAPTHINGPOS
-	}
-	States
-	{
-	Spawn:
-		WTRH A 0 NoDelay
-		{
-			mkSndManager.StartObjSeq(self,"SndTorch",ofsz:70.0);
-			mkObjManager.AttachLight(self,Color(128,102,0),64,
-				false,(0,0,70));
-		}
-		WTRH ABC 6;
-		Goto Spawn+1;
-	}
-}
-Class mkChandelier : Actor
-{
-	Default
-	{
-		//$Title "Manor Chandelier"
-		//$Category "Marisa Kirisame"
-		Radius 20;
-		Height 60;
-		+SPAWNCEILING
-		+NOGRAVITY
-	}
-	States
-	{
-	Spawn:
-		CHDL A 0 NoDelay
-		{
-			mkObjManager.AttachLight(self,Color(128,102,0),160,
-				true);
-		}
-		CHDL ABC 4;
-		Goto Spawn+1;
-	}
-}
 Class mkKeyGizmoYellow : Actor
 {
 	Default
@@ -108,12 +15,7 @@ Class mkKeyGizmoYellow : Actor
 	{
 	Spawn:
 		KGZ1 A 1;
-		KGZ1 A 1
-		{
-			A_SpawnItemEx("KeyGizmoFloatYellow",0,0,60);
-			mkObjManager.AttachLight(self,Color(128,112,48),96,
-				true,(0,0,64));
-		}
+		KGZ1 A 1 A_SpawnItemEx("KeyGizmoFloatYellow",0,0,60);
 		KGZ1 A -1;
 		Stop;
 	}
@@ -132,12 +34,7 @@ Class mkKeyGizmoGreen : Actor
 	{
 	Spawn:
 		KGZ1 A 1;
-		KGZ1 A 1
-		{
-			A_SpawnItemEx("KeyGizmoFloatGreen",0,0,60);
-			mkObjmanager.AttachLight(self,Color(64,128,64),96,true,
-				(0,0,64));
-		}
+		KGZ1 A 1 A_SpawnItemEx("KeyGizmoFloatGreen",0,0,60);
 		KGZ1 A -1;
 		Stop;
 	}
@@ -156,19 +53,14 @@ Class mkKeyGizmoBlue : Actor
 	{
 	Spawn:
 		KGZ1 A 1;
-		KGZ1 A 1
-		{
-			A_SpawnItemEx("KeyGizmoFloatBlue",0,0,60);
-			mkObjManager.AttachLight(self,Color(32,32,128),96,true,
-				(0,0,64));
-		}
+		KGZ1 A 1 A_SpawnItemEx("KeyGizmoFloatBlue",0,0,60);
 		KGZ1 A -1;
 		Stop;
 	}
 }
 
 /* toggleable lights */
-Class mkTFireBrazier : SwitchableDecoration
+Class mkFireBrazier : SwitchableDecoration
 {
 	Default
 	{
@@ -191,9 +83,7 @@ Class mkTFireBrazier : SwitchableDecoration
 				A_PlaySound("hexen/ignite",0,0.8);
 			}
 			args[0] = 0;
-			mkSndManager.StartObjSeq(self,"SndFire",ofsz:48.0);
-			mkObjManager.AttachLight(self,Color(255,204,0),204,
-				true,(0,0,48));
+			A_PlaySound("thief/firelp",CHAN_BODY,1.0,true,4.0);
 		}
 		KFR1 ABCDEFGH 3;
 		Goto Active+1;
@@ -204,15 +94,14 @@ Class mkTFireBrazier : SwitchableDecoration
 			{
 				return ResolveState("Active");
 			}
-			mkSndManager.StopSeq(self,"SndFire");
-			mkObjManager.DetachLight(self);
+			A_StopSound(CHAN_BODY);
 			return ResolveState(null);
 		}
 		KFR1 I -1;
 		Stop;
 	}
 }
-Class mkTSerpentTorch : SwitchableDecoration
+Class mkSerpentTorch : SwitchableDecoration
 {
 	Default
 	{
@@ -235,9 +124,7 @@ Class mkTSerpentTorch : SwitchableDecoration
 				A_PlaySound("hexen/ignite",0,0.8);
 			}
 			args[0] = 0;
-			mkSndManager.StartObjSeq(self,"SndTorch",ofsz:48.0);
-			mkObjManager.AttachLight(self,Color(192,160,0),144,
-				true,(0,0,48));
+			A_PlaySound("thief/firelp",CHAN_BODY,0.4,true,6.0);
 		}
 		SRTC ABC 4;
 		Goto Active+1;
@@ -248,15 +135,14 @@ Class mkTSerpentTorch : SwitchableDecoration
 			{
 				return ResolveState("Active");
 			}
-			mkSndManager.StopSeq(self,"SndTorch");
-			mkObjManager.DetachLight(self);
+			A_StopSound(CHAN_BODY);
 			return ResolveState(null);
 		}
 		SRTC D -1;
 		Stop;
 	}
 }
-Class mkTWallTorch : SwitchableDecoration
+Class mkWallTorch : SwitchableDecoration
 {
 	Default
 	{
@@ -280,9 +166,7 @@ Class mkTWallTorch : SwitchableDecoration
 				A_PlaySound("hexen/ignite",0,0.8);
 			}
 			args[0] = 0;
-			mkSndManager.StartObjSeq(self,"SndTorch",ofsz:70.0);
-			mkObjManager.AttachLight(self,Color(128,102,0),64,
-				false,(0,0,70));
+			A_PlaySound("thief/firelp",CHAN_BODY,0.4,true,6.0);
 		}
 		WTRH ABC 6;
 		Goto Active+1;
@@ -293,15 +177,14 @@ Class mkTWallTorch : SwitchableDecoration
 			{
 				return ResolveState("Active");
 			}
-			mkSndManager.StopSeq(self,"SndTorch");
-			mkObjManager.DetachLight(self);
+			A_StopSound(CHAN_BODY);
 			return ResolveState(null);
 		}
 		WTRH D -1;
 		Stop;
 	}
 }
-Class mkTChandelier : SwitchableDecoration
+Class mkChandelier : SwitchableDecoration
 {
 	Default
 	{
@@ -325,8 +208,6 @@ Class mkTChandelier : SwitchableDecoration
 				A_PlaySound("hexen/ignite",0,0.1);
 			}
 			args[0] = 0;
-			mkObjManager.AttachLight(self,Color(128,102,0),160,
-				true);
 		}
 		CHDL ABC 4;
 		Goto Active+1;
@@ -337,7 +218,6 @@ Class mkTChandelier : SwitchableDecoration
 			{
 				return ResolveState("Active");
 			}
-			mkObjManager.DetachLight(self);
 			return ResolveState(null);
 		}
 		CHDL D -1;
