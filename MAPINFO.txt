@@ -97,6 +97,7 @@ Map MAP07 "Dead River - by: Impie"
 	Music = "BGMCHAOS"
 	MinotaurSpecial
 	SpecialAction_LowerFloor
+	Par = 100
 }
 
 Map MAP08 "The Downward Spiral - by: Zero X. Diamond"
