@@ -128,6 +128,7 @@ Map MAP10 "Preserved Catacombs - by: leodoom85"
 	SecretNext = "MAP11"
 	Music = "TULKU"
 	Sky1 = "SKY1" , 0.0
+	Par = 135
 }
 
 Map MAP11 "Trial of the Maulotaur - by: Zedonk"
@@ -135,6 +136,7 @@ Map MAP11 "Trial of the Maulotaur - by: Zedonk"
 	Next = "MAP12"
 	SecretNext = "MAP12"
 	Sky1 = "SKY1"
+	Par = 190
 }
 
 map MAP12 "Desecrated Shrines - by: Mor'ladim"
@@ -145,6 +147,7 @@ map MAP12 "Desecrated Shrines - by: Mor'ladim"
 	music = "01-SHRIN"
 	IronLichSpecial
 	SpecialAction_LowerFloor
+	Par = 45
 }
 
 map MAP13 "The Best Weapon - by: isaacpop23"
