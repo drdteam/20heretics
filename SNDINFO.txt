@@ -123,6 +123,26 @@ MarsFishPain			FISHHURT
 MarsFishDeath			FISHDTH
 
 
-// Leodoom85: Catacomb
+// ******** Leodoom85: Catacomb
 doorslide/start			STNMOV
 doorslide/stop			PSTOP
+
+
+// ******** Zero X. Diamond: Wizard's Techbase
+// HEXEN DOOR
+
+DoorOpenMetal           stmdr1
+MetalMove               mtlmv3
+DoorCloseMetal          drstp2
+
+// ROBOVOICE ANNOUNCEMENTS
+
+MechanicalFailure		MECHFAIL
+
+// ALARM
+
+KlaxonAlarm				KLAXON
+
+// COMPUTER
+
+ComputerAmbience		COMPUTER

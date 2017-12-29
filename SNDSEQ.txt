@@ -13,3 +13,12 @@ end
 	playrepeat		doorslide/start
 	stopsound		doorslide/stop
 end
+
+// zero x diamond - wizard's techbase
+:DoorMetal
+	Door 0
+	Attenuation Idle
+	playtime  	DoorOpenMetal 35
+	playrepeat      MetalMove
+	stopsound	DoorCloseMetal
+end

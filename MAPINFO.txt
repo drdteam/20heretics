@@ -152,6 +152,15 @@ map MAP13 "The Best Weapon - by: isaacpop23"
 	SecretNext = "MAP14"
 }
 
+map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
+{
+	next = "MAP15"
+	secretnext = "MAP15"
+	sky1 = "MAGIKSKY"
+	par = 60
+	music = "AIENTITY"
+}
+
 Map FINAL "You'll Only Live To Twenty - by: Rachael"
 {
 	Cluster = 0
