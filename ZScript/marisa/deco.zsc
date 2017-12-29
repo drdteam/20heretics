@@ -151,7 +151,6 @@ Class mkWallTorch : SwitchableDecoration
 		Radius 6;
 		Height 16;
 		+NOGRAVITY
-		+FIXMAPTHINGPOS
 	}
 	States
 	{

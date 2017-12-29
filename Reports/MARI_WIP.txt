@@ -2,17 +2,11 @@ As you can see this isn't finished yet. There are still many rooms unfinished.
 
 Stuff left to do:
  - Ground floor hallways, music room, study, guest bedrooms, servant quarters,
-   kitchen, library, trophy room, vault, storerooms, gardens, chapel.
+   kitchen, library, trophy room, vault, storerooms.
  - Basement guard barracks (partial), prison, tomb (boss fight arena).
  - Detail area outside map, need more buildings to block the view and make it
    look like an actual town.
 
 Stuff done since last update:
- - Reduced VM overhead by about 90% by restricting the sound system to just
-   ambience and making many lights and sounds static. Map now runs smoothly
-   even on my puny little GPD Pocket.
- - Unified normal lights and toggled lights, reducing the number of
-   unique decorative actors.
- - Added brightmaps.
- - Louder knock sound.
- - Readjusted closet setpiece to prevent sequence breaking (hopefully).
+ - Chapel and garden added.
+ - Tiny flag change on a decoration.
