@@ -166,6 +166,7 @@ thief/bird3	BIRD3
 thief/bluecry1	BLUECRY1
 thief/bluecry2	BLUECRY2
 thief/bluecry3	BLUECRY3
+$random thief/bluecry { thief/bluecry1 thief/bluecry2 thief/bluecry3 }
 thief/brassl	brassL
 thief/btrem1	btrem1
 thief/btrem2	btrem2
@@ -199,6 +200,7 @@ thief/egglp1	EGGLP1
 thief/firelp1	FIRELP1
 thief/firelp8	FIRELP8
 thief/firelp9	FIRELP9
+$random thief/firelp { thief/firelp1 thief/firelp8 thief/firelp9 }
 thief/ft_hh1	FT_HH1
 thief/ft_hh2	FT_HH2
 thief/ft_hh3	FT_HH3
@@ -213,14 +215,17 @@ thief/ftwoo_a3	FTWOO_A3
 thief/ftwoo_a4	FTWOO_A4
 thief/harsh1	harsh1
 thief/harsh2	harsh2
+$random thief/harsh { thief/harsh1 thief/harsh2 }
 thief/howltxta	HOWLTXTA
 thief/howltxtb	HOWLTXTB
+$random thief/howltxt { thief/howltxta thief/howltxtb }
 thief/hum	HUM
 thief/hum2	HUM2
-thief/hwoowoo	hwoowoo
+thief/hwoowoo1	hwoowoo
 thief/hwoowoo2	hwoowoo2
 thief/hwoowoo3	hwoowoo3
-thief/keehit_S	keehit_S
+$random thief/hwoowoo {thief/hwoowoo1 thief/hwoowoo2 thief/hwoowoo3}
+thief/keehit_s	keehit_S
 thief/l14wail1	L14wail1
 thief/l14wail2	L14wail2
 thief/l14wail3	L14wail3
@@ -256,6 +261,7 @@ thief/s01mel2	s01mel2
 thief/splat1	SPLAT1
 thief/splat2	SPLAT2
 thief/splat3	SPLAT3
+$random thief/splat { thief/splat1 thief/splat2 thief/splat3 }
 thief/squeaks1	SQUEAKS1
 thief/str1	STR1
 thief/str2	STR2
@@ -282,6 +288,7 @@ thief/vikglow2	vikglow2
 thief/vikglow3	vikglow3
 thief/vikglow4	vikglow4
 thief/vikglow5	vikglow5
+$random thief/vikglow { thief/vikglow1 thief/vikglow2 thief/vikglow3 thief/vikglow4 thief/vikglow5 }
 thief/voceerie	VOCEERIE
 thief/voicel1	voicel1
 thief/vooh	VOOH
@@ -304,6 +311,7 @@ thief/wingedf	wingedF
 thief/wslow1	wslow1
 thief/wslow2	wslow2
 thief/wslow3	wslow3
+$random thief/wslow { thief/wslow1 thief/wslow2 thief/wslow3 }
 thief/zommoan1	ZOMMOAN1
 thief/zommoan2	ZOMMOAN2
 thief/zommoan3	ZOMMOAN3
@@ -374,7 +382,7 @@ $pitchshift thief/howltxta 0
 $pitchshift thief/howltxtb 0
 $pitchshift thief/hum 0
 $pitchshift thief/hum2 0
-$pitchshift thief/hwoowoo 0
+$pitchshift thief/hwoowoo1 0
 $pitchshift thief/hwoowoo2 0
 $pitchshift thief/hwoowoo3 0
 $pitchshift thief/keehit_S 0
