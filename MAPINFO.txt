@@ -160,3 +160,13 @@ Map FINAL "You'll Only Live To Twenty - by: Rachael"
 	Music = "D_YVEL"
 	Par = 355
 }
+
+map SECRET "Through The Portal Of Time"
+{
+	next = "SECRET"
+	secretnext = "SECRET"
+	sky1 = "FUTURSKY"
+	cluster = 1
+	par = 60
+	music = "PLACHLDR"
+}
