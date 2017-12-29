@@ -7029,7 +7029,7 @@ actor Bawss 1010
 	ActiveSound "wizard/active"
 	DeathSound "wizard/death"
 
-	Translation "0:255=%[0.,0.,-0.5]:[1.5,1.,0.5]"
+	Translation "0:255=%[0.,0.,0.]:[1.5,1.,0.5]"
 
 	Obituary "%o had an encounter with Bawss."
 
@@ -7073,6 +7073,8 @@ actor BawssHoming
 	-ACTIVATEPCROSS
 	+SEEKERMISSILE
 	RenderStyle Add
+	Translation "0:255=%[0.,0.,0.]:[1.5,1.,0.5]"
+
 	States
 	{
 	Spawn:
