@@ -19,90 +19,90 @@ WARP texture WSLIME03
 WARP texture WSLIMH
 WARP2 texture WDWATR01
 
-texture WLLATFL1
+texture optional WLLATFL1
  pic WLLATFL1 tics 8
  pic WLLATFL2 tics 8
  pic WLLATFL3 tics 8
 
-texture WLLBLOD1
+texture optional WLLBLOD1
  pic WLLBLOD1 tics 8
  pic WLLBLOD2 tics 8
  pic WLLBLOD3 tics 8
 
-texture WLLSLIM1
+texture optional WLLSLIM1
  pic WLLSLIM1 tics 8
  pic WLLSLIM2 tics 8
  pic WLLSLIM3 tics 8
 
-texture CANDLES1
+texture optional CANDLES1
  pic CANDLES1 tics 8
  pic CANDLES2 tics 8
  pic CANDLES3 tics 8
 
-texture DOORXNF1
+texture optional DOORXNF1
  pic DOORXNF1 tics 8
  pic DOORXNF2 tics 8
  pic DOORXNF3 tics 8
 
-texture DOORXNV1
+texture optional DOORXNV1
  pic DOORXNV1 tics 8
  pic DOORXNV2 tics 8
  pic DOORXNV3 tics 8
 
-texture ELECDOR1
+texture optional ELECDOR1
  pic ELECDOR1 tics 8
  pic ELECDOR2 tics 8
  pic ELECDOR3 tics 8
 
-texture ELECDOR4
+texture optional ELECDOR4
  pic ELECDOR4 tics 8
  pic ELECDOR5 tics 8
  pic ELECDOR6 tics 8
 
-texture GLAVA1
+texture optional GLAVA1
  pic GLAVA1 tics 8
  pic GLAVA2 tics 8 
  pic GLAVA3 tics 8
 
-texture FLTAAWA1
+texture optional FLTAAWA1
  pic FLTAAWA1 tics 8
  pic FLTAAWA2 tics 8
  pic FLTAAWA3 tics 8
 
-texture FLTMUD1
+texture optional FLTMUD1
  pic FLTMUD1 tics 8
  pic FLTMUD2 tics 8
  pic FLTMUD3 tics 8
 
-texture FLTTEL21
+texture optional FLTTEL21
  pic FLTTEL21 tics 8
  pic FLTTEL22 tics 8
  pic FLTTEL23 tics 8
  pic FLTTEL24 tics 8
 
-texture FLTTEL31
+texture optional FLTTEL31
  pic FLTTEL31 tics 8
  pic FLTTEL32 tics 8
  pic FLTTEL33 tics 8
  pic FLTTEL34 tics 8
 
-texture FLTTEL41
+texture optional FLTTEL41
  pic FLTTEL41 tics 8
  pic FLTTEL42 tics 8
  pic FLTTEL43 tics 8
  pic FLTTEL44 tics 8
 
-texture lvwalla1
+texture optional lvwalla1
  pic lvwalla1 tics 8
  pic lvwalla2 tics 8
  pic lvwalla3 tics 8
 
-texture lvwallb1
+texture optional lvwallb1
  pic lvwallb1 tics 8
  pic lvwallb2 tics 8
  pic lvwallb3 tics 8
 
-texture lvwallc1
+texture optional lvwallc1
  pic lvwallc1 tics 8
  pic lvwallc2 tics 8
  pic lvwallc3 tics 8
@@ -140,7 +140,7 @@ switch SW51OFF off sound Switch2 pic SW51ON tics 0
 //
 //-----------------------------------------------
 
-Texture ARUNE1
+texture optional ARUNE1
 allowdecals
 Pic ARUNE1 Tics 4
 Pic ARUNE2 Tics 4
@@ -149,7 +149,7 @@ Pic ARUNE4 Tics 4
 Pic ARUNE5 Tics 4
 Pic ARUNE6 Tics 4
 
-Texture BELT1
+texture optional BELT1
 Pic BELT1 Tics 6
 Pic BELT2 Tics 6
 Pic BELT3 Tics 6
@@ -157,35 +157,35 @@ Pic BELT4 Tics 6
 Pic BELT5 Tics 6
 Pic BELT6 Tics 6
 
-Texture NEWEARB1
+texture optional NEWEARB1
 Pic NEWEARB1 Tics 6
 Pic NEWEARB2 Tics 6
 Pic NEWEARB3 Tics 6
 Pic NEWEARB4 Tics 6
 
-Texture WATERF01
+texture optional WATERF01
 Pic WATERF01 Tics 3
 Pic WATERF02 Tics 3
 Pic WATERF03 Tics 3
 Pic WATERF04 Tics 3
 
-Warp Texture BUGSLIM1
-Warp Texture BUGSLIM2
-Warp Texture EARTHBL1
-Warp Texture EARTHBL2
-Warp Texture EARTHBL3
-Warp Texture EARTHBL4
-Warp Texture EARTHBL5
-Warp Texture EARTHBL6
-Warp Texture LAVA01
-Warp Texture LAVA02
-Warp Texture SLIME
-Warp2 Texture WATER01
-Warp2 Texture WATER02
-Warp2 Texture WATER03
-Warp2 Texture WATER04
-Warp2 Texture WATER05
-Warp2 Texture WATER06
+WARP texture BUGSLIM1
+WARP texture BUGSLIM2
+WARP texture EARTHBL1
+WARP texture EARTHBL2
+WARP texture EARTHBL3
+WARP texture EARTHBL4
+WARP texture EARTHBL5
+WARP texture EARTHBL6
+WARP texture LAVA01
+WARP texture LAVA02
+WARP texture SLIME
+WARP2 texture WATER01
+WARP2 texture WATER02
+WARP2 texture WATER03
+WARP2 texture WATER04
+WARP2 texture WATER05
+WARP2 texture WATER06
 
 Switch 0BUTTA1 on pic 0BUTTA2 tics 0
 Switch 0BUTTA2 on pic 0BUTTA1 tics 0
@@ -208,31 +208,31 @@ Switch 0BUTTE2 on pic 0BUTTE1 tics 0
 //
 //-----------------------------------------------
 
-texture CANDLE_1 range CANDLE_5 rand 3 5
+texture optional CANDLE_1 range CANDLE_5 rand 3 5
 
-texture RUNE1_1 range RUNE1_5 tics 7 oscillate
+texture optional RUNE1_1 range RUNE1_5 tics 7 oscillate
 
-texture RUNE2_1 range RUNE2_4 tics 7 oscillate
+texture optional RUNE2_1 range RUNE2_4 tics 7 oscillate
 
-texture RUNE3_1 range RUNE3_4 tics 7 oscillate
+texture optional RUNE3_1 range RUNE3_4 tics 7 oscillate
 
-texture RUNE4_1 range RUNE4_6 tics 7 oscillate
+texture optional RUNE4_1 range RUNE4_6 tics 7 oscillate
 
-texture EVILSK_1 range EVILSK_2 tics 12
+texture optional EVILSK_1 range EVILSK_2 tics 12
 
-texture MUCK_1 range MUCK_4 tics 8
+texture optional MUCK_1 range MUCK_4 tics 8
 
-warp2 texture H2WAT1
-warp2 texture H2WAT2
+WARP2 texture H2WAT1
+WARP2 texture H2WAT2
 
-warp2 texture H2LAVA1
-warp2 texture H2LAVA2
+WARP2 texture H2LAVA1
+WARP2 texture H2LAVA2
 
-warp2 texture ENERGY1
-warp2 texture ENERGY2
+WARP2 texture ENERGY1
+WARP2 texture ENERGY2
 
-warp2 texture SILVER1
-warp2 texture SKULWARP
+WARP2 texture SILVER1
+WARP2 texture SKULWARP
 
 /*
 Well here you go, PNG Hexen II textures. Some neat stuff here. These would good for, oh I dunno, Heretic or Hexen? :P
@@ -251,23 +251,23 @@ A big thanks to Gez for adding Quake .BSP support to SLADE! --Ceeb
 //
 //-----------------------------------------------
 
-texture WLLBLOD1
+texture optional WLLBLOD1
 	range WLLBLOD3
 	tics 8
 	
-texture WLLSLIM1
+texture optional WLLSLIM1
 	range WLLSLIM3
 	tics 8
 	
-texture FIREWALA
+texture optional FIREWALA
 	range FIREWALE
 	tics 6
 	
-flat FLTBLOD1
+flat optional FLTBLOD1
 	range FLTBLOD3
 	tics 8
 	
-flat FLTTBLU1
+flat optional FLTTBLU1
 	range FLTTBLU3
 	tics 8
 	
@@ -294,18 +294,18 @@ flat	SCSLUDG7	range SCSLUDG9	tics 8
 flat	SCWATER1	range SCWATER3	tics 8 
 // SCWATER4 to SCWATERS is to be used in a script that empties water in an area.
 
-texture SCBLOODA	range SCBLOODC	tics 8
-texture SCBLOODD	range SCBLOODF	tics 8
-texture SCBLUET1	range SCBLUET3	tics 6
-texture SCFACES1	range SCFACES3	tics 9
-texture SCGATEC1	range SCGATEC4	tics 5
-texture SCGREEN1	range SCGREEN3	tics 8
-texture SCHEADB1	range SCHEADB5	tics 6
-texture SCHEADG1	range SCHEADG3	tics 6
-texture SCROKWF1	range SCROKWF3	tics 4
-texture SCSTWAT1	range SCSTWAT3	tics 8
-texture SCVEINS1	range SCVEINS3	tics 8
-texture SCWEIRD1	range SCWEIRD3	tics 8
+texture optional SCBLOODA	range SCBLOODC	tics 8
+texture optional SCBLOODD	range SCBLOODF	tics 8
+texture optional SCBLUET1	range SCBLUET3	tics 6
+texture optional SCFACES1	range SCFACES3	tics 9
+texture optional SCGATEC1	range SCGATEC4	tics 5
+texture optional SCGREEN1	range SCGREEN3	tics 8
+texture optional SCHEADB1	range SCHEADB5	tics 6
+texture optional SCHEADG1	range SCHEADG3	tics 6
+texture optional SCROKWF1	range SCROKWF3	tics 4
+texture optional SCSTWAT1	range SCSTWAT3	tics 8
+texture optional SCVEINS1	range SCVEINS3	tics 8
+texture optional SCWEIRD1	range SCWEIRD3	tics 8
 
 switch	SCSWHED0  on  pic SCSWHED1	tics 0
 switch	SCSWHRG0  on  pic SCSWHRG1	tics 0
@@ -339,14 +339,14 @@ switch 0BUTTE1 on sound Switch1 pic 0BUTTE2 tics 0
 switch 0BUTTE2 off sound Switch2 pic 0BUTTE1 tics 0
 
 
-texture CANDLE_1 range CANDLE_5 rand 3 5
+texture optional CANDLE_1 range CANDLE_5 rand 3 5
 
-texture CANDLES1
+texture optional CANDLES1
  pic CANDLES1 tics 8
  pic CANDLES2 tics 8
  pic CANDLES3 tics 8
 
-Texture BELT1
+texture optional BELT1
  Pic BELT1 Tics 6
  Pic BELT2 Tics 6
  Pic BELT3 Tics 6
@@ -354,17 +354,17 @@ Texture BELT1
  Pic BELT5 Tics 6
  Pic BELT6 Tics 6
 
-texture ELECDOR1
+texture optional ELECDOR1
  pic ELECDOR1 tics 8
  pic ELECDOR2 tics 8
  pic ELECDOR3 tics 8
  
- texture ELECDOR4
+ texture optional ELECDOR4
  pic ELECDOR4 tics 8
  pic ELECDOR5 tics 8
  pic ELECDOR6 tics 8
 
-texture GLAVA1
+texture optional GLAVA1
  pic GLAVA1 tics 8
  pic GLAVA2 tics 8 
  pic GLAVA3 tics 8
@@ -374,11 +374,11 @@ texture GLAVA1
 // MAP08
 //
 //-----------------------------------------------
-TEXTURE GRYFALL1 RANGE GRYFALL4 tics 10
+texture optional GRYFALL1 RANGE GRYFALL4 tics 10
 
 //-----------------------------------------------
 //
 // FINAL
 //
 //-----------------------------------------------
-TEXTURE W_256 RANGE W_264 tics 3
+texture optional W_256 RANGE W_264 tics 3

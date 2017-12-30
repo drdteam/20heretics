@@ -1,115 +1,115 @@
-WallTexture BADPATCH, 64, 128
+WallTexture optional BADPATCH, 64, 128
 {
 	NullTexture
 	Patch WALL07, 0, 0
 	Patch WALL07, 0, 46
 	Patch WALL07, 0, 92
 }
-WallTexture CHAINMAN, 256, 128
+WallTexture optional CHAINMAN, 256, 128
 {
 	Patch WALL35, 0, 0
 }
-WallTexture CHAINSD, 64, 128
+WallTexture optional CHAINSD, 64, 128
 {
 	Patch WALL42, 0, 0
 }
-WallTexture CSTLRCK, 64, 128
+WallTexture optional CSTLRCK, 64, 128
 {
 	Patch WALL04, 0, 0
 }
-WallTexture CTYSTCI1, 64, 128
+WallTexture optional CTYSTCI1, 64, 128
 {
 	Patch WALL20, 0, 0
 	Patch WALL24, 0, 64
 }
-WallTexture CTYSTCI2, 64, 128
+WallTexture optional CTYSTCI2, 64, 128
 {
 	Patch WALL21, 0, 0
 	Patch WALL24, 0, 64
 }
-WallTexture CTYSTCI4, 64, 128
+WallTexture optional CTYSTCI4, 64, 128
 {
 	Patch WALL24, 0, 0
 	Patch WALL24, 0, 64
 	Patch WALL20, 0, -55
 }
-WallTexture CTYSTUC1, 64, 128
+WallTexture optional CTYSTUC1, 64, 128
 {
 	Patch WALL14, 0, 0
 	Patch WALL17, 0, 64
 }
-WallTexture CTYSTUC2, 64, 128
+WallTexture optional CTYSTUC2, 64, 128
 {
 	Patch WALL15, 0, 0
 	Patch WALL18, 0, 64
 	Patch WALL25, 20, 88
 }
-WallTexture CTYSTUC3, 64, 128
+WallTexture optional CTYSTUC3, 64, 128
 {
 	Patch WALL16, 0, 0
 	Patch WALL19, 0, 64
 }
-WallTexture CTYSTUC4, 64, 128
+WallTexture optional CTYSTUC4, 64, 128
 {
 	Patch WALL15, 0, 0
 	Patch WALL18, 0, 64
 }
-WallTexture CTYSTUC5, 64, 128
+WallTexture optional CTYSTUC5, 64, 128
 {
 	Patch WALL15, 0, 0
 	Patch WALL15, 0, 64
 }
-WallTexture DMNMSK, 128, 128
+WallTexture optional DMNMSK, 128, 128
 {
 	Patch WALL34, 0, 0
 }
-WallTexture DOOREXIT, 64, 96
+WallTexture optional DOOREXIT, 64, 96
 {
 	Patch WALL57, 0, 0
 }
-WallTexture DOORSTON, 64, 128
+WallTexture optional DOORSTON, 64, 128
 {
 	Patch WALL59, 0, 0
 }
-WallTexture DOORWOOD, 64, 128
+WallTexture optional DOORWOOD, 64, 128
 {
 	Patch WALL37, 0, 0
 }
-WallTexture DRIPWALL, 32, 128
+WallTexture optional DRIPWALL, 32, 128
 {
 	Patch WALL05, 0, 0
 }
-WallTexture GRSKULL1, 64, 128
+WallTexture optional GRSKULL1, 64, 128
 {
 	Patch WALL02, 0, 0
 }
-WallTexture GRSKULL2, 128, 128
+WallTexture optional GRSKULL2, 128, 128
 {
 	Patch WALL00, 0, 0
 }
-WallTexture GRSKULL3, 128, 128
+WallTexture optional GRSKULL3, 128, 128
 {
 	Patch WALL01, 0, 0
 }
-WallTexture GRSTNPB, 64, 128
+WallTexture optional GRSTNPB, 64, 128
 {
 	Patch WALL06, 0, 0
 }
-WallTexture GRSTNPBV, 64, 128
+WallTexture optional GRSTNPBV, 64, 128
 {
 	Patch WALL06, 0, 0
 	Patch WALL08, 0, 51
 }
-WallTexture GRSTNPBW, 64, 128
+WallTexture optional GRSTNPBW, 64, 128
 {
 	Patch WALL06, 0, 0
 	Patch WALL07, 0, 51
 }
-WallTexture METL1, 64, 128
+WallTexture optional METL1, 64, 128
 {
 	Patch WALL64, 0, 0
 }
-WallTexture METL2, 64, 128
+WallTexture optional METL2, 64, 128
 {
 	Patch WALL63, 0, 0
 	Patch WALL63, 16, 0
@@ -130,85 +130,85 @@ WallTexture METL2, 64, 128
 	Patch WALL63, 32, 64
 	Patch WALL63, 48, 64
 }
-WallTexture MOSSRCK1, 128, 128
+WallTexture optional MOSSRCK1, 128, 128
 {
 	Patch WALL26, 0, 0
 	Patch WALL27, 64, 0
 }
-WallTexture OLDSKY2, 256, 128
+WallTexture optional OLDSKY2, 256, 128
 {
 	Patch SKY1, 0, 0
 }
-WallTexture OLDSKY3, 256, 128
+WallTexture optional OLDSKY3, 256, 128
 {
 	Patch SKY1, 0, 0
 }
-WallTexture ORNGRAY, 64, 100
+WallTexture optional ORNGRAY, 64, 100
 {
 	Patch WALL50, 0, 0
 }
-WallTexture RCKSNMUD, 64, 128
+WallTexture optional RCKSNMUD, 64, 128
 {
 	Patch WALL28, 0, 0
 }
-WallTexture REDWALL, 64, 128
+WallTexture optional REDWALL, 64, 128
 {
 	Patch WALL44, 0, 0
 	Patch WALL44, 0, 64
 }
-WallTexture SAINT1, 64, 128
+WallTexture optional SAINT1, 64, 128
 {
 	Patch WALL56, 0, 0
 }
-WallTexture SANDSQ2, 64, 128
+WallTexture optional SANDSQ2, 64, 128
 {
 	Patch WALL12, 0, 0
 }
-WallTexture SKULLSB1, 64, 128
+WallTexture optional SKULLSB1, 64, 128
 {
 	Patch WALL40, 0, 0
 }
-WallTexture SKULLSB2, 128, 128
+WallTexture optional SKULLSB2, 128, 128
 {
 	Patch WALL41, 0, 0
 }
-WallTexture SKY1, 256, 128
+WallTexture optional SKY1, 256, 128
 {
 	Patch SKY1, 0, 0
 }
-WallTexture SKY5, 256, 128
+WallTexture optional SKY5, 256, 128
 {
 	Patch SKY1, 0, 0
 }
-WallTexture SNDBLCKS, 128, 128
+WallTexture optional SNDBLCKS, 128, 128
 {
 	Patch WALL30, 0, 0
 }
-WallTexture SNDCHNKS, 64, 128
+WallTexture optional SNDCHNKS, 64, 128
 {
 	Patch WALL10, 0, 0
 }
-WallTexture SNDPLAIN, 64, 128
+WallTexture optional SNDPLAIN, 64, 128
 {
 	Patch WALL51, 0, 0
 }
-WallTexture SPINE1, 64, 128
+WallTexture optional SPINE1, 64, 128
 {
 	Patch WALL52, 0, 0
 }
-WallTexture SPINE2, 64, 128
+WallTexture optional SPINE2, 64, 128
 {
 	Patch WALL53, 0, 0
 }
-WallTexture SQPEB1, 64, 128
+WallTexture optional SQPEB1, 64, 128
 {
 	Patch WALL38, 0, 0
 }
-WallTexture STNGLS1, 128, 128
+WallTexture optional STNGLS1, 128, 128
 {
 	Patch WALL60, 0, 0
 }
-WallTexture SW1OFF, 64, 128
+WallTexture optional SW1OFF, 64, 128
 {
 	Patch WALL63, 16, 32
 	Patch WALL63, 32, 32
@@ -228,7 +228,7 @@ WallTexture SW1OFF, 64, 128
 	Patch WALL63, 32, 64
 	Patch WALL46, 20, 53
 }
-WallTexture SW1ON, 64, 128
+WallTexture optional SW1ON, 64, 128
 {
 	Patch WALL63, 0, 0
 	Patch WALL63, 16, 0
@@ -248,7 +248,7 @@ WallTexture SW1ON, 64, 128
 	Patch WALL63, 32, 96
 	Patch WALL63, 48, 96
 }
-WallTexture SW2OFF, 64, 128
+WallTexture optional SW2OFF, 64, 128
 {
 	Patch WALL63, 0, 0
 	Patch WALL63, 16, 32
@@ -268,7 +268,7 @@ WallTexture SW2OFF, 64, 128
 	Patch WALL63, 48, 96
 	Patch WALL63, 32, 96
 }
-WallTexture SW2ON, 64, 128
+WallTexture optional SW2ON, 64, 128
 {
 	Patch WALL63, 16, 32
 	Patch WALL63, 0, 32
@@ -289,242 +289,242 @@ WallTexture SW2ON, 64, 128
 	Patch WALL63, 48, 64
 	Patch PATA00, 19, 53
 }
-WallTexture TMBSTON1, 64, 48
+WallTexture optional TMBSTON1, 64, 48
 {
 	Patch WALL50, 0, 0
 	Patch WALL54, 0, 0
 }
-WallTexture TMBSTON2, 64, 48
+WallTexture optional TMBSTON2, 64, 48
 {
 	Patch WALL50, 0, -52
 	Patch WALL55, 0, 0
 }
-WallTexture TRISTON1, 64, 128
+WallTexture optional TRISTON1, 64, 128
 {
 	Patch WALL32, 0, 0
 }
-WallTexture WDGAT64, 64, 64
+WallTexture optional WDGAT64, 64, 64
 {
 	Patch WALL62, 0, 0
 }
-WallTexture WEB1_B, 32, 128
+WallTexture optional WEB1_B, 32, 128
 {
 	Patch PATA02, 0, 0
 }
-WallTexture WEB1_F, 32, 128
+WallTexture optional WEB1_F, 32, 128
 {
 	Patch PATA04, 0, 0
 }
-WallTexture WEB2_B, 32, 128
+WallTexture optional WEB2_B, 32, 128
 {
 	Patch PATA03, 0, 0
 }
-WallTexture WEB2_F, 32, 128
+WallTexture optional WEB2_F, 32, 128
 {
 	Patch PATA05, 0, 0
 }
-WallTexture WEB3_M, 32, 128
+WallTexture optional WEB3_M, 32, 128
 {
 	Patch PATA06, 0, 0
 }
-WallTexture WOODWL, 64, 128
+WallTexture optional WOODWL, 64, 128
 {
 	Patch WALL49, 0, 64
 	Patch WALL49, 0, 0
 }
-WallTexture BLUEFRA2, 64, 128
+WallTexture optional BLUEFRA2, 64, 128
 {
 	Patch BLUEFRA2, 0, 0
 	Patch BLUEFRA2, 0, 64
 }
-WallTexture BLUEFRA3, 64, 128
+WallTexture optional BLUEFRA3, 64, 128
 {
 	Patch BLUEFRA3, 0, 0
 	Patch BLUEFRA3, 0, 64
 }
-WallTexture BLUEFRA4, 64, 128
+WallTexture optional BLUEFRA4, 64, 128
 {
 	Patch BLUEFRA4, 0, 0
 	Patch BLUEFRA4, 0, 64
 }
-WallTexture BRWNRCK2, 64, 128
+WallTexture optional BRWNRCK2, 64, 128
 {
 	Patch BRWNRCK2, 0, 0
 }
-WallTexture CSTLRCK2, 64, 128
+WallTexture optional CSTLRCK2, 64, 128
 {
 	Patch CSTLRCK2, 0, 0
 }
-WallTexture CSTLRCK3, 64, 128
+WallTexture optional CSTLRCK3, 64, 128
 {
 	Patch CSTLRCK3, 0, 0
 }
-WallTexture CSTLRCK4, 64, 128
+WallTexture optional CSTLRCK4, 64, 128
 {
 	Patch CSTLRCK4, 0, 0
 }
-WallTexture CSTLRCK5, 64, 128
+WallTexture optional CSTLRCK5, 64, 128
 {
 	Patch CSTLRCK5, 0, 0
 }
-WallTexture CSTLRCK6, 64, 128
+WallTexture optional CSTLRCK6, 64, 128
 {
 	Patch CSTLRCK6, 0, 0
 }
-WallTexture CSTLRCK7, 64, 128
+WallTexture optional CSTLRCK7, 64, 128
 {
 	Patch CSTLRCK7, 0, 0
 }
-WallTexture CSTLRCK8, 64, 128
+WallTexture optional CSTLRCK8, 64, 128
 {
 	Patch CSTLRCK8, 0, 0
 }
-WallTexture CSTLRCK9, 64, 128
+WallTexture optional CSTLRCK9, 64, 128
 {
 	Patch CSTLRCK9, 0, 0
 }
-WallTexture CTYSTUC6, 64, 128
+WallTexture optional CTYSTUC6, 64, 128
 {
 	Patch CTYSTUC6, 0, 0
 }
-WallTexture CTYSTUC7, 64, 128
+WallTexture optional CTYSTUC7, 64, 128
 {
 	Patch CTYSTUC7, 0, 0
 }
-WallTexture CTYSTUC8, 128, 128
+WallTexture optional CTYSTUC8, 128, 128
 {
 	Patch CTYSTUC8, 0, 0
 	Patch CTYSTUC8, 0, 64
 }
-WallTexture DRIPWAL2, 32, 128
+WallTexture optional DRIPWAL2, 32, 128
 {
 	Patch DRIPWAL2, 0, 0
 }
-WallTexture DRIPWAL3, 32, 128
+WallTexture optional DRIPWAL3, 32, 128
 {
 	Patch DRIPWAL3, 0, 0
 }
-WallTexture DRIPWAL4, 32, 128
+WallTexture optional DRIPWAL4, 32, 128
 {
 	Patch DRIPWAL4, 0, 0
 }
-WallTexture GATMETLA, 128, 128
+WallTexture optional GATMETLA, 128, 128
 {
 	Patch GATMETLA, 0, 0
 }
-WallTexture GATMETLB, 64, 32
+WallTexture optional GATMETLB, 64, 32
 {
 	Patch GATMETLB, 0, 0
 }
-WallTexture GATMETLC, 64, 32
+WallTexture optional GATMETLC, 64, 32
 {
 	Patch GATMETLC, 0, 0
 }
-WallTexture GATMETLD, 64, 64
+WallTexture optional GATMETLD, 64, 64
 {
 	Patch GATMETLD, 0, 0
 }
-WallTexture GATMETLE, 64, 128
+WallTexture optional GATMETLE, 64, 128
 {
 	Patch GATMETLE, 0, 0
 }
-WallTexture GRNBLOK5, 128, 128
+WallTexture optional GRNBLOK5, 128, 128
 {
 	Patch GRNBLOK5, 0, 0
 }
-WallTexture GRNBLOK6, 128, 128
+WallTexture optional GRNBLOK6, 128, 128
 {
 	Patch GRNBLOK6, 0, 0
 }
-WallTexture GRNBLOK7, 128, 128
+WallTexture optional GRNBLOK7, 128, 128
 {
 	Patch GRNBLOK7, 0, 0
 }
-WallTexture GRNBLOK8, 128, 128
+WallTexture optional GRNBLOK8, 128, 128
 {
 	Patch GRNBLOK8, 0, 0
 }
-WallTexture GRNBLOKA, 128, 128
+WallTexture optional GRNBLOKA, 128, 128
 {
 	Patch GRNBLOKA, 0, 0
 }
-WallTexture GRNBLOKB, 128, 128
+WallTexture optional GRNBLOKB, 128, 128
 {
 	Patch GRNBLOKB, 0, 0
 }
-WallTexture GRNBLOKC, 128, 128
+WallTexture optional GRNBLOKC, 128, 128
 {
 	Patch GRNBLOKC, 0, 0
 }
-WallTexture GRNBLOKD, 128, 128
+WallTexture optional GRNBLOKD, 128, 128
 {
 	Patch GRNBLOKD, 0, 0
 }
-WallTexture GRNBLOKE, 128, 128
+WallTexture optional GRNBLOKE, 128, 128
 {
 	Patch GRNBLOKE, 0, 0
 }
-WallTexture GRSTNPB2, 64, 128
+WallTexture optional GRSTNPB2, 64, 128
 {
 	Patch GRSTNPB2, 0, 0
 }
-WallTexture GRSTNPB3, 64, 128
+WallTexture optional GRSTNPB3, 64, 128
 {
 	Patch GRSTNPB3, 0, 0
 }
-WallTexture GRSTNPB4, 64, 128
+WallTexture optional GRSTNPB4, 64, 128
 {
 	Patch GRSTNPB4, 0, 0
 }
-WallTexture LEATHER1, 128, 128
+WallTexture optional LEATHER1, 128, 128
 {
 	Patch LEATHER1, 0, 0
 }
-WallTexture LEATHER2, 128, 128
+WallTexture optional LEATHER2, 128, 128
 {
 	Patch LEATHER2, 0, 0
 }
-WallTexture LEATHER3, 128, 128
+WallTexture optional LEATHER3, 128, 128
 {
 	Patch LEATHER3, 0, 0
 }
-WallTexture LEATHER4, 128, 128
+WallTexture optional LEATHER4, 128, 128
 {
 	Patch LEATHER4, 0, 0
 }
-WallTexture LEATHER5, 128, 128
+WallTexture optional LEATHER5, 128, 128
 {
 	Patch LEATHER5, 0, 0
 }
-WallTexture LEATHER6, 128, 128
+WallTexture optional LEATHER6, 128, 128
 {
 	Patch LEATHER6, 0, 0
 }
-WallTexture LEATHER7, 128, 128
+WallTexture optional LEATHER7, 128, 128
 {
 	Patch LEATHER7, 0, 0
 }
-WallTexture LEATHER8, 128, 128
+WallTexture optional LEATHER8, 128, 128
 {
 	Patch LEATHER8, 0, 0
 }
-WallTexture LEATHER9, 128, 128
+WallTexture optional LEATHER9, 128, 128
 {
 	Patch LEATHER9, 0, 0
 }
-WallTexture LOOSERC2, 64, 128
+WallTexture optional LOOSERC2, 64, 128
 {
 	Patch LOOSERC2, 0, 0
 }
-WallTexture LOOSERC3, 64, 128
+WallTexture optional LOOSERC3, 64, 128
 {
 	Patch LOOSERC3, 0, 0
 }
-WallTexture METL3, 32, 16
+WallTexture optional METL3, 32, 16
 {
 	Patch METL3, 0, 0
 }
-WallTexture METL4, 64, 128
+WallTexture optional METL4, 64, 128
 {
 	Patch METL4, 0, 0
 	Patch METL4, 16, 96
@@ -534,7 +534,7 @@ WallTexture METL4, 64, 128
 	Patch METL4, 32, 32
 	Patch METL4, -32, 32
 }
-WallTexture METL5, 64, 128
+WallTexture optional METL5, 64, 128
 {
 	Patch METL5, 0, 0
 	Patch METL5, 0, 64
@@ -542,285 +542,285 @@ WallTexture METL5, 64, 128
 	Patch METL5, 32, 40
 	Patch METL5, 32, -24
 }
-WallTexture MIDCHAIN, 16, 128
+WallTexture optional MIDCHAIN, 16, 128
 {
 	Patch MIDCHAIN, 0, 0
 }
-WallTexture MOSSRCK2, 128, 128
+WallTexture optional MOSSRCK2, 128, 128
 {
 	Patch MOSSRCK2, 0, 0
 }
-WallTexture MOSSRCK3, 128, 128
+WallTexture optional MOSSRCK3, 128, 128
 {
 	Patch MOSSRCK3, 0, 0
 }
-WallTexture MOSSRCK4, 128, 128
+WallTexture optional MOSSRCK4, 128, 128
 {
 	Patch MOSSRCK4, 0, 0
 }
-WallTexture MOSSRCK5, 128, 128
+WallTexture optional MOSSRCK5, 128, 128
 {
 	Patch MOSSRCK5, 0, 0
 }
-WallTexture MOSSRCK6, 128, 128
+WallTexture optional MOSSRCK6, 128, 128
 {
 	Patch MOSSRCK6, 0, 0
 }
-WallTexture MOSSRCK7, 128, 128
+WallTexture optional MOSSRCK7, 128, 128
 {
 	Patch MOSSRCK7, 0, 0
 }
-WallTexture MOSSRCK8, 128, 128
+WallTexture optional MOSSRCK8, 128, 128
 {
 	Patch MOSSRCK8, 0, 0
 }
-WallTexture MOSSRCK9, 128, 128
+WallTexture optional MOSSRCK9, 128, 128
 {
 	Patch MOSSRCK9, 0, 0
 }
-WallTexture ORNGRAYB, 64, 128
+WallTexture optional ORNGRAYB, 64, 128
 {
 	Patch ORNGRAYB, 0, 0
 }
-WallTexture ORNGRAYC, 64, 128
+WallTexture optional ORNGRAYC, 64, 128
 {
 	Patch ORNGRAYC, 0, 0
 }
-WallTexture ORNGRAYD, 64, 128
+WallTexture optional ORNGRAYD, 64, 128
 {
 	Patch ORNGRAYD, 0, 0
 }
-WallTexture ORNGRAYE, 64, 128
+WallTexture optional ORNGRAYE, 64, 128
 {
 	Patch ORNGRAYE, 0, 0
 }
-WallTexture ORNGRAYF, 64, 128
+WallTexture optional ORNGRAYF, 64, 128
 {
 	Patch ORNGRAYF, 0, 0
 }
-WallTexture RCKSNMU2, 64, 128
+WallTexture optional RCKSNMU2, 64, 128
 {
 	Patch RCKSNMU2, 0, 0
 }
-WallTexture RCKSNMU3, 64, 128
+WallTexture optional RCKSNMU3, 64, 128
 {
 	Patch RCKSNMU3, 0, 0
 }
-WallTexture SANDSQ2A, 64, 128
+WallTexture optional SANDSQ2A, 64, 128
 {
 	Patch SANDSQ2A, 0, 0
 }
-WallTexture SANDSQ2B, 64, 128
+WallTexture optional SANDSQ2B, 64, 128
 {
 	Patch SANDSQ2B, 0, 0
 }
-WallTexture SANDSQ2D, 64, 128
+WallTexture optional SANDSQ2D, 64, 128
 {
 	Patch SANDSQ2D, 0, 0
 }
-WallTexture SANDSQ2E, 64, 128
+WallTexture optional SANDSQ2E, 64, 128
 {
 	Patch SANDSQ2E, 0, 0
 }
-WallTexture SANDSQ2F, 64, 128
+WallTexture optional SANDSQ2F, 64, 128
 {
 	Patch SANDSQ2F, 0, 0
 }
-WallTexture SANDSQ2G, 64, 128
+WallTexture optional SANDSQ2G, 64, 128
 {
 	Patch SANDSQ2G, 0, 0
 }
-WallTexture SANDSQ2H, 64, 128
+WallTexture optional SANDSQ2H, 64, 128
 {
 	Patch SANDSQ2H, 0, 0
 }
-WallTexture SANDSQ3A, 64, 128
+WallTexture optional SANDSQ3A, 64, 128
 {
 	Patch SANDSQ3A, 0, 0
 }
-WallTexture SANDSQ3B, 64, 128
+WallTexture optional SANDSQ3B, 64, 128
 {
 	Patch SANDSQ3B, 0, 0
 }
-WallTexture SNDBLCK1, 128, 128
+WallTexture optional SNDBLCK1, 128, 128
 {
 	Patch SNDBLCK1, 0, 0
 }
-WallTexture SNDBLCK2, 128, 128
+WallTexture optional SNDBLCK2, 128, 128
 {
 	Patch SNDBLCK2, 0, 0
 }
-WallTexture SNDBLCK3, 128, 128
+WallTexture optional SNDBLCK3, 128, 128
 {
 	Patch SNDBLCK3, 0, 0
 }
-WallTexture SNDBLCK4, 64, 128
+WallTexture optional SNDBLCK4, 64, 128
 {
 	Patch SNDBLCK4, 0, 0
 	Patch SNDBLCK4, 32, 64
 	Patch SNDBLCK4, -32, 64
 }
-WallTexture SNDBLCK5, 64, 128
+WallTexture optional SNDBLCK5, 64, 128
 {
 	Patch SNDBLCK5, 0, 0
 	Patch SNDBLCK5, 32, 64
 	Patch SNDBLCK5, -32, 64
 }
-WallTexture SNDPLAI2, 64, 128
+WallTexture optional SNDPLAI2, 64, 128
 {
 	Patch SNDPLAI2, 0, 0
 }
-WallTexture SNDPLAI3, 64, 128
+WallTexture optional SNDPLAI3, 64, 128
 {
 	Patch SNDPLAI3, 0, 0
 }
-WallTexture SNDPLAI4, 64, 128
+WallTexture optional SNDPLAI4, 64, 128
 {
 	Patch SNDPLAI4, 0, 0
 }
-WallTexture SNDPLAI5, 64, 128
+WallTexture optional SNDPLAI5, 64, 128
 {
 	Patch SNDPLAI5, 0, 0
 }
-WallTexture SPINE1B, 64, 128
+WallTexture optional SPINE1B, 64, 128
 {
 	Patch SPINE1B, 0, 0
 }
-WallTexture SPINE1C, 64, 128
+WallTexture optional SPINE1C, 64, 128
 {
 	Patch SPINE1C, 0, 0
 }
-WallTexture SPINE2B, 64, 128
+WallTexture optional SPINE2B, 64, 128
 {
 	Patch SPINE2B, 0, 0
 }
-WallTexture SQPEB3, 64, 128
+WallTexture optional SQPEB3, 64, 128
 {
 	Patch SQPEB3, 0, 0
 }
-WallTexture SQPEB4, 64, 128
+WallTexture optional SQPEB4, 64, 128
 {
 	Patch SQPEB4, 0, 0
 }
-WallTexture SQPEB5, 64, 128
+WallTexture optional SQPEB5, 64, 128
 {
 	Patch SQPEB5, 0, 0
 }
-WallTexture STEPSIL2, 64, 16
+WallTexture optional STEPSIL2, 64, 16
 {
 	Patch STEPSIL2, 0, 0
 }
-WallTexture STEPSILV, 64, 16
+WallTexture optional STEPSILV, 64, 16
 {
 	Patch STEPSILV, 0, 0
 }
-WallTexture TRISTON3, 64, 128
+WallTexture optional TRISTON3, 64, 128
 {
 	Patch TRISTON3, 0, 0
 }
-WallTexture TRISTON4, 64, 128
+WallTexture optional TRISTON4, 64, 128
 {
 	Patch TRISTON4, 0, 0
 }
-WallTexture TRISTON5, 64, 128
+WallTexture optional TRISTON5, 64, 128
 {
 	Patch TRISTON5, 0, 0
 }
-WallTexture TRISTON6, 64, 128
+WallTexture optional TRISTON6, 64, 128
 {
 	Patch TRISTON6, 0, 0
 }
-WallTexture TRISTON7, 64, 128
+WallTexture optional TRISTON7, 64, 128
 {
 	Patch TRISTON7, 0, 0
 }
-WallTexture WDGAT64B, 64, 64
+WallTexture optional WDGAT64B, 64, 64
 {
 	Patch WDGAT64B, 0, 0
 }
-WallTexture GRNBLOKF, 128, 128
+WallTexture optional GRNBLOKF, 128, 128
 {
 	Patch GRNBLOKF, 0, 0
 }
-WallTexture GRNBLOKG, 128, 128
+WallTexture optional GRNBLOKG, 128, 128
 {
 	Patch GRNBLOKG, 0, 0
 }
-WallTexture GRNBLOKH, 128, 128
+WallTexture optional GRNBLOKH, 128, 128
 {
 	Patch GRNBLOKH, 0, 0
 }
-WallTexture GRNBLOKI, 128, 128
+WallTexture optional GRNBLOKI, 128, 128
 {
 	Patch GRNBLOKI, 0, 0
 }
-WallTexture GRNBLOKJ, 128, 128
+WallTexture optional GRNBLOKJ, 128, 128
 {
 	Patch GRNBLOKJ, 0, 0
 }
-WallTexture GRNBLOKK, 64, 128
+WallTexture optional GRNBLOKK, 64, 128
 {
 	Patch GRNBLOKK, 0, 0
 	Patch GRNBLOKK, 32, 64
 	Patch GRNBLOKK, -32, 64
 }
-WallTexture GRNBLOKL, 64, 128
+WallTexture optional GRNBLOKL, 64, 128
 {
 	Patch GRNBLOKL, 0, 0
 	Patch GRNBLOKL, 32, 64
 	Patch GRNBLOKL, -32, 64
 }
-WallTexture GRNBLOKM, 64, 128
+WallTexture optional GRNBLOKM, 64, 128
 {
 	Patch GRNBLOKM, 0, 0
 	Patch GRNBLOKM, 32, 64
 	Patch GRNBLOKM, -32, 64
 }
-WallTexture GRNBLOKN, 64, 128
+WallTexture optional GRNBLOKN, 64, 128
 {
 	Patch GRNBLOKN, 0, 0
 	Patch GRNBLOKN, 32, 64
 	Patch GRNBLOKN, -32, 64
 }
-WallTexture GRNBLOKO, 64, 128
+WallTexture optional GRNBLOKO, 64, 128
 {
 	Patch GRNBLOKO, 0, 0
 	Patch GRNBLOKO, -32, 64
 	Patch GRNBLOKO, 32, 64
 }
-WallTexture GRNBLOK9, 128, 128
+WallTexture optional GRNBLOK9, 128, 128
 {
 	Patch GRNBLOK9, 0, 0
 }
-WallTexture GRNBLOK0, 128, 128
+WallTexture optional GRNBLOK0, 128, 128
 {
 	Patch GRNBLOK0, 0, 0
 }
-WallTexture BANNMID1, 64, 128
+WallTexture optional BANNMID1, 64, 128
 {
 	Patch WALL522, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture BANNMID2, 64, 128
+WallTexture optional BANNMID2, 64, 128
 {
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 	Patch WALL520, 11, 8
 }
-WallTexture BANNMID3, 64, 128
+WallTexture optional BANNMID3, 64, 128
 {
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 	Patch WALL519, 11, 8
 }
-WallTexture BANNMID4, 64, 128
+WallTexture optional BANNMID4, 64, 128
 {
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 	Patch WALL523, 11, 8
 }
-WallTexture METLSUP0, 32, 128
+WallTexture optional METLSUP0, 32, 128
 {
 	Patch METLSUP0, 0, 0
 	Patch METLSUP0, 0, 64
@@ -834,12 +834,12 @@ WallTexture METLSUP0, 32, 128
 	Patch METLSUP0, 24, 28
 	Patch METLSUP0, 24, -36
 }
-WallTexture METLSUP1, 16, 128
+WallTexture optional METLSUP1, 16, 128
 {
 	Patch METLSUP1, 0, 0
 	Patch METLSUP1, 0, 64
 }
-WallTexture METLSUP2, 64, 128
+WallTexture optional METLSUP2, 64, 128
 {
 	Patch METLSUP2, 0, 0
 	Patch METLSUP2, 0, 64
@@ -850,326 +850,326 @@ WallTexture METLSUP2, 64, 128
 	Patch METLSUP2, 40, 16
 	Patch METLSUP2, 40, -48
 }
-WallTexture ORNSUPP, 16, 128
+WallTexture optional ORNSUPP, 16, 128
 {
 	Patch ORNSUPP, 0, 0
 	Patch ORNSUPP, 0, 64
 }
-WallTexture ORNSUPPH, 64, 16
+WallTexture optional ORNSUPPH, 64, 16
 {
 	Patch ORNSUPPH, 0, 0
 }
-WallTexture WOODWLH, 64, 128
+WallTexture optional WOODWLH, 64, 128
 {
 	Patch WOODWLH, 0, 0
 	Patch WOODWLH, 32, 64
 	Patch WOODWLH, -32, 64
 }
-WallTexture SANDSQHB, 128, 128
+WallTexture optional SANDSQHB, 128, 128
 {
 	Patch SANDSQHB, 0, 0
 	Patch SANDSQHB, 0, 64
 }
-WallTexture SANDSQHE, 128, 128
+WallTexture optional SANDSQHE, 128, 128
 {
 	Patch SANDSQHE, 0, 0
 	Patch SANDSQHE, 0, 64
 }
-WallTexture SANDSQHG, 128, 128
+WallTexture optional SANDSQHG, 128, 128
 {
 	Patch SANDSQHG, 0, 0
 	Patch SANDSQHG, 0, 64
 }
-WallTexture FLROCK01, 64, 128
+WallTexture optional FLROCK01, 64, 128
 {
 	Patch FLROCK01, 0, 0
 	Patch FLROCK01, -32, 64
 	Patch FLROCK01, 32, 64
 }
-WallTexture FLROCK11, 64, 128
+WallTexture optional FLROCK11, 64, 128
 {
 	Patch FLROCK11, 0, 0
 	Patch FLROCK11, 0, 64
 }
-WallTexture FLROCK21, 64, 128
+WallTexture optional FLROCK21, 64, 128
 {
 	Patch FLROCK21, 0, 0
 	Patch FLROCK21, 0, 64
 }
-WallTexture FLMARB01, 64, 128
+WallTexture optional FLMARB01, 64, 128
 {
 	Patch FLMARB01, 0, 0
 	Patch FLMARB01, 0, 64
 }
-WallTexture FLDIRT01, 64, 128
+WallTexture optional FLDIRT01, 64, 128
 {
 	Patch FLDIRT01, 0, 16
 	Patch FLDIRT01, 0, 80
 	Patch FLDIRT01, 0, -48
 }
-WallTexture FLSTON01, 64, 128
+WallTexture optional FLSTON01, 64, 128
 {
 	Patch FLSTON01, 0, 0
 	Patch FLSTON01, 0, 64
 }
-WallTexture FLMETL01, 64, 128
+WallTexture optional FLMETL01, 64, 128
 {
 	Patch FLMETL01, 0, 0
 	Patch FLMETL01, 0, 64
 }
-WallTexture FLSTON11, 64, 128
+WallTexture optional FLSTON11, 64, 128
 {
 	Patch FLSTON11, 0, 0
 	Patch FLSTON11, 32, 64
 	Patch FLSTON11, -32, 64
 }
-WallTexture FLSTON12, 64, 128
+WallTexture optional FLSTON12, 64, 128
 {
 	Patch FLSTON12, 0, 0
 	Patch FLSTON12, 32, 64
 	Patch FLSTON12, -32, 64
 }
-WallTexture FLSTON13, 64, 128
+WallTexture optional FLSTON13, 64, 128
 {
 	Patch FLSTON13, 0, 0
 	Patch FLSTON13, 32, 64
 	Patch FLSTON13, -32, 64
 }
-WallTexture FLSTON14, 64, 128
+WallTexture optional FLSTON14, 64, 128
 {
 	Patch FLSTON14, 0, 0
 	Patch FLSTON14, 32, 64
 	Patch FLSTON14, -32, 64
 }
-WallTexture FLSTON02, 64, 128
+WallTexture optional FLSTON02, 64, 128
 {
 	Patch FLSTON02, 0, 0
 	Patch FLSTON02, 0, 64
 }
-WallTexture FLSTON03, 64, 128
+WallTexture optional FLSTON03, 64, 128
 {
 	Patch FLSTON03, 0, 0
 	Patch FLSTON03, 0, 64
 }
-WallTexture FLSTON04, 64, 128
+WallTexture optional FLSTON04, 64, 128
 {
 	Patch FLSTON04, 0, 0
 	Patch FLSTON04, 0, 64
 }
-WallTexture FLSTON05, 64, 128
+WallTexture optional FLSTON05, 64, 128
 {
 	Patch FLSTON05, 0, 0
 	Patch FLSTON05, 0, 64
 }
-WallTexture FLSTON06, 64, 128
+WallTexture optional FLSTON06, 64, 128
 {
 	Patch FLSTON06, 0, 0
 	Patch FLSTON06, 0, 64
 }
-WallTexture FLMARB02, 64, 128
+WallTexture optional FLMARB02, 64, 128
 {
 	Patch FLMARB02, 0, 0
 	Patch FLMARB02, 0, 64
 }
-WallTexture FLMARB03, 64, 128
+WallTexture optional FLMARB03, 64, 128
 {
 	Patch FLMARB03, 0, 0
 	Patch FLMARB03, 0, 64
 }
-WallTexture CRATE1, 64, 128
+WallTexture optional CRATE1, 64, 128
 {
 	Patch CRATE1, 0, 0
 	Patch CRATE2, 0, 64
 }
-WallTexture CRATE2, 64, 128
+WallTexture optional CRATE2, 64, 128
 {
 	Patch CRATE2, 0, 0
 	Patch CRATE1, 0, 64
 }
-WallTexture ESSLMRB1, 64, 128
+WallTexture optional ESSLMRB1, 64, 128
 {
 	Patch ESSLMRB1, 0, 0
 }
-WallTexture ESSLMRB2, 64, 128
+WallTexture optional ESSLMRB2, 64, 128
 {
 	Patch ESSLMRB2, 0, 0
 }
-WallTexture ESSLMRB3, 64, 128
+WallTexture optional ESSLMRB3, 64, 128
 {
 	Patch ESSLMRB3, 0, 0
 }
-WallTexture ESSLMRB4, 64, 128
+WallTexture optional ESSLMRB4, 64, 128
 {
 	Patch ESSLMRB4, 0, 0
 }
-WallTexture GRSTNPB5, 64, 128
+WallTexture optional GRSTNPB5, 64, 128
 {
 	Patch GRSTNPB5, 0, 0
 }
-WallTexture GRSTNPB6, 64, 128
+WallTexture optional GRSTNPB6, 64, 128
 {
 	Patch GRSTNPB6, 0, 0
 }
-WallTexture GRSTNPB7, 64, 128
+WallTexture optional GRSTNPB7, 64, 128
 {
 	Patch GRSTNPB7, 0, 0
 }
-WallTexture GRSTNPB8, 64, 128
+WallTexture optional GRSTNPB8, 64, 128
 {
 	Patch GRSTNPB8, 0, 0
 }
-WallTexture MOSSRCKE, 64, 128
+WallTexture optional MOSSRCKE, 64, 128
 {
 	Patch MOSSRCKE, 0, 0
 	Patch MOSSRCKE, 32, 64
 	Patch MOSSRCKE, -32, 64
 }
-WallTexture RCKSNMU4, 64, 128
+WallTexture optional RCKSNMU4, 64, 128
 {
 	Patch RCKSNMU4, 0, 0
 }
-WallTexture SNDBRIK1, 64, 128
+WallTexture optional SNDBRIK1, 64, 128
 {
 	Patch SNDBRIK1, 0, 0
 }
-WallTexture SNDBRIK2, 64, 128
+WallTexture optional SNDBRIK2, 64, 128
 {
 	Patch SNDBRIK2, 0, 0
 }
-WallTexture SNDBRIK3, 64, 128
+WallTexture optional SNDBRIK3, 64, 128
 {
 	Patch SNDBRIK3, 0, 0
 }
-WallTexture SNDBRIK4, 64, 128
+WallTexture optional SNDBRIK4, 64, 128
 {
 	Patch SNDBRIK4, 0, 0
 }
-WallTexture SNDBRIK5, 64, 128
+WallTexture optional SNDBRIK5, 64, 128
 {
 	Patch SNDBRIK5, 0, 0
 }
-WallTexture SNDCHNK1, 64, 128
+WallTexture optional SNDCHNK1, 64, 128
 {
 	Patch SNDCHNK1, 0, 0
 }
-WallTexture SNDCHNK2, 64, 128
+WallTexture optional SNDCHNK2, 64, 128
 {
 	Patch SNDCHNK2, 0, 0
 }
-WallTexture SNDCHNK3, 64, 128
+WallTexture optional SNDCHNK3, 64, 128
 {
 	Patch SNDCHNK3, 0, 0
 }
-WallTexture SNDCHNK4, 64, 128
+WallTexture optional SNDCHNK4, 64, 128
 {
 	Patch SNDCHNK4, 0, 0
 }
-WallTexture SNDCHNK5, 64, 128
+WallTexture optional SNDCHNK5, 64, 128
 {
 	Patch SNDCHNK5, 0, 0
 }
-WallTexture SNDCHNK6, 64, 128
+WallTexture optional SNDCHNK6, 64, 128
 {
 	Patch SNDCHNK6, 0, 0
 }
-WallTexture SNDCHNK7, 64, 128
+WallTexture optional SNDCHNK7, 64, 128
 {
 	Patch SNDCHNK7, 0, 0
 }
-WallTexture FLSTON15, 64, 128
+WallTexture optional FLSTON15, 64, 128
 {
 	Patch FLSTON15, 0, 0
 	Patch FLSTON15, 32, 64
 	Patch FLSTON15, -32, 64
 }
-WallTexture FLSTON16, 64, 128
+WallTexture optional FLSTON16, 64, 128
 {
 	Patch FLSTON16, 0, 0
 	Patch FLSTON16, 32, 64
 	Patch FLSTON16, -32, 64
 }
-WallTexture FLROCK12, 64, 128
+WallTexture optional FLROCK12, 64, 128
 {
 	Patch FLROCK12, 0, 0
 	Patch FLROCK12, 0, 64
 }
-WallTexture FLROCK13, 64, 128
+WallTexture optional FLROCK13, 64, 128
 {
 	Patch FLROCK13, 0, 0
 	Patch FLROCK13, 0, 64
 }
-WallTexture FLROCK14, 64, 128
+WallTexture optional FLROCK14, 64, 128
 {
 	Patch FLROCK14, 0, 0
 	Patch FLROCK14, 0, 64
 }
-WallTexture FLROCK15, 64, 128
+WallTexture optional FLROCK15, 64, 128
 {
 	Patch FLROCK15, 0, 0
 	Patch FLROCK15, 0, 64
 }
-WallTexture FLROCK16, 64, 128
+WallTexture optional FLROCK16, 64, 128
 {
 	Patch FLROCK16, 0, 0
 	Patch FLROCK16, 0, 64
 }
-WallTexture FLROCK17, 64, 128
+WallTexture optional FLROCK17, 64, 128
 {
 	Patch FLROCK17, 0, 0
 	Patch FLROCK17, 0, 64
 }
-WallTexture FLROCK02, 64, 128
+WallTexture optional FLROCK02, 64, 128
 {
 	Patch FLROCK02, 0, 0
 	Patch FLROCK02, -32, 64
 	Patch FLROCK02, 32, 64
 }
-WallTexture FLROCK03, 64, 128
+WallTexture optional FLROCK03, 64, 128
 {
 	Patch FLROCK03, 0, 0
 	Patch FLROCK03, -32, 64
 	Patch FLROCK03, 32, 64
 }
-WallTexture FLROCK04, 64, 128
+WallTexture optional FLROCK04, 64, 128
 {
 	Patch FLROCK04, 0, 0
 	Patch FLROCK04, 32, 64
 	Patch FLROCK04, -32, 64
 }
-WallTexture FLROCK05, 64, 128
+WallTexture optional FLROCK05, 64, 128
 {
 	Patch FLROCK05, 0, 0
 	Patch FLROCK05, 32, 64
 	Patch FLROCK05, -32, 64
 }
-WallTexture FLROCK06, 64, 128
+WallTexture optional FLROCK06, 64, 128
 {
 	Patch FLROCK06, 0, 0
 	Patch FLROCK06, 32, 64
 	Patch FLROCK06, -32, 64
 }
-WallTexture CITVERTI, 64, 128
+WallTexture optional CITVERTI, 64, 128
 {
 	Patch CITVERTI, 0, 0
 	Patch CITVERTI, 0, 64
 }
-WallTexture METLSPH0, 64, 8
+WallTexture optional METLSPH0, 64, 8
 {
 	Patch METLSPH0, 0, 0
 }
-WallTexture METLSPH1, 64, 16
+WallTexture optional METLSPH1, 64, 16
 {
 	Patch METLSPH1, 0, 0
 }
-WallTexture METLSPH2, 64, 24
+WallTexture optional METLSPH2, 64, 24
 {
 	Patch METLSPH2, 0, 0
 }
-WallTexture METLSPH3, 64, 32
+WallTexture optional METLSPH3, 64, 32
 {
 	Patch METL4, 0, 0
 }
-WallTexture METLSPH4, 64, 32
+WallTexture optional METLSPH4, 64, 32
 {
 	Patch METLSPH0, 0, 0
 	Patch METLSPH0, -28, 24
@@ -1178,7 +1178,7 @@ WallTexture METLSPH4, 64, 32
 	Patch METLSPH0, -44, 8
 	Patch METLSPH0, 20, 8
 }
-WallTexture METLSPH5, 64, 32
+WallTexture optional METLSPH5, 64, 32
 {
 	Patch METLSPH0, -12, 0
 	Patch METLSPH0, 12, 24
@@ -1186,7 +1186,7 @@ WallTexture METLSPH5, 64, 32
 	Patch METLSPH0, 52, 0
 	Patch METLSPH1, 0, 8
 }
-WallTexture METLSPH6, 64, 32
+WallTexture optional METLSPH6, 64, 32
 {
 	Patch METL3, 0, 0
 	Patch METL3, 32, 0
@@ -1194,14 +1194,14 @@ WallTexture METLSPH6, 64, 32
 	Patch METL3, 16, 16
 	Patch METL3, -16, 16
 }
-WallTexture METLSPH7, 64, 32
+WallTexture optional METLSPH7, 64, 32
 {
 	Patch WALL63, 0, 0
 	Patch WALL63, 16, 0
 	Patch WALL63, 48, 0
 	Patch WALL63, 32, 0
 }
-WallTexture METLSTGR, 64, 128
+WallTexture optional METLSTGR, 64, 128
 {
 	Patch WALL63, -8, 0
 	Patch WALL63, 40, 16
@@ -1226,7 +1226,7 @@ WallTexture METLSTGR, 64, 128
 	Patch WALL63, 56, 32
 	Patch WALL63, 40, 112
 }
-WallTexture METLSPH8, 64, 32
+WallTexture optional METLSPH8, 64, 32
 {
 	Patch METL3, 48, 8
 	Patch METL3, -16, 8
@@ -1234,365 +1234,365 @@ WallTexture METLSPH8, 64, 32
 	Patch METLSPH0, 0, 0
 	Patch METLSPH0, 0, 24
 }
-WallTexture BANNERL, 64, 128
+WallTexture optional BANNERL, 64, 128
 {
 	Patch BANNERL, 11, 8
 }
-WallTexture BANNERA, 64, 128
+WallTexture optional BANNERA, 64, 128
 {
 	Patch BANNERA, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture BANNERB, 64, 128
+WallTexture optional BANNERB, 64, 128
 {
 	Patch BANNERB, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture BANNERC, 64, 128
+WallTexture optional BANNERC, 64, 128
 {
 	Patch BANNERC, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture BANNERD, 64, 128
+WallTexture optional BANNERD, 64, 128
 {
 	Patch BANNERD, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture BANNERE, 64, 128
+WallTexture optional BANNERE, 64, 128
 {
 	Patch BANNERE, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture BANNERF, 64, 128
+WallTexture optional BANNERF, 64, 128
 {
 	Patch BANNERF, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture BANNERG, 64, 128
+WallTexture optional BANNERG, 64, 128
 {
 	Patch BANNERG, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture BANNERH, 64, 128
+WallTexture optional BANNERH, 64, 128
 {
 	Patch BANNERH, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture BANNERI, 64, 128
+WallTexture optional BANNERI, 64, 128
 {
 	Patch BANNERI, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture BANNERJ, 64, 128
+WallTexture optional BANNERJ, 64, 128
 {
 	Patch BANNERJ, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture BANNERK, 64, 128
+WallTexture optional BANNERK, 64, 128
 {
 	Patch BANNERK, 11, 8
 	Patch ALLTRANS, 0, 0
 	Patch ALLTRANS, 0, 64
 }
-WallTexture CRATE3, 32, 32
+WallTexture optional CRATE3, 32, 32
 {
 	Patch CRATE3, 0, 0
 }
-WallTexture CSTLRCK0, 64, 128
+WallTexture optional CSTLRCK0, 64, 128
 {
 	Patch CSTLRCK0, 0, 0
 }
-WallTexture DMNMSK2, 128, 128
+WallTexture optional DMNMSK2, 128, 128
 {
 	Patch DMNMSK2, 0, 0
 }
-WallTexture DMNMSK3, 128, 128
+WallTexture optional DMNMSK3, 128, 128
 {
 	Patch DMNMSK3, 0, 0
 }
-WallTexture DMNMSK4, 128, 128
+WallTexture optional DMNMSK4, 128, 128
 {
 	Patch DMNMSK4, 0, 0
 }
-WallTexture DRIPSUP1, 32, 128
+WallTexture optional DRIPSUP1, 32, 128
 {
 	Patch DRIPSUP1, 0, 0
 }
-WallTexture DRIPSUP2, 32, 128
+WallTexture optional DRIPSUP2, 32, 128
 {
 	Patch DRIPSUP2, 0, 0
 }
-WallTexture DRIPSUP3, 32, 128
+WallTexture optional DRIPSUP3, 32, 128
 {
 	Patch DRIPSUP3, 0, 0
 }
-WallTexture DRIPSUP4, 32, 128
+WallTexture optional DRIPSUP4, 32, 128
 {
 	Patch DRIPSUP4, 0, 0
 }
-WallTexture GLASS2, 128, 128
+WallTexture optional GLASS2, 128, 128
 {
 	Patch GLASS2, 0, 0
 }
-WallTexture GLASS3, 128, 128
+WallTexture optional GLASS3, 128, 128
 {
 	Patch GLASS3, 0, 0
 }
-WallTexture GLASS4, 128, 128
+WallTexture optional GLASS4, 128, 128
 {
 	Patch GLASS4, 0, 0
 }
-WallTexture GLASS5, 128, 128
+WallTexture optional GLASS5, 128, 128
 {
 	Patch GLASS5, 0, 0
 }
-WallTexture GLASS6, 128, 128
+WallTexture optional GLASS6, 128, 128
 {
 	Patch GLASS6, 0, 0
 }
-WallTexture GLASSB2, 128, 128
+WallTexture optional GLASSB2, 128, 128
 {
 	Patch GLASSB2, 0, 0
 }
-WallTexture GLASSB3, 128, 128
+WallTexture optional GLASSB3, 128, 128
 {
 	Patch GLASSB3, 0, 0
 }
-WallTexture GLASSB4, 128, 128
+WallTexture optional GLASSB4, 128, 128
 {
 	Patch GLASSB4, 0, 0
 }
-WallTexture GLASSB5, 128, 128
+WallTexture optional GLASSB5, 128, 128
 {
 	Patch GLASSB5, 0, 0
 }
-WallTexture GLASSB6, 128, 128
+WallTexture optional GLASSB6, 128, 128
 {
 	Patch GLASSB6, 0, 0
 }
-WallTexture GLASSC2, 128, 128
+WallTexture optional GLASSC2, 128, 128
 {
 	Patch GLASSC2, 0, 0
 }
-WallTexture GLASSC3, 128, 128
+WallTexture optional GLASSC3, 128, 128
 {
 	Patch GLASSC3, 0, 0
 }
-WallTexture GLASSC4, 128, 128
+WallTexture optional GLASSC4, 128, 128
 {
 	Patch GLASSC4, 0, 0
 }
-WallTexture GLASSC5, 128, 128
+WallTexture optional GLASSC5, 128, 128
 {
 	Patch GLASSC5, 0, 0
 }
-WallTexture GLASSC6, 128, 128
+WallTexture optional GLASSC6, 128, 128
 {
 	Patch GLASSC6, 0, 0
 }
-WallTexture LAVAWAL2, 64, 128
+WallTexture optional LAVAWAL2, 64, 128
 {
 	Patch LAVAWAL2, 0, 0
 }
-WallTexture LAVAWAL3, 64, 128
+WallTexture optional LAVAWAL3, 64, 128
 {
 	Patch LAVAWAL3, 0, 0
 }
-WallTexture LAVAWAL4, 64, 128
+WallTexture optional LAVAWAL4, 64, 128
 {
 	Patch LAVAWAL4, 0, 0
 }
-WallTexture LAVAWAL5, 64, 128
+WallTexture optional LAVAWAL5, 64, 128
 {
 	Patch LAVAWAL5, 0, 0
 }
-WallTexture LAVAWAL6, 64, 128
+WallTexture optional LAVAWAL6, 64, 128
 {
 	Patch LAVAWAL6, 0, 0
 }
-WallTexture MARBSUP3, 64, 8
+WallTexture optional MARBSUP3, 64, 8
 {
 	Patch MARBSUP3, 0, 0
 }
-WallTexture MARBSUP4, 8, 128
+WallTexture optional MARBSUP4, 8, 128
 {
 	Patch MARBSUP4, 0, 0
 	Patch MARBSUP4, 0, 64
 }
-WallTexture MARBSUP1, 64, 8
+WallTexture optional MARBSUP1, 64, 8
 {
 	Patch MARBSUP1, 0, 0
 }
-WallTexture MARBSUP2, 8, 128
+WallTexture optional MARBSUP2, 8, 128
 {
 	Patch MARBSUP2, 0, 0
 	Patch MARBSUP2, 0, 64
 }
-WallTexture MIDVINE2, 128, 128
+WallTexture optional MIDVINE2, 128, 128
 {
 	Patch MIDVINE2, 0, 0
 }
-WallTexture MIDVINE3, 128, 128
+WallTexture optional MIDVINE3, 128, 128
 {
 	Patch MIDVINE3, 0, 0
 }
-WallTexture MIDVINE4, 128, 128
+WallTexture optional MIDVINE4, 128, 128
 {
 	Patch MIDVINE4, 0, 0
 }
-WallTexture MIDVINE5, 128, 128
+WallTexture optional MIDVINE5, 128, 128
 {
 	Patch MIDVINE5, 0, 0
 }
-WallTexture MIDVINE6, 128, 128
+WallTexture optional MIDVINE6, 128, 128
 {
 	Patch MIDVINE6, 0, 0
 }
-WallTexture MIDVINE7, 128, 128
+WallTexture optional MIDVINE7, 128, 128
 {
 	Patch MIDVINE7, 0, 0
 }
-WallTexture MIDVINE8, 128, 128
+WallTexture optional MIDVINE8, 128, 128
 {
 	Patch MIDVINE8, 0, 0
 }
-WallTexture MIDVINE1, 128, 128
+WallTexture optional MIDVINE1, 128, 128
 {
 	Patch MIDVINE1, 0, 0
 }
-WallTexture ORNBARS1, 64, 128
+WallTexture optional ORNBARS1, 64, 128
 {
 	Patch ORNBARS1, 0, 0
 }
-WallTexture ORNBARS2, 64, 128
+WallTexture optional ORNBARS2, 64, 128
 {
 	Patch ORNBARS2, 0, 0
 }
-WallTexture ORNGRAYG, 64, 128
+WallTexture optional ORNGRAYG, 64, 128
 {
 	Patch ORNGRAYG, 0, 0
 }
-WallTexture REDWALL2, 64, 128
+WallTexture optional REDWALL2, 64, 128
 {
 	Patch REDWALL2, 0, 0
 	Patch REDWALL2, 0, 64
 }
-WallTexture REDWALL3, 64, 128
+WallTexture optional REDWALL3, 64, 128
 {
 	Patch REDWALL3, 0, 0
 	Patch REDWALL3, 0, 64
 }
-WallTexture SKULLS, 64, 128
+WallTexture optional SKULLS, 64, 128
 {
 	Patch SKULLS, 0, 0
 	Patch SKULLS, 0, 64
 }
-WallTexture ORNBARS3, 64, 128
+WallTexture optional ORNBARS3, 64, 128
 {
 	Patch ORNBARS2, 0, 0
 	Patch SKULBRD1, 0, 94
 	Patch MARBSUP1, 0, 86
 }
-WallTexture ORNBARS4, 64, 128
+WallTexture optional ORNBARS4, 64, 128
 {
 	Patch ORNBARS1, 0, 0
 	Patch SKULBRD2, 0, 94
 	Patch MARBSUP3, 0, 86
 }
-WallTexture SKULLS2, 64, 128
+WallTexture optional SKULLS2, 64, 128
 {
 	Patch SKULLS2, 0, 0
 	Patch SKULLS2, 0, 64
 }
-WallTexture SPINE1E, 64, 128
+WallTexture optional SPINE1E, 64, 128
 {
 	Patch SPINE1E, 0, 0
 }
-WallTexture SPINE1F, 64, 128
+WallTexture optional SPINE1F, 64, 128
 {
 	Patch SPINE1F, 0, 0
 }
-WallTexture SPINE2D, 64, 128
+WallTexture optional SPINE2D, 64, 128
 {
 	Patch SPINE2D, 0, 0
 }
-WallTexture SQPEB6, 64, 128
+WallTexture optional SQPEB6, 64, 128
 {
 	Patch SQPEB6, 0, 0
 }
-WallTexture TRISTON8, 64, 128
+WallTexture optional TRISTON8, 64, 128
 {
 	Patch TRISTON8, 0, 0
 }
-WallTexture TRISTON9, 64, 128
+WallTexture optional TRISTON9, 64, 128
 {
 	Patch TRISTON9, 0, 0
 }
-WallTexture WALL07BL, 64, 64
+WallTexture optional WALL07BL, 64, 64
 {
 	Patch WALL07BL, 0, 0
 }
-WallTexture WALL07GR, 64, 64
+WallTexture optional WALL07GR, 64, 64
 {
 	Patch WALL07GR, 0, 0
 }
-WallTexture WALL07RE, 64, 64
+WallTexture optional WALL07RE, 64, 64
 {
 	Patch WALL07RE, 0, 0
 }
-WallTexture WALL08BL, 64, 64
+WallTexture optional WALL08BL, 64, 64
 {
 	Patch WALL08BL, 0, 0
 }
-WallTexture WALL08GR, 64, 64
+WallTexture optional WALL08GR, 64, 64
 {
 	Patch WALL08GR, 0, 0
 }
-WallTexture WALL08RE, 64, 64
+WallTexture optional WALL08RE, 64, 64
 {
 	Patch WALL08RE, 0, 0
 }
-WallTexture WOODESS2, 128, 128
+WallTexture optional WOODESS2, 128, 128
 {
 	Patch WOODESS2, 0, 0
 }
-WallTexture WOODESSL, 128, 128
+WallTexture optional WOODESSL, 128, 128
 {
 	Patch WOODESSL, 0, 0
 }
-WallTexture GRNBLOKP, 128, 128
+WallTexture optional GRNBLOKP, 128, 128
 {
 	Patch GRNBLOKP, 0, 0
 }
-WallTexture GRNBLOKQ, 128, 128
+WallTexture optional GRNBLOKQ, 128, 128
 {
 	Patch GRNBLOKQ, 0, 0
 }
-WallTexture GRNBLOKR, 128, 128
+WallTexture optional GRNBLOKR, 128, 128
 {
 	Patch GRNBLOKR, 0, 0
 }
-WallTexture GRNBLOKT, 64, 128
+WallTexture optional GRNBLOKT, 64, 128
 {
 	Patch GRNBLOKT, 0, 0
 	Patch GRNBLOKT, 32, 64
 	Patch GRNBLOKT, -32, 64
 }
-WallTexture GRNBLOKS, 128, 128
+WallTexture optional GRNBLOKS, 128, 128
 {
 	Patch GRNBLOKS, 0, 0
 }
-WallTexture WOODESS3, 128, 128
+WallTexture optional WOODESS3, 128, 128
 {
 	Patch WOODESS2, 0, 6
 	Patch METL4, 64, -16
@@ -1603,21 +1603,21 @@ WallTexture WOODESS3, 128, 128
 	Patch METL4, 0, 112
 	Patch METL4, 64, 112
 }
-WallTexture ORNBARS5, 64, 128
+WallTexture optional ORNBARS5, 64, 128
 {
 	Patch ORNBARS1, 0, -21
 	Patch MARBSUP1, 0, 0
 	Patch SNDBRIK3, 0, 73
 	Patch METLSPH0, 0, 69
 }
-WallTexture ORNBARS6, 64, 128
+WallTexture optional ORNBARS6, 64, 128
 {
 	Patch ORNBARS2, 0, -21
 	Patch SNDBRIK3, 0, 73
 	Patch METLSPH0, 0, 69
 	Patch MARBSUP1, 0, 0
 }
-WallTexture SKULLS3, 64, 128
+WallTexture optional SKULLS3, 64, 128
 {
 	Patch SKULLS, 0, -16
 	Patch SKULLS, 0, 80
@@ -1625,7 +1625,7 @@ WallTexture SKULLS3, 64, 128
 	Patch MARBSUP1, 0, 120
 	Patch METL4, 0, 48
 }
-WallTexture SKULLS4, 64, 128
+WallTexture optional SKULLS4, 64, 128
 {
 	Patch SKULLS2, 0, -16
 	Patch SKULLS2, 0, 80
@@ -1633,7 +1633,7 @@ WallTexture SKULLS4, 64, 128
 	Patch MARBSUP3, 0, 120
 	Patch METL4, 0, 48
 }
-WallTexture ORNBARS7, 128, 128
+WallTexture optional ORNBARS7, 128, 128
 {
 	Patch ORNBARS2, 0, 0
 	Patch ORNBARS2, 64, 0
@@ -1644,7 +1644,7 @@ WallTexture ORNBARS7, 128, 128
 	Patch MARBSUP1, 64, 121
 	Patch MARBSUP1, 0, 121
 }
-WallTexture ORNBARS8, 128, 128
+WallTexture optional ORNBARS8, 128, 128
 {
 	Patch ORNBARS1, 0, 0
 	Patch ORNBARS1, 64, 0
@@ -1655,33 +1655,33 @@ WallTexture ORNBARS8, 128, 128
 	Patch MARBSUP1, 64, 121
 	Patch MARBSUP1, 0, 121
 }
-WallTexture FLMARB04, 64, 128
+WallTexture optional FLMARB04, 64, 128
 {
 	Patch FLMARB04, 0, 0
 	Patch FLMARB04, 0, 64
 }
-WallTexture FLMARB05, 64, 128
+WallTexture optional FLMARB05, 64, 128
 {
 	Patch FLMARB05, 0, 0
 	Patch FLMARB05, 0, 64
 }
-WallTexture BRWNRCK3, 64, 128
+WallTexture optional BRWNRCK3, 64, 128
 {
 	Patch BRWNRCK3, 0, 0
 }
-WallTexture CELTICB, 64, 128
+WallTexture optional CELTICB, 64, 128
 {
 	Patch CELTICB, 0, 0
 }
-WallTexture CELTICC, 64, 128
+WallTexture optional CELTICC, 64, 128
 {
 	Patch CELTICC, 0, 0
 }
-WallTexture CELTICD, 64, 128
+WallTexture optional CELTICD, 64, 128
 {
 	Patch CELTICD, 0, 0
 }
-WallTexture DOORESSL, 128, 128
+WallTexture optional DOORESSL, 128, 128
 {
 	Patch WOODESS2, 0, 0
 	Patch METLSUP2, 0, -16
@@ -1698,238 +1698,238 @@ WallTexture DOORESSL, 128, 128
 	Patch METLSUP0, 48, 88
 	Patch METLSUP2, 0, 112
 }
-WallTexture CHAINMA2, 256, 128
+WallTexture optional CHAINMA2, 256, 128
 {
 	Patch CHAINMA2, 0, 0
 }
-WallTexture CHAINMA3, 256, 128
+WallTexture optional CHAINMA3, 256, 128
 {
 	Patch CHAINMA3, 0, 0
 }
-WallTexture CHAINMA4, 256, 128
+WallTexture optional CHAINMA4, 256, 128
 {
 	Patch CHAINMA4, 0, 0
 }
-WallTexture DOOREXI2, 64, 96
+WallTexture optional DOOREXI2, 64, 96
 {
 	Patch DOOREXI2, 0, 0
 }
-WallTexture DOOREXI3, 64, 96
+WallTexture optional DOOREXI3, 64, 96
 {
 	Patch DOOREXI3, 0, 0
 }
-WallTexture EXITSIG2, 32, 64
+WallTexture optional EXITSIG2, 32, 64
 {
 	Patch EXITSIG2, 0, 0
 }
-WallTexture EXITSIG3, 32, 64
+WallTexture optional EXITSIG3, 32, 64
 {
 	Patch EXITSIG3, 0, 0
 }
-WallTexture EXITSIG4, 32, 64
+WallTexture optional EXITSIG4, 32, 64
 {
 	Patch EXITSIG4, 0, 0
 }
-WallTexture EXITSIGN, 32, 64
+WallTexture optional EXITSIGN, 32, 64
 {
 	Patch EXITSIGN, 0, 0
 }
-WallTexture LAVAWAL7, 64, 128
+WallTexture optional LAVAWAL7, 64, 128
 {
 	Patch LAVAWAL7, 0, 0
 }
-WallTexture LAVAWAL8, 64, 128
+WallTexture optional LAVAWAL8, 64, 128
 {
 	Patch LAVAWAL8, 0, 0
 }
-WallTexture DOORSTO2, 64, 128
+WallTexture optional DOORSTO2, 64, 128
 {
 	Patch DOORSTO2, 0, 0
 }
-WallTexture DOORSTO3, 64, 128
+WallTexture optional DOORSTO3, 64, 128
 {
 	Patch DOORSTO3, 0, 0
 }
-WallTexture DOORSTO4, 64, 128
+WallTexture optional DOORSTO4, 64, 128
 {
 	Patch DOORSTO4, 0, 0
 }
-WallTexture METLGOLD, 64, 128
+WallTexture optional METLGOLD, 64, 128
 {
 	Patch METLGOLD, 0, 0
 }
-WallTexture METLGRAY, 64, 128
+WallTexture optional METLGRAY, 64, 128
 {
 	Patch METLGRAY, 0, 0
 }
-WallTexture MOSAICFC, 128, 128
+WallTexture optional MOSAICFC, 128, 128
 {
 	Patch MOSAICFC, 0, 0
 }
-WallTexture LOOSEICE, 64, 128
+WallTexture optional LOOSEICE, 64, 128
 {
 	Patch LOOSEICE, 0, 0
 }
-WallTexture LOOSESNW, 64, 128
+WallTexture optional LOOSESNW, 64, 128
 {
 	Patch LOOSESNW, 0, 0
 }
-WallTexture CHAINSD2, 64, 128
+WallTexture optional CHAINSD2, 64, 128
 {
 	Patch CHAINSD2, 0, 0
 }
-WallTexture SAINT2, 64, 128
+WallTexture optional SAINT2, 64, 128
 {
 	Patch SAINT2, 0, 0
 }
-WallTexture SAINT3, 64, 128
+WallTexture optional SAINT3, 64, 128
 {
 	Patch SAINT3, 0, 0
 }
-WallTexture SAINT4, 64, 128
+WallTexture optional SAINT4, 64, 128
 {
 	Patch SAINT4, 0, 0
 }
-WallTexture SAINT5, 64, 128
+WallTexture optional SAINT5, 64, 128
 {
 	Patch SAINT5, 0, 0
 }
-WallTexture HORSES2, 256, 128
+WallTexture optional HORSES2, 256, 128
 {
 	Patch HORSES2, 0, 0
 }
-WallTexture HORSES3, 256, 128
+WallTexture optional HORSES3, 256, 128
 {
 	Patch HORSES3, 0, 0
 }
-WallTexture HORSES4, 256, 128
+WallTexture optional HORSES4, 256, 128
 {
 	Patch HORSES4, 0, 0
 }
-WallTexture HORSES5, 256, 128
+WallTexture optional HORSES5, 256, 128
 {
 	Patch HORSES5, 0, 0
 }
-WallTexture WLLBLOD1, 64, 128
+WallTexture optional WLLBLOD1, 64, 128
 {
 	Patch WLLBLOD1, 0, 0
 }
-WallTexture WLLBLOD2, 64, 128
+WallTexture optional WLLBLOD2, 64, 128
 {
 	Patch WLLBLOD2, 0, 0
 }
-WallTexture WLLBLOD3, 64, 128
+WallTexture optional WLLBLOD3, 64, 128
 {
 	Patch WLLBLOD3, 0, 0
 }
-WallTexture WLLSLIM1, 64, 128
+WallTexture optional WLLSLIM1, 64, 128
 {
 	Patch WLLSLIM1, 0, 0
 }
-WallTexture WLLSLIM2, 64, 128
+WallTexture optional WLLSLIM2, 64, 128
 {
 	Patch WLLSLIM2, 0, 0
 }
-WallTexture WLLSLIM3, 64, 128
+WallTexture optional WLLSLIM3, 64, 128
 {
 	Patch WLLSLIM3, 0, 0
 }
-WallTexture FLROCK22, 64, 128
+WallTexture optional FLROCK22, 64, 128
 {
 	Patch FLROCK22, 0, 0
 	Patch FLROCK22, 0, 64
 }
-WallTexture FLROCK23, 64, 128
+WallTexture optional FLROCK23, 64, 128
 {
 	Patch FLROCK23, 0, 0
 	Patch FLROCK23, 0, 64
 }
-WallTexture FLROCK24, 64, 128
+WallTexture optional FLROCK24, 64, 128
 {
 	Patch FLROCK24, 0, 0
 	Patch FLROCK24, 0, 64
 }
-WallTexture FLROCK25, 64, 128
+WallTexture optional FLROCK25, 64, 128
 {
 	Patch FLROCK25, 0, 0
 	Patch FLROCK25, 0, 64
 }
-WallTexture FLROCK26, 64, 128
+WallTexture optional FLROCK26, 64, 128
 {
 	Patch FLROCK26, 0, 0
 	Patch FLROCK26, 0, 64
 }
-WallTexture FLROCK27, 64, 128
+WallTexture optional FLROCK27, 64, 128
 {
 	Patch FLROCK27, 0, 0
 	Patch FLROCK27, 0, 64
 }
-WallTexture FLROCK28, 64, 128
+WallTexture optional FLROCK28, 64, 128
 {
 	Patch FLROCK28, 0, 0
 	Patch FLROCK28, 0, 64
 }
-WallTexture FLSTON07, 64, 128
+WallTexture optional FLSTON07, 64, 128
 {
 	Patch FLSTON07, 0, 0
 	Patch FLSTON07, 0, 64
 }
-WallTexture FLSTON08, 64, 128
+WallTexture optional FLSTON08, 64, 128
 {
 	Patch FLSTON08, 0, 0
 	Patch FLSTON08, 0, 64
 }
-WallTexture FLMARB07, 64, 128
+WallTexture optional FLMARB07, 64, 128
 {
 	Patch FLMARB07, 0, 0
 	Patch FLMARB07, 0, 64
 }
-WallTexture BRWNBORD, 64, 128
+WallTexture optional BRWNBORD, 64, 128
 {
 	Patch BRWNBORD, 0, 0
 }
-WallTexture DMNMSK5, 128, 128
+WallTexture optional DMNMSK5, 128, 128
 {
 	Patch DMNMSK5, 0, 0
 }
-WallTexture FLMARB06, 64, 128
+WallTexture optional FLMARB06, 64, 128
 {
 	Patch FLMARB06, 0, 0
 	Patch FLMARB06, 0, 64
 }
-WallTexture MARBSUG1, 64, 8
+WallTexture optional MARBSUG1, 64, 8
 {
 	Patch MARBSUG1, 0, 0
 }
-WallTexture MARBSUG2, 8, 64
+WallTexture optional MARBSUG2, 8, 64
 {
 	Patch MARBSUG2, 0, 0
 }
-WallTexture METLSPG0, 64, 8
+WallTexture optional METLSPG0, 64, 8
 {
 	Patch METLSPG0, 0, 0
 }
-WallTexture METLSPG1, 64, 8
+WallTexture optional METLSPG1, 64, 8
 {
 	Patch METLSPG1, 0, 0
 }
-WallTexture METLSPG2, 64, 16
+WallTexture optional METLSPG2, 64, 16
 {
 	Patch METLSPG2, 0, 0
 }
-WallTexture METLSPG3, 64, 16
+WallTexture optional METLSPG3, 64, 16
 {
 	Patch METLSPG3, 0, 0
 }
-WallTexture METLSPG4, 64, 24
+WallTexture optional METLSPG4, 64, 24
 {
 	Patch METLSPG4, 0, 0
 }
-WallTexture METLSPG5, 64, 24
+WallTexture optional METLSPG5, 64, 24
 {
 	Patch METLSPG5, 0, 0
 }
-WallTexture METLSUG0, 32, 128
+WallTexture optional METLSUG0, 32, 128
 {
 	Patch METLSUG0, 0, 0
 	Patch METLSUG0, 0, 64
@@ -1942,7 +1942,7 @@ WallTexture METLSUG0, 32, 128
 	Patch METLSUG0, 16, 64
 	Patch METLSUG0, 16, 0
 }
-WallTexture METLSUG1, 32, 128
+WallTexture optional METLSUG1, 32, 128
 {
 	Patch METLSUG1, 0, 0
 	Patch METLSUG1, 0, 64
@@ -1955,17 +1955,17 @@ WallTexture METLSUG1, 32, 128
 	Patch METLSUG1, 8, 28
 	Patch METLSUG1, 8, -36
 }
-WallTexture METLSUG2, 16, 128
+WallTexture optional METLSUG2, 16, 128
 {
 	Patch METLSUG2, 0, 0
 	Patch METLSUG2, 0, 64
 }
-WallTexture METLSUG3, 16, 128
+WallTexture optional METLSUG3, 16, 128
 {
 	Patch METLSUG3, 0, 0
 	Patch METLSUG3, 0, 64
 }
-WallTexture METLSUG4, 64, 128
+WallTexture optional METLSUG4, 64, 128
 {
 	Patch METLSUG4, 0, 0
 	Patch METLSUG4, 0, 64
@@ -1976,7 +1976,7 @@ WallTexture METLSUG4, 64, 128
 	Patch METLSUG2, 24, 24
 	Patch METLSUG2, 24, -40
 }
-WallTexture METLSUG5, 64, 128
+WallTexture optional METLSUG5, 64, 128
 {
 	Patch METLSUG5, 0, 0
 	Patch METLSUG5, 0, 64
@@ -1987,109 +1987,109 @@ WallTexture METLSUG5, 64, 128
 	Patch METLSUG3, 24, 24
 	Patch METLSUG3, 24, -40
 }
-WallTexture ORNBARG1, 64, 128
+WallTexture optional ORNBARG1, 64, 128
 {
 	Patch ORNBARG1, 0, 0
 }
-WallTexture ORNBARG2, 64, 128
+WallTexture optional ORNBARG2, 64, 128
 {
 	Patch ORNBARG2, 0, 0
 }
-WallTexture ORNGRAG1, 64, 128
+WallTexture optional ORNGRAG1, 64, 128
 {
 	Patch ORNGRAG1, 0, 0
 }
-WallTexture ORNGRAG2, 64, 128
+WallTexture optional ORNGRAG2, 64, 128
 {
 	Patch ORNGRAG2, 0, 0
 }
-WallTexture ORNGRAG3, 64, 128
+WallTexture optional ORNGRAG3, 64, 128
 {
 	Patch ORNGRAG3, 0, 0
 }
-WallTexture ORNGRAG4, 64, 128
+WallTexture optional ORNGRAG4, 64, 128
 {
 	Patch ORNGRAG4, 0, 0
 }
-WallTexture ORNSUPG1, 16, 128
+WallTexture optional ORNSUPG1, 16, 128
 {
 	Patch ORNSUPG1, 0, 0
 	Patch ORNSUPG1, 0, 64
 }
-WallTexture ORNSUPG2, 64, 16
+WallTexture optional ORNSUPG2, 64, 16
 {
 	Patch ORNSUPG2, 0, 0
 }
-WallTexture SANDSG00, 64, 128
+WallTexture optional SANDSG00, 64, 128
 {
 	Patch SANDSG00, 0, 0
 }
-WallTexture SANDSG01, 64, 128
+WallTexture optional SANDSG01, 64, 128
 {
 	Patch SANDSG01, 0, 0
 }
-WallTexture SANDSG02, 64, 128
+WallTexture optional SANDSG02, 64, 128
 {
 	Patch SANDSG02, 0, 0
 }
-WallTexture SANDSG03, 64, 128
+WallTexture optional SANDSG03, 64, 128
 {
 	Patch SANDSG03, 0, 0
 }
-WallTexture SANDSG04, 64, 128
+WallTexture optional SANDSG04, 64, 128
 {
 	Patch SANDSG04, 0, 0
 }
-WallTexture SANDSG05, 64, 128
+WallTexture optional SANDSG05, 64, 128
 {
 	Patch SANDSG05, 0, 0
 }
-WallTexture SANDSG06, 64, 128
+WallTexture optional SANDSG06, 64, 128
 {
 	Patch SANDSG06, 0, 0
 }
-WallTexture SANDSQ2G, 64, 128
+WallTexture optional SANDSQ2G, 64, 128
 {
 	Patch SANDSQ2G, 0, 0
 }
-WallTexture SANDSQG1, 64, 128
+WallTexture optional SANDSQG1, 64, 128
 {
 	Patch SANDSQG1, 0, 0
 }
-WallTexture SANDSQG2, 64, 128
+WallTexture optional SANDSQG2, 64, 128
 {
 	Patch SANDSQG2, 0, 0
 }
-WallTexture SANDSQG4, 64, 128
+WallTexture optional SANDSQG4, 64, 128
 {
 	Patch SANDSQG4, 0, 0
 }
-WallTexture SANDSQG5, 128, 128
+WallTexture optional SANDSQG5, 128, 128
 {
 	Patch SANDSQG5, 0, 0
 	Patch SANDSQG5, 0, 64
 }
-WallTexture SKULGOLD, 64, 32
+WallTexture optional SKULGOLD, 64, 32
 {
 	Patch SKULGOLD, 0, 0
 }
-WallTexture STEPGOLD, 64, 16
+WallTexture optional STEPGOLD, 64, 16
 {
 	Patch STEPGOLD, 0, 0
 }
-WallTexture METLSPG6, 64, 32
+WallTexture optional METLSPG6, 64, 32
 {
 	Patch METLSPG0, 0, 0
 	Patch METLSPG0, 0, 24
 	Patch METLSPG2, 0, 8
 }
-WallTexture METLSPG7, 64, 32
+WallTexture optional METLSPG7, 64, 32
 {
 	Patch METLSPG1, 0, 0
 	Patch METLSPG1, 0, 24
 	Patch METLSPG3, 0, 8
 }
-WallTexture METLSPG8, 64, 32
+WallTexture optional METLSPG8, 64, 32
 {
 	Patch METLSPG0, 0, 0
 	Patch METLSPG0, 20, 24
@@ -2098,7 +2098,7 @@ WallTexture METLSPG8, 64, 32
 	Patch METLSPG0, 44, 8
 	Patch METLSPG0, -20, 8
 }
-WallTexture METLSPG9, 64, 32
+WallTexture optional METLSPG9, 64, 32
 {
 	Patch METLSPG1, 0, 0
 	Patch METLSPG1, 20, 24
@@ -2107,15 +2107,15 @@ WallTexture METLSPG9, 64, 32
 	Patch METLSPG1, 44, 8
 	Patch METLSPG1, -20, 8
 }
-WallTexture SKULBORD, 64, 32
+WallTexture optional SKULBORD, 64, 32
 {
 	Patch SKULBRD1, 0, 0
 }
-WallTexture SKULGREN, 64, 32
+WallTexture optional SKULGREN, 64, 32
 {
 	Patch SKULBRD2, 0, 0
 }
-WallTexture SKULLS5, 64, 128
+WallTexture optional SKULLS5, 64, 128
 {
 	Patch SKULLS2, 0, 80
 	Patch SKULLS2, 0, -16
@@ -2125,7 +2125,7 @@ WallTexture SKULLS5, 64, 128
 	Patch MARBSUG1, 0, 0
 	Patch MARBSUG1, 0, 120
 }
-WallTexture SKULLS6, 64, 128
+WallTexture optional SKULLS6, 64, 128
 {
 	Patch SKULLS, 0, 80
 	Patch SKULLS, 0, -16
@@ -2135,48 +2135,48 @@ WallTexture SKULLS6, 64, 128
 	Patch MARBSUG1, 0, 0
 	Patch MARBSUG1, 0, 120
 }
-WallTexture SKULLSB3, 128, 128
+WallTexture optional SKULLSB3, 128, 128
 {
 	Patch SKULLSB3, 0, 0
 }
-WallTexture METL3A, 32, 16
+WallTexture optional METL3A, 32, 16
 {
 	Patch METL3A, 0, 0
 }
-WallTexture METL3B, 32, 16
+WallTexture optional METL3B, 32, 16
 {
 	Patch METL3B, 0, 0
 }
-WallTexture METL4A, 64, 32
+WallTexture optional METL4A, 64, 32
 {
 	Patch METL4A, 0, 0
 }
-WallTexture METL4B, 64, 32
+WallTexture optional METL4B, 64, 32
 {
 	Patch METL4B, 0, 0
 }
-WallTexture METL5A, 32, 128
+WallTexture optional METL5A, 32, 128
 {
 	Patch METL5A, 0, 0
 	Patch METL5A, 0, 64
 }
-WallTexture METL5B, 32, 128
+WallTexture optional METL5B, 32, 128
 {
 	Patch METL5B, 0, 0
 	Patch METL5B, 0, 64
 }
-WallTexture DOOROTTY, 128, 128
+WallTexture optional DOOROTTY, 128, 128
 {
 	Patch WOODESS2, 0, 0
 	Patch METL4, 64, 48
 	Patch METL4, 0, 48
 	Patch SKULLMID, 42, 48
 }
-WallTexture SKULLSB4, 64, 128
+WallTexture optional SKULLSB4, 64, 128
 {
 	Patch SKULLSB4, 0, 0
 }
-WallTexture METL3C, 64, 32
+WallTexture optional METL3C, 64, 32
 {
 	Patch METL3A, 0, 0
 	Patch METL3A, 48, 16
@@ -2184,7 +2184,7 @@ WallTexture METL3C, 64, 32
 	Patch METL3A, -16, 16
 	Patch METL3A, 32, 0
 }
-WallTexture METL3D, 64, 32
+WallTexture optional METL3D, 64, 32
 {
 	Patch METL3B, 0, 0
 	Patch METL3B, 48, 16
@@ -2192,72 +2192,72 @@ WallTexture METL3D, 64, 32
 	Patch METL3B, -16, 16
 	Patch METL3B, 32, 0
 }
-WallTexture MEDIVLDM, 256, 64
+WallTexture optional MEDIVLDM, 256, 64
 {
 	Patch MEDIVLDM, 0, 0
 }
-WallTexture METLARC2, 64, 128
+WallTexture optional METLARC2, 64, 128
 {
 	Patch METLARC2, 0, 0
 }
-WallTexture METLARCH, 128, 128
+WallTexture optional METLARCH, 128, 128
 {
 	Patch METLARCH, 0, 0
 }
-WallTexture METVEE, 128, 64
+WallTexture optional METVEE, 128, 64
 {
 	Patch METVEE, 0, 0
 }
-WallTexture SNDBRIK6, 64, 128
+WallTexture optional SNDBRIK6, 64, 128
 {
 	Patch SNDBRIK6, 0, 0
 }
-WallTexture WOODBRDG, 64, 16
+WallTexture optional WOODBRDG, 64, 16
 {
 	Patch WOODBRDG, 0, 0
 }
-WallTexture WOODVEE, 128, 64
+WallTexture optional WOODVEE, 128, 64
 {
 	Patch WOODVEE, 0, 0
 }
-WallTexture METALWAL, 64, 64
+WallTexture optional METALWAL, 64, 64
 {
 	Patch METALWAL, 0, 0
 }
-WallTexture LOOSEIC2, 64, 128
+WallTexture optional LOOSEIC2, 64, 128
 {
 	Patch ROCKICE2, 0, 0
 }
-WallTexture CSTLBARS, 64, 128
+WallTexture optional CSTLBARS, 64, 128
 {
 	Patch CSTLRCK2, 0, 0
 	Patch CSTLRCK3, 32, 96
 	Patch CSTLRCK3, -32, 96
 }
-WallTexture CSTLBAR2, 64, 128
+WallTexture optional CSTLBAR2, 64, 128
 {
 	Patch CSTLRCK4, 0, 0
 	Patch CSTLRCK5, 32, 96
 	Patch CSTLRCK5, -32, 96
 }
-WallTexture CSTLBAR3, 64, 128
+WallTexture optional CSTLBAR3, 64, 128
 {
 	Patch CSTLRCK7, 0, 0
 	Patch CSTLRCK8, 32, 96
 	Patch CSTLRCK8, -32, 96
 }
-WallTexture CSTLBAR4, 64, 128
+WallTexture optional CSTLBAR4, 64, 128
 {
 	Patch CSTLRCK2, 0, -32
 }
-WallTexture MTLBARS1, 64, 128
+WallTexture optional MTLBARS1, 64, 128
 {
 	Patch METALWAL, 0, 80
 	Patch MARBSUP1, 0, 0
 	Patch FLROCK12, 0, 8
 	Patch METLSPH1, 0, 64
 }
-WallTexture MTLBARS2, 64, 128
+WallTexture optional MTLBARS2, 64, 128
 {
 	Patch ESSLMRB3, 0, 8
 	Patch METLSPH1, 0, 64
@@ -2265,31 +2265,31 @@ WallTexture MTLBARS2, 64, 128
 	Patch MARBSUP1, 0, 56
 	Patch METALWAL, 0, 80
 }
-WallTexture MTLBARS3, 64, 128
+WallTexture optional MTLBARS3, 64, 128
 {
 	Patch LEATHER1, -24, 8
 	Patch METLSPH1, 0, 64
 	Patch MARBSUP1, 0, 0
 	Patch METALWAL, 0, 80
 }
-WallTexture FLDIRT02, 64, 128
+WallTexture optional FLDIRT02, 64, 128
 {
 	Patch FLDIRT02, 0, 16
 	Patch FLDIRT02, 0, 80
 	Patch FLDIRT02, 0, -48
 }
-WallTexture FLSTON17, 64, 128
+WallTexture optional FLSTON17, 64, 128
 {
 	Patch FLSTON17, 0, 0
 	Patch FLSTON17, -32, 64
 	Patch FLSTON17, 32, 64
 }
-WallTexture FLROCK18, 64, 128
+WallTexture optional FLROCK18, 64, 128
 {
 	Patch FLROCK18, 0, 0
 	Patch FLROCK18, 0, 64
 }
-WallTexture MTLBARS4, 64, 128
+WallTexture optional MTLBARS4, 64, 128
 {
 	Patch LEATHER3, -32, -16
 	Patch METL3, 16, 0
@@ -2301,7 +2301,7 @@ WallTexture MTLBARS4, 64, 128
 	Patch MARBSUP1, 0, 48
 	Patch ORNSUPPH, 0, 56
 }
-WallTexture MTLBARS5, 64, 128
+WallTexture optional MTLBARS5, 64, 128
 {
 	Patch SNDBLCK4, 0, 0
 	Patch SNDBLCK4, 32, 64
@@ -2309,7 +2309,7 @@ WallTexture MTLBARS5, 64, 128
 	Patch METLSPH1, 0, 0
 	Patch METLSPH1, 0, 112
 }
-WallTexture MTLBARS6, 64, 128
+WallTexture optional MTLBARS6, 64, 128
 {
 	Patch SNDPLAI3, 0, 0
 	Patch SNDPLAI3, 0, -61
@@ -2317,7 +2317,7 @@ WallTexture MTLBARS6, 64, 128
 	Patch MARBSUP1, 0, 48
 	Patch MARBSUP1, 0, 72
 }
-WallTexture WOODSKUL, 128, 128
+WallTexture optional WOODSKUL, 128, 128
 {
 	Patch WOODESS2, 0, -64
 	Patch METL4, 104, 64
@@ -2330,7 +2330,7 @@ WallTexture WOODSKUL, 128, 128
 	Patch SKULLMID, 71, 96
 	Patch SKULLMID, 12, 64
 }
-WallTexture WOODBARS, 128, 128
+WallTexture optional WOODBARS, 128, 128
 {
 	Patch WOODESS2, 0, -64
 	Patch WOODESSL, 0, -120
@@ -2341,7 +2341,7 @@ WallTexture WOODBARS, 128, 128
 	Patch METL4, 64, 96
 	Patch METL4, 0, 96
 }
-WallTexture LILDOOR1, 64, 96
+WallTexture optional LILDOOR1, 64, 96
 {
 	Patch WOODESS2, -32, 7
 	Patch WOODESS2, -32, 55
@@ -2354,21 +2354,21 @@ WallTexture LILDOOR1, 64, 96
 	Patch METLSPH1, 0, 48
 	Patch SKULLMID, 10, 24
 }
-WallTexture METLTIN4, 32, 16
+WallTexture optional METLTIN4, 32, 16
 {
 	Patch METLTIN4, 0, 0
 	Patch METLTIN4, 24, 0
 	Patch METLTIN4, 16, 0
 	Patch METLTIN4, 8, 0
 }
-WallTexture METLTIN3, 32, 16
+WallTexture optional METLTIN3, 32, 16
 {
 	Patch METLTIN3, 0, 0
 	Patch METLTIN3, 24, 0
 	Patch METLTIN3, 16, 0
 	Patch METLTIN3, 8, 0
 }
-WallTexture LITEGRN, 32, 128
+WallTexture optional LITEGRN, 32, 128
 {
 	Patch LITEGRN, 8, 8
 	Patch LITEGRN, 8, 56
@@ -2411,7 +2411,7 @@ WallTexture LITEGRN, 32, 128
 	Patch METLTINY, 0, 80
 	Patch METLTINY, 0, 64
 }
-WallTexture LITERED, 32, 128
+WallTexture optional LITERED, 32, 128
 {
 	Patch LITERED, 8, 8
 	Patch LITERED, 8, 56
@@ -2458,7 +2458,7 @@ WallTexture LITERED, 32, 128
 	Patch LITERED, 8, 88
 	Patch LITERED, 8, 72
 }
-WallTexture LITEBLU, 32, 128
+WallTexture optional LITEBLU, 32, 128
 {
 	Patch LITEBLU, 8, 8
 	Patch LITEBLU, 8, 56
@@ -2506,7 +2506,7 @@ WallTexture LITEBLU, 32, 128
 	Patch METLTINY, -8, 72
 	Patch METLTINY, 0, 64
 }
-WallTexture LITEYEL, 32, 128
+WallTexture optional LITEYEL, 32, 128
 {
 	Patch LITEYEL, 8, 8
 	Patch METLTINY, 0, 0
@@ -2549,7 +2549,7 @@ WallTexture LITEYEL, 32, 128
 	Patch METLTINY, 16, 112
 	Patch METLTINY, 0, 112
 }
-WallTexture METLTIN2, 32, 16
+WallTexture optional METLTIN2, 32, 16
 {
 	Patch METLTIN2, 0, 0
 	Patch METLTIN2, 24, 8
@@ -2557,7 +2557,7 @@ WallTexture METLTIN2, 32, 16
 	Patch METLTIN2, -8, 8
 	Patch METLTIN2, 16, 0
 }
-WallTexture METLTINY, 32, 16
+WallTexture optional METLTINY, 32, 16
 {
 	Patch METLTINY, 0, 0
 	Patch METLTINY, 24, 8
@@ -2565,101 +2565,101 @@ WallTexture METLTINY, 32, 16
 	Patch METLTINY, -8, 8
 	Patch METLTINY, 16, 0
 }
-WallTexture LITEBIG5, 64, 64
+WallTexture optional LITEBIG5, 64, 64
 {
 	Patch LITEBIG5, 0, 0
 }
-WallTexture LITEBIG4, 64, 64
+WallTexture optional LITEBIG4, 64, 64
 {
 	Patch LITEBIG4, 0, 0
 }
-WallTexture LITEBIG3, 64, 64
+WallTexture optional LITEBIG3, 64, 64
 {
 	Patch LITEBIG3, 0, 0
 }
-WallTexture LITEBIG2, 64, 64
+WallTexture optional LITEBIG2, 64, 64
 {
 	Patch LITEBIG2, 0, 0
 }
-WallTexture LITEBIG, 64, 64
+WallTexture optional LITEBIG, 64, 64
 {
 	Patch LITEBIG, 0, 0
 }
-WallTexture CSTLVRT4, 64, 128
+WallTexture optional CSTLVRT4, 64, 128
 {
 	Patch CSTLVRT4, 0, 0
 }
-WallTexture CSTLVRT3, 64, 128
+WallTexture optional CSTLVRT3, 64, 128
 {
 	Patch CSTLVRT3, 0, 0
 }
-WallTexture CSTLVRT2, 64, 128
+WallTexture optional CSTLVRT2, 64, 128
 {
 	Patch CSTLVRT2, 0, 0
 }
-WallTexture CSTLVRT1, 64, 128
+WallTexture optional CSTLVRT1, 64, 128
 {
 	Patch CSTLVRT1, 0, 0
 }
-WallTexture LEATHBL1, 128, 128
+WallTexture optional LEATHBL1, 128, 128
 {
 	Patch LEATHBL1, 0, 0
 }
-WallTexture LEATHBL2, 128, 128
+WallTexture optional LEATHBL2, 128, 128
 {
 	Patch LEATHBL2, 0, 0
 }
-WallTexture LEATHSK5, 128, 128
+WallTexture optional LEATHSK5, 128, 128
 {
 	Patch LEATHSK5, 0, 0
 }
-WallTexture LEATHSK4, 128, 128
+WallTexture optional LEATHSK4, 128, 128
 {
 	Patch LEATHSK4, 0, 0
 }
-WallTexture LEATHSK2, 128, 128
+WallTexture optional LEATHSK2, 128, 128
 {
 	Patch LEATHSK2, 0, 0
 }
-WallTexture LEATHSKL, 128, 128
+WallTexture optional LEATHSKL, 128, 128
 {
 	Patch LEATHSKL, 0, 0
 }
-WallTexture BLUEFRED, 64, 128
+WallTexture optional BLUEFRED, 64, 128
 {
 	Patch BLUEFRED, 0, 0
 	Patch BLUEFRED, 0, 64
 }
-WallTexture CELTIRED, 64, 128
+WallTexture optional CELTIRED, 64, 128
 {
 	Patch CELTIRED, 0, 0
 }
-WallTexture CELTIBLU, 64, 128
+WallTexture optional CELTIBLU, 64, 128
 {
 	Patch CELTIBLU, 0, 0
 }
-WallTexture REDWBLUE, 64, 128
+WallTexture optional REDWBLUE, 64, 128
 {
 	Patch REDWBLUE, 0, 0
 	Patch REDWBLUE, 0, 64
 }
-WallTexture "TRI-BLUE", 64, 128
+WallTexture optional "TRI-BLUE", 64, 128
 {
 	Patch "TRI-BLUE", 0, 0
 }
-WallTexture "TRI-RED", 64, 128
+WallTexture optional "TRI-RED", 64, 128
 {
 	Patch "TRI-RED", 0, 0
 }
-WallTexture WALL38BL, 64, 128
+WallTexture optional WALL38BL, 64, 128
 {
 	Patch WALL38BL, 0, 0
 }
-WallTexture WALL38RE, 64, 128
+WallTexture optional WALL38RE, 64, 128
 {
 	Patch WALL38RE, 0, 0
 }
-WallTexture METLSKUL, 64, 128
+WallTexture optional METLSKUL, 64, 128
 {
 	Patch METLTINY, 0, 0
 	Patch METLTINY, 56, 8
@@ -2700,7 +2700,7 @@ WallTexture METLSKUL, 64, 128
 	Patch METALWAL, 0, 32
 	Patch SKULLMI2, 8, 40
 }
-WallTexture METLSKU2, 64, 128
+WallTexture optional METLSKU2, 64, 128
 {
 	Patch METLTINY, 0, 0
 	Patch METLTINY, 8, 24
@@ -2740,143 +2740,143 @@ WallTexture METLSKU2, 64, 128
 	Patch METLTINY, -8, 120
 	Patch METALWAL, 0, 32
 }
-WallTexture FIREWALA, 128, 128
+WallTexture optional FIREWALA, 128, 128
 {
 	Patch FIREWALA, 0, 0
 }
-WallTexture FIREWALB, 128, 128
+WallTexture optional FIREWALB, 128, 128
 {
 	Patch FIREWALB, 0, 0
 }
-WallTexture FIREWALC, 128, 128
+WallTexture optional FIREWALC, 128, 128
 {
 	Patch FIREWALC, 0, 0
 }
-WallTexture FIREWALD, 128, 128
+WallTexture optional FIREWALD, 128, 128
 {
 	Patch FIREWALD, 0, 0
 }
-WallTexture FIREWALE, 128, 128
+WallTexture optional FIREWALE, 128, 128
 {
 	Patch FIREWALE, 0, 0
 }
-WallTexture FLGRASS, 64, 128
+WallTexture optional FLGRASS, 64, 128
 {
 	Patch FLGRASS, 0, -48
 	Patch FLGRASS, 0, 16
 	Patch FLGRASS, 0, 80
 }
-WallTexture FLGRAS2, 64, 128
+WallTexture optional FLGRAS2, 64, 128
 {
 	Patch FLDIRT01, 0, 0
 	Patch FLDIRT01, 0, 64
 	Patch FLGRASS, 0, -48
 }
-WallTexture FLGRAS3, 64, 128
+WallTexture optional FLGRAS3, 64, 128
 {
 	Patch FLROCK23, 0, 0
 	Patch FLROCK23, 0, 64
 	Patch FLGRASS, 0, -48
 }
-WallTexture GLASS0, 128, 128
+WallTexture optional GLASS0, 128, 128
 {
 	Patch GLASS0, 0, 0
 }
-WallTexture GLASSB0, 128, 128
+WallTexture optional GLASSB0, 128, 128
 {
 	Patch GLASSB0, 0, 0
 }
-WallTexture GLASSC0, 128, 128
+WallTexture optional GLASSC0, 128, 128
 {
 	Patch GLASSC0, 0, 0
 }
-WallTexture ROCKESS2, 256, 128
+WallTexture optional ROCKESS2, 256, 128
 {
 	Patch ROCKESS2, 0, 0
 }
-WallTexture ROCKESS3, 256, 128
+WallTexture optional ROCKESS3, 256, 128
 {
 	Patch ROCKESS3, 0, 0
 }
-WallTexture ROCKESS4, 256, 128
+WallTexture optional ROCKESS4, 256, 128
 {
 	Patch ROCKESS4, 0, 0
 }
-WallTexture ROCKESS5, 256, 128
+WallTexture optional ROCKESS5, 256, 128
 {
 	Patch ROCKESS5, 0, 0
 }
-WallTexture ROCKESSL, 256, 128
+WallTexture optional ROCKESSL, 256, 128
 {
 	Patch ROCKESSL, 0, 0
 }
-WallTexture SNDBLOKZ, 128, 128
+WallTexture optional SNDBLOKZ, 128, 128
 {
 	Patch SNDBLOKZ, 0, 0
 }
-WallTexture FLGRASS2, 64, 128
+WallTexture optional FLGRASS2, 64, 128
 {
 	Patch FLGRASS2, 0, -48
 	Patch FLGRASS2, 0, 16
 	Patch FLGRASS2, 0, 80
 }
-WallTexture BLUEFRA7, 64, 64
+WallTexture optional BLUEFRA7, 64, 64
 {
 	Patch BLUEFRA7, 0, 0
 }
-WallTexture BLUEFRA6, 64, 64
+WallTexture optional BLUEFRA6, 64, 64
 {
 	Patch BLUEFRA6, 0, 0
 }
-WallTexture BLUEFRA5, 64, 64
+WallTexture optional BLUEFRA5, 64, 64
 {
 	Patch BLUEFRA5, 0, 0
 }
-WallTexture BLUEFRA4, 64, 64
+WallTexture optional BLUEFRA4, 64, 64
 {
 	Patch BLUEFRA4, 0, 0
 }
-WallTexture BLUEFRA3, 64, 64
+WallTexture optional BLUEFRA3, 64, 64
 {
 	Patch BLUEFRA3, 0, 0
 }
-WallTexture BLUEFRA2, 64, 64
+WallTexture optional BLUEFRA2, 64, 64
 {
 	Patch BLUEFRA2, 0, 0
 }
-WallTexture BLUEFRA4, 64, 64
+WallTexture optional BLUEFRA4, 64, 64
 {
 	Patch BLUEFRA4, 0, 0
 }
-WallTexture BLUEFRED, 64, 64
+WallTexture optional BLUEFRED, 64, 64
 {
 	Patch BLUEFRED, 0, 0
 }
-WallTexture CSTLCTFR, 64, 128
+WallTexture optional CSTLCTFR, 64, 128
 {
 	Patch CSTLCTFR, 0, 0
 }
-WallTexture CSTLCTFB, 64, 128
+WallTexture optional CSTLCTFB, 64, 128
 {
 	Patch CSTLCTFB, 0, 0
 }
-WallTexture MOSSRCKA, 64, 64
+WallTexture optional MOSSRCKA, 64, 64
 {
 	Patch MOSSRCKA, 0, 0
 }
-WallTexture MOSSRCKB, 64, 64
+WallTexture optional MOSSRCKB, 64, 64
 {
 	Patch MOSSRCKB, 0, 0
 }
-WallTexture MOSSRCKC, 64, 64
+WallTexture optional MOSSRCKC, 64, 64
 {
 	Patch MOSSRCKC, 0, 0
 }
-WallTexture MOSSRCKD, 64, 64
+WallTexture optional MOSSRCKD, 64, 64
 {
 	Patch MOSSRCKD, 0, 0
 }
-WallTexture BLUEFRA8, 64, 64
+WallTexture optional BLUEFRA8, 64, 64
 {
 	Patch BLUEFRA8, 0, 0
 }

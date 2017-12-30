@@ -1,11 +1,10 @@
 Played on skill: smite-meister
 
 ===================
-Misaligned textures
+Misaligned textures [Addressed]
 ===================
 -The first area.
-For the rock wall select linedef 165 and set its front side
-left lower scale to 0.95
+For the rock wall select linedef 165 and set its front side left lower scale to 0.95
 For the rock path you walk on, first Ctrl+A linedef 100.
 Then select the left neighbor linedef 99 and set its front side
 left lower scale 1.31
@@ -14,7 +13,7 @@ left lower scale 1.31
 (Which, arguable, can be said about the above points as well.)
 
 ===================
-Missing textures
+Missing textures [Addressed, as best I could, that area's glitchy as hell]
 ===================
 -Final area. Lines 1346, 1347, 1348 & 1349.
 I don't understand why there is a pillar of missing textures
@@ -22,13 +21,13 @@ under the first 3D floor you teleport to. If you fall off and
 look at that 3D floor, you'll notice a "sky hole" underneath it.
 
 ===================
-Quirks
+Quirks [Won't change]
 ===================
 -The first area treasure chest can be opened by the lava balls
 hitting it.
 
 ===================
-Suggestions
+Suggestions [Done]
 ===================
 -The second area with the ship. I think Tap said this already, but it
 wouldn't be a bad idea to bring the ophidian towers closer to the bridge.
