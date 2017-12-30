@@ -137,6 +137,7 @@ Map MAP11 "Trial of the Maulotaur - by: Zedonk"
 	SecretNext = "MAP12"
 	Sky1 = "SKY1"
 	Par = 190
+	Music = "MUS_E2M8"
 }
 
 map MAP12 "Desecrated Shrines - by: Mor'ladim"
@@ -155,6 +156,7 @@ map MAP13 "The Best Weapon - by: isaacpop23"
 	Next = "MAP14"
 	SecretNext = "MAP14"
 	par = 105
+	Music = "MUS_E2M9"
 }
 
 map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
