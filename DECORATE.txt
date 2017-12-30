@@ -7062,8 +7062,8 @@ actor Malumax 1010
 
 actor BawssHoming
 {
-	Radius 20
-	Height 12
+	Radius 10
+	Height 6
 	Speed 10
 	FastSpeed 15
 	Damage 9
@@ -7076,7 +7076,7 @@ actor BawssHoming
 	States
 	{
 	Spawn:
-		SBS1 ABCD 6 Bright A_SeekerMissile(5, 10, SMF_PRECISE)
+		SBS1 ABCD 3 Bright A_SeekerMissile(5, 10, SMF_PRECISE)
 		Loop
 	Death:
 		FX06 ABCDEFG 5 Bright
