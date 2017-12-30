@@ -7066,8 +7066,8 @@ actor BawssHoming
 	Height 12
 	Scale 1.5
 	Speed 6
-	FastSpeed 8
-	Damage 8
+	FastSpeed 15
+	Damage 9
 	Projectile
 	-ACTIVATEIMPACT
 	-ACTIVATEPCROSS
