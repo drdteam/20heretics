@@ -7003,7 +7003,7 @@ ACTOR DSparilBannerTattered : ZBannerTattered 7394
 }
 
 //////////////// BAWSS ////////////////
-actor Bawss 1010
+actor Malumax 1010
 {
 	//$Category "Monsters"
 	Health 3500
@@ -7031,7 +7031,7 @@ actor Bawss 1010
 
 	Translation "0:255=%[0.,0.,0.]:[1.5,1.,0.5]"
 
-	Obituary "%o had an encounter with Bawss."
+	Obituary "%o had an encounter with Malumax."
 
 	States
 	{
@@ -7064,24 +7064,22 @@ actor BawssHoming
 {
 	Radius 20
 	Height 12
-	Scale 1.5
-	Speed 6
+	Speed 10
 	FastSpeed 15
 	Damage 9
 	Projectile
 	-ACTIVATEIMPACT
 	-ACTIVATEPCROSS
 	+SEEKERMISSILE
-	RenderStyle Add
-	Translation "0:255=%[0.,0.,0.]:[1.5,1.,0.5]"
+	RenderStyle Normal
 
 	States
 	{
 	Spawn:
-		FX11 AB 6 Bright A_SeekerMissile(5, 10, SMF_PRECISE)
+		SBS1 ABCD 6 Bright A_SeekerMissile(5, 10, SMF_PRECISE)
 		Loop
 	Death:
-		FX11 CDEFG 5 Bright
+		FX06 ABCDEFG 5 Bright
 		Stop
 	}
 }
