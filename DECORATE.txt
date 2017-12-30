@@ -7079,7 +7079,7 @@ actor BawssHoming
 		SBS1 ABCD 3 Bright A_SeekerMissile(5, 10, SMF_PRECISE)
 		Loop
 	Death:
-		FX06 ABCDEFG 5 Bright
+		FX06 DEFG 5 Bright
 		Stop
 	}
 }
