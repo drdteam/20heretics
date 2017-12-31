@@ -7029,28 +7029,26 @@ actor Malumax 1010
 	ActiveSound "wizard/active"
 	DeathSound "wizard/death"
 
-	Translation "0:255=%[0.,0.,0.]:[1.5,1.,0.5]"
-
 	Obituary "%o had an encounter with Malumax."
 
 	States
 	{
 	Spawn:
-		WZRD AB 10 A_Look
+		MALM AB 12 A_Look
 		loop
 	See:
-		WZRD AAABBB 4 A_Chase
+		MALM AABBAACC 4 A_Chase
 		loop
 	Pain:
-		WZRD E 3
-		WZRD E 3 A_Pain
+		MALM D 3
+		MALM D 3 A_Pain
 		goto See
 	Missile:
-		WZRD C 0 A_Jump(256, "GasAttack", "HomingAttack")
+		MALM E 0 A_Jump(256, "GasAttack", "HomingAttack")
 	GasAttack:
 	HomingAttack:
-		WZRD C 4 A_FaceTarget
-		WZRD D 12 A_SpawnProjectile("BawssHoming")
+		MALM E 4 A_FaceTarget
+		MALM E 12 A_SpawnProjectile("BawssHoming")
 		goto See
 	Death:
 		WZRD F 6 { A_Scream; A_NoBlocking; }
