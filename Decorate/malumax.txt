@@ -112,6 +112,9 @@ actor BawssHoming
 	-ACTIVATEPCROSS
 	+SEEKERMISSILE
 	RenderStyle Normal
+	DamageType Fire
+	SeeSound "weapons/phoenixshoot"
+	DeathSound "weapons/phoenixhit"
 
 	States
 	{
@@ -156,6 +159,7 @@ actor Hydra1
 	+NODAMAGE
 	-SOLID
 	-SHOOTABLE
+	-COUNTKILL
 	RenderStyle Add
 	Translation "0:255=%[0.00,0.00,0.00]:[2.00,1.50,0.25]"
 	+ALWAYSFAST
