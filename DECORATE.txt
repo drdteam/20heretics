@@ -1,5 +1,6 @@
 #include "decorate/map02.txt"
 #include "decorate/map12.txt"
+#include "decorate/malumax.txt"
 // MOR'LADIM'S HERETIC PROP PACK
 
 ACTOR BrownStonePillar 6250
@@ -7002,82 +7003,3 @@ ACTOR DSparilBannerTattered : ZBannerTattered 7394
 	}
 }
 
-//////////////// BAWSS ////////////////
-actor Malumax 1010
-{
-	//$Category "Monsters"
-	Health 3500
-	Radius 24
-	Height 105
-	Scale 1.5
-	Mass 300
-	Speed 20
-	PainChance 64
-	Monster
-	+DROPOFF
-	+BOSS
-	+DONTMORPH
-	+FULLVOLACTIVE
-	+NORADIUSDMG
-	+NOTARGET
-	+NOICEDEATH
-	+FLOORCLIP
-	+BOSSDEATH
-	SeeSound "wizard/sight"
-	AttackSound "wizard/attack"
-	PainSound "wizard/pain"
-	ActiveSound "wizard/active"
-	DeathSound "wizard/death"
-
-	Obituary "%o had an encounter with Malumax."
-
-	States
-	{
-	Spawn:
-		MALM AB 12 A_Look
-		loop
-	See:
-		MALM AABBAACC 4 A_Chase
-		loop
-	Pain:
-		MALM D 3
-		MALM D 3 A_Pain
-		goto See
-	Missile:
-		MALM E 0 A_Jump(256, "GasAttack", "HomingAttack")
-	GasAttack:
-	HomingAttack:
-		MALM E 4 A_FaceTarget
-		MALM E 12 A_SpawnProjectile("BawssHoming")
-		goto See
-	Death:
-		WZRD F 6 { A_Scream; A_NoBlocking; }
-		WZRD GHIJKL 6
-		WZRD M -1
-		Stop
-	}
-}
-
-actor BawssHoming
-{
-	Radius 10
-	Height 6
-	Speed 10
-	FastSpeed 15
-	Damage 9
-	Projectile
-	-ACTIVATEIMPACT
-	-ACTIVATEPCROSS
-	+SEEKERMISSILE
-	RenderStyle Normal
-
-	States
-	{
-	Spawn:
-		SBS1 ABCD 3 Bright A_SeekerMissile(5, 10, SMF_PRECISE)
-		Loop
-	Death:
-		FX06 DEFG 5 Bright
-		Stop
-	}
-}

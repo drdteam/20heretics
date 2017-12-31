@@ -6,7 +6,7 @@
 ------------------------------------------------------------
 */
 
-class HCPParticleFountain : Actor
+class HCPParticleFountain : SwitchableDecoration
 {	
 	Default
 	{
@@ -20,6 +20,10 @@ class HCPParticleFountain : Actor
 	
 	States
 	{
+		Inactive:
+			TNT1 A -1;
+			Loop;
+		Active:
 		Spawn:
 			TNT1 A 1
 			{
