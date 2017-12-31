@@ -57,7 +57,7 @@ actor Malumax 1010
 	Teleport:
 		MALM AAAFFFAAAGGGAAAFFFAAAGGG 2 {
 			A_FaceTarget;
-			for (user_x = 0; user_x < 360; user_x+=random(22, 65))
+			for (user_x = random(-5, 22); user_x < 360; user_x+=random(22, 65))
 			{
 				A_SpawnProjectile("PhoenixFX2", 5, 0, user_x, CMF_ABSOLUTEPITCH);
 			}
@@ -77,7 +77,7 @@ actor Malumax 1010
 		MALM AAAFFFAAAGGGAAAFFFAAAGGG 2 {
 			A_RadiusThrust(50, 128, RTF_NOTMISSILE | RTF_THRUSTZ, 1);
 			A_FaceTarget;
-			for (user_x = 0; user_x < 360; user_x+=random(22, 65))
+			for (user_x = random(-5, 22); user_x < 360; user_x+=random(22, 65))
 			{
 				A_SpawnProjectile("PhoenixFX2", 5, 0, user_x, CMF_ABSOLUTEPITCH);
 			}
