@@ -28,11 +28,11 @@ Class mkAttachSnd : Actor
 	int counter;
 	override void PostBeginPlay()
 	{
-		// don't play sound if we're attached to remote players
+		// play sound only if we're attached to the local player
 		if ( CheckClass("PlayerPawn",AAPTR_TRACER,true)
-			&& (players[consoleplayer].mo != PlayerPawn(tracer)) )
-			return;
-		A_PlaySound(name,CHAN_6,volume,looping,attenuation);
+			&& (players[consoleplayer].mo == PlayerPawn(tracer)) )
+			A_PlaySound(name,CHAN_6,volume,looping,attenuation);
+		Super.PostBeginPlay();
 	}
 	override void Tick()
 	{
@@ -58,8 +58,8 @@ Class mkSoundSeq : Actor
 	int type; // 0: Oneshot, 1: Looping, 2,3: Repeating, 4,5: Sequential
 	int mininterval, maxinterval; // minimum and maximum repeat intervals
 	int panning; // "width" in degrees for spreading a sound on the player
-	int panmode; // 0: relative, 1: relative single
-	             // 2: absolute, 3: absolute single
+	int panmode; // 0: global, 1: relative, 2: relative single
+	             // 3: absolute, 4: absolute single
 	float volume; // volume of the sound
 	Array<String> sounds; // list of sound options to pick at random
 	Array<int> durations; // list of durations for each sound, for cleanup
@@ -114,7 +114,7 @@ Class mkSoundSeq : Actor
 		snd.counter = durations[pick];
 		snd.volume = volume*fadetimer;
 		if ( panmode == 0 ) snd.attenuation = 0.0;
-		else snd.attenuation = 1.0;
+		else snd.attenuation = 0.1;
 		playcount++;
 	}
 	void DoFade()

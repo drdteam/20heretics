@@ -88,7 +88,7 @@ pointlight MKYELLOWBALL
 	offset 0 64 0
 	attenuate 1
 }
-object mkKeyGizmoBlue
+object mkKeyGizmoYellow
 {
 	frame KGZ1 { light MKYELLOWBALL }
 }
@@ -103,6 +103,20 @@ pointlight MKGREENBALL
 object mkKeyGizmoGreen
 {
 	frame KGZ1 { light MKGREENBALL }
+}
+
+pulselight MKHEART
+{
+	color 0.15 0.1 0.25
+	size 80
+	secondarysize 96
+	interval 0.15
+	attenuate 1
+}
+
+object mkHeart
+{
+	frame DSPH { light MKHEART }
 }
 
 // Brightmaps for my decorations - MK

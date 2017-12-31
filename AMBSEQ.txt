@@ -39,7 +39,6 @@
 
 # seqname type delay mininterval maxinterval volume pan panmode numsounds sound duration [sound duration [...]]
 
-SndMapStart Oneshot 0 0 0 1.0 0 0 1 thief/keehit_S 240
 SndWindOut Repeating 0 140 180 0.06 180 3 5 thief/wind1 195 thief/wind2 215 thief/wind3 245 thief/wind1lo 275 thief/wind2lo 270
 SndNightOut Looping 0 0 0 0.13 0 0 1 thief/nightlp 0
 SndBirds Repeating 50 180 300 0.2 180 3 3 thief/bird1 170 thief/bird2 130 thief/bird3 200
@@ -53,38 +52,32 @@ SndDrips Repeating 20 40 210 0.2 180 3 3 thief/drip1 35 thief/drip2 40 thief/dri
 SndDrip Oneshot 0 0 0 0.2 180 3 3 thief/drip1 35 thief/drip2 40 thief/drip3 40
 SndDripsFar Repeating 20 40 210 0.3 180 3 3 thief/drip4 110 thief/drip5 100 thief/drip6 85
 SndDripFar Oneshot 0 0 0 0.3 180 3 3 thief/drip4 110 thief/drip5 100 thief/drip6 85
-SndTension Oneshot 0 0 0 1.0 0 0 1 thief/tension7 160
 SndRats Repeating 70 120 300 0.3 180 3 2 thief/rat1 85 thief/rat2 95
 SndRat Oneshot 0 0 0 0.3 180 3 2 thief/rat1 85 thief/rat2 95
 SndChain Oneshot 0 0 0 0.15 180 3 1 thief/chain1 75
 SndChains Repeating 0 100 200 0.25 180 3 1 thief/chain1 75
 SndDrums Looping 0 0 0 0.25 0 0 1 thief/drumloop 0
 SndChant Looping 0 0 0 0.2 0 0 1 thief/chantlo 0
-SndBell Oneshot 0 0 0 0.8 0 0 1 thief/bellthmp 225
 SndBellLoop Looping 0 0 0 0.5 0 0 1 thief/bellthmp 0
 SndMoans Repeating 70 150 350 0.3 180 3 4 thief/zommoan1 130 thief/zommoan2 140 thief/zommoan3 125 thief/zommoan4 135
 SndBigRoom Looping 0 0 0 0.3 0 0 1 thief/subson1 0
 SndBigVoices Repeating 90 140 1050 0.35 40 1 3 thief/m04cat2a 230 thief/m04cat2b 200 thief/m04cat2c 245
 SndBigVoicesLow Repeating 70 180 530 0.3 30 1 3 thief/m04cat1a 245 thief/m04cat1b 180 thief/m04cat1c 240
-SndHowl Oneshot 0 0 0 1.0 0 0 2 thief/howltxta 235 thief/howltxtb 240
 SndCave Repeating 0 180 250 0.14 180 3 3 thief/cave1 350 thief/cave2 310 thief/cave3 420
 SndCaveDeep Repeating 110 320 810 0.6 180 3 4 thief/cave4 210 thief/cave5 220 thief/cave6 195 thief/cave7 270
 SndCaveShrine Repeating2 0 210 260 0.9 180 3 3 thief/cave8 285 thief/cave9 285 thief/cave10 285
 SndHallways1 Looping 0 0 0 0.15 0 0 1 thief/hum 0
 SndHallways2 Looping 0 0 0 0.2 0 0 1 thief/diffuse 0
 SndHallwaysB Looping 0 0 0 0.25 0 0 1 thief/hum2 0
-SndEnterChapel Oneshot 0 0 0 0.8 0 0 1 thief/voceerie 240
 SndChapel Looping 0 0 0 0.2 0 0 1 thief/subson4 0
 SndGiggles Repeating 40 80 210 0.25 180 3 4 thief/vikgig1 85 thief/vikgig2 70 thief/vikgig3 90 thief/vikgig4 140
 SndWrong Repeating2 0 70 110 0.2 60 1 3 thief/warble1 195 thief/warble2 200 thief/warble3 180
 SndOrgan Repeating2 0 287 287 0.35 30 1 2 thief/organ1 390 thief/organ2 385
-SndGasp Oneshot 0 0 0 1.0 0 0 1 thief/whgasp 215
 SndCmere Oneshot 0 0 0 0.1 180 3 2 thief/vcomhere 85 thief/vcomher2 110
 SndOoh Oneshot 0 0 0 0.1 180 3 1 thief/vooh 140
 SndRoom Looping 0 0 0 0.5 0 0 1 thief/m01drone 0
 SndRoomTones Repeating2 0 110 350 0.3 40 1 8 thief/m01tone1 135 thief/m01tone2 135 thief/m01tone3 255 thief/m01tone4 170 thief/m01tone5 195 thief/m01tone6 175 thief/m01tone7 285 thief/m01tone8 275
 SndLab Looping 0 0 0 0.4 0 0 1 thief/brassl 0
-SndLaugh Oneshot 0 0 0 1.0 0 0 1 thief/laugh2 180
 SndBasement Looping 0 0 0 0.5 0 0 1 thief/basement 0
 SndBasement2 Looping 0 0 0 0.4 0 0 1 thief/basemen2 0
 SndRoom2 Looping 0 0 0 0.5 0 0 1 thief/beatcym2 0

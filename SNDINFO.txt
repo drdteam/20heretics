@@ -224,7 +224,7 @@ thief/hum2	HUM2
 thief/hwoowoo1	hwoowoo
 thief/hwoowoo2	hwoowoo2
 thief/hwoowoo3	hwoowoo3
-$random thief/hwoowoo {thief/hwoowoo1 thief/hwoowoo2 thief/hwoowoo3}
+$random thief/hwoowoo { thief/hwoowoo1 thief/hwoowoo2 thief/hwoowoo3 }
 thief/keehit_s	keehit_S
 thief/l14wail1	L14wail1
 thief/l14wail2	L14wail2
@@ -477,6 +477,7 @@ $pitchshift thief/zommoan4 0
 // From Hexen
 hexen/ignite	TORCH2
 hexen/locked	LOCKED
+hexen/whoosh	POP
 
 // Mine
 misc/knock	knock

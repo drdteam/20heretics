@@ -5,7 +5,7 @@ Class mkKeyGizmoYellow : Actor
 {
 	Default
 	{
-		//$Title "Manor Yellow Key Marker"
+		//$Title "Yellow Key Marker"
 		//$Category "Marisa Kirisame"
 		Radius 16;
 		Height 50;
@@ -24,7 +24,7 @@ Class mkKeyGizmoGreen : Actor
 {
 	Default
 	{
-		//$Title "Manor Green Key Marker"
+		//$Title "Green Key Marker"
 		//$Category "Marisa Kirisame"
 		Radius 16;
 		Height 50;
@@ -43,7 +43,7 @@ Class mkKeyGizmoBlue : Actor
 {
 	Default
 	{
-		//$Title "Manor Blue Key Marker"
+		//$Title "Blue Key Marker"
 		//$Category "Marisa Kirisame"
 		Radius 16;
 		Height 50;
@@ -64,7 +64,7 @@ Class mkFireBrazier : SwitchableDecoration
 {
 	Default
 	{
-		//$Title "Manor Toggleable Fire Brazier"
+		//$Title "Toggleable Fire Brazier"
 		//$Category "Marisa Kirisame"
 		Radius 16;
 		Height 44;
@@ -105,7 +105,7 @@ Class mkSerpentTorch : SwitchableDecoration
 {
 	Default
 	{
-		//$Title "Manor Toggleable Serpent Torch"
+		//$Title "Toggleable Serpent Torch"
 		//$Category "Marisa Kirisame"
 		Radius 12;
 		Height 54;
@@ -124,7 +124,6 @@ Class mkSerpentTorch : SwitchableDecoration
 				A_PlaySound("hexen/ignite",0,0.8);
 			}
 			args[0] = 0;
-			A_PlaySound("thief/firelp",CHAN_BODY,0.4,true,6.0);
 		}
 		SRTC ABC 4;
 		Goto Active+1;
@@ -135,7 +134,6 @@ Class mkSerpentTorch : SwitchableDecoration
 			{
 				return ResolveState("Active");
 			}
-			A_StopSound(CHAN_BODY);
 			return ResolveState(null);
 		}
 		SRTC D -1;
@@ -146,7 +144,7 @@ Class mkWallTorch : SwitchableDecoration
 {
 	Default
 	{
-		//$Title "Manor Toggleable Wall Torch"
+		//$Title "Toggleable Wall Torch"
 		//$Category "Marisa Kirisame"
 		Radius 6;
 		Height 16;
@@ -165,7 +163,6 @@ Class mkWallTorch : SwitchableDecoration
 				A_PlaySound("hexen/ignite",0,0.8);
 			}
 			args[0] = 0;
-			A_PlaySound("thief/firelp",CHAN_BODY,0.4,true,6.0);
 		}
 		WTRH ABC 6;
 		Goto Active+1;
@@ -176,7 +173,6 @@ Class mkWallTorch : SwitchableDecoration
 			{
 				return ResolveState("Active");
 			}
-			A_StopSound(CHAN_BODY);
 			return ResolveState(null);
 		}
 		WTRH D -1;
@@ -187,7 +183,7 @@ Class mkChandelier : SwitchableDecoration
 {
 	Default
 	{
-		//$Title "Manor Toggleable Chandelier"
+		//$Title "Toggleable Chandelier"
 		//$Category "Marisa Kirisame"
 		Radius 20;
 		Height 60;
@@ -220,6 +216,54 @@ Class mkChandelier : SwitchableDecoration
 			return ResolveState(null);
 		}
 		CHDL D -1;
+		Stop;
+	}
+}
+Class mkHeart : Inventory
+{
+	Default
+	{
+		//$Title "Heart of D'Sparil"
+		//$Category "Marisa Kirisame"
+		Radius 10;
+		Height 15;
+		Scale 0.75;
+		FloatBobStrength 0.25;
+		Inventory.PickupMessage "You have the heart of D'Sparil!";
+		Inventory.PickupSound "misc/k_pkup";
+		Inventory.Icon "DSPHART";
+		Tag "Heart of D'Sparil";
+		+COUNTITEM
+		+FLOATBOB
+		+NOGRAVITY
+		+INVENTORY.INVBAR
+		+INVENTORY.FANCYPICKUPSOUND
+		+INVENTORY.UNDROPPABLE
+		+INVENTORY.UNTOSSABLE
+		+INVENTORY.NEVERRESPAWN
+	}
+	States
+	{
+	Spawn:
+		DSPH A 0;
+		DSPH A 1 A_PlaySound("thief/egglp1",CHAN_BODY,1.0,true,3.0);
+		DSPH A -1;
+		Stop;
+	}
+}
+Class mkDSparilCorpse : Actor
+{
+	Default
+	{
+		//$Title "Corpse of D'Sparil"
+		//$Category "Marisa Kirisame"
+		Radius 32;
+		Height 8;
+	}
+	States
+	{
+	Spawn:
+		SDTH O -1;
 		Stop;
 	}
 }
