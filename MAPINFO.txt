@@ -182,7 +182,7 @@ Map FINAL "You'll Only Live To Twenty - by: Rachael"
 	Par = 355
 }
 
-map SECRET "Through The Portal Of Time"
+map SECRET "Through The Portal Of Time - by: Zero X. Diamond"
 {
 	next = "SECRET"
 	secretnext = "SECRET"
@@ -192,7 +192,7 @@ map SECRET "Through The Portal Of Time"
 	music = "PLACHLDR"
 }
 
-map CREDITS "The 20 Heretics Team Gallery"
+map CREDITS "The 20 Heretics Team Gallery - by: Rachael"
 {
 	pixelratio = 1.0
 	music = ""
