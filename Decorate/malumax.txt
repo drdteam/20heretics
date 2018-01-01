@@ -103,7 +103,12 @@ actor Malumax 1010
 		MALM E 4 A_FaceTarget
 		MALM AAAFFFAAAGGGAAAFFFAAAGGG 2 {
 			A_FaceTarget;
-			A_SpawnParticle("ff ff 00", SPF_FULLBRIGHT | SPF_RELATIVE, 60, 5, random(0,360), 0, 0, 0, frandom(0, 1.5), 0, frandom(0, 8.0), 0, 0, -0.5, frandom(0.5, 1.0), -1);
+			for (user_x = 0; user_x < 30; user_x+=1)
+			{
+				A_SpawnParticle("ff ff 00", SPF_FULLBRIGHT | SPF_RELATIVE, 60, 5, random(0,360), 0, 0, 0, frandom(1.0, 3.5), 0, frandom(0, frandom(0, 10.0)), 0, 0, -0.5, frandom(0.5, 1.0), -1);
+				A_SpawnParticle("ff 80 00", SPF_FULLBRIGHT | SPF_RELATIVE, 60, 5, random(0,360), 0, 0, 0, frandom(1.0, 3.5), 0, frandom(0, frandom(0, 10.0)), 0, 0, -0.5, frandom(0.5, 1.0), -1);
+				A_SpawnParticle("ff 00 00", SPF_FULLBRIGHT | SPF_RELATIVE, 60, 5, random(0,360), 0, 0, 0, frandom(1.0, 3.5), 0, frandom(0, frandom(0, 10.0)), 0, 0, -0.5, frandom(0.5, 1.0), -1);
+			}
 		}
 		MALM E 12 {
  			for (user_x = 0; user_x < 360; user_x+=3)
