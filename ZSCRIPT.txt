@@ -9,5 +9,4 @@ version "3.2.4"
 #include "zscript/marisa/deco.zsc"
 #include "zscript/marisa/lighthelper.zsc"
 #include "zscript/marisa/bosshelper.zsc"
-
-#include "zscript/mkmarisa.zsc"
+#include "zscript/marisa/marisa.zsc"
