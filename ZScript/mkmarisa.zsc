@@ -1,0 +1,21 @@
+/* Marisa "I shouldn't be let anywhere near ZScript" Kirisame */
+Class mkMarisa : Actor
+{
+	Default
+	{
+		//$Title "Marisa Kirisame"
+		//$Category "Marisa Kirisame"
+		Radius 15;
+		Height 50;
+		Scale 0.35;
+		+NOGRAVITY
+		+SOLID
+	}
+
+	States
+	{
+	Spawn:
+		MARI ABCDEFGHIJKLMNO 3;
+		Loop;
+	}
+}

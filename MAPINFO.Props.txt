@@ -152,4 +152,8 @@ DoomEdNums
 	6414 = mkKeyGizmoYellow
 	6415 = mkKeyGizmoGreen
 	6416 = mkKeyGizmoBlue
+
+	// credits
+	6499 = mkMarisa
+
 }

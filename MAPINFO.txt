@@ -180,8 +180,8 @@ map MAP15 "Thievery at the Forsaken Manor - by: Marisa Kirisame"
 Map FINAL "You'll Only Live To Twenty - by: Rachael"
 {
 	Cluster = 0
-	Next = "ENDGAME"
-	SecretNext = "ENDGAME"
+	Next = "CREDITS"
+	SecretNext = "CREDITS"
 	Music = "D_YVEL"
 	Par = 355
 }
@@ -196,3 +196,8 @@ map SECRET "Through The Portal Of Time"
 	music = "PLACHLDR"
 }
 
+map CREDITS "The 20 Heretics Team Gallery"
+{
+	pixelstretch = 1.0
+	music = ""
+}
