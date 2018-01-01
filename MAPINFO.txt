@@ -198,6 +198,6 @@ map SECRET "Through The Portal Of Time"
 
 map CREDITS "The 20 Heretics Team Gallery"
 {
-	pixelstretch = 1.0
+	pixelratio = 1.0
 	music = ""
 }
