@@ -8,6 +8,8 @@ actor Malumax 1010
 	Mass 300
 	Speed 20
 	PainChance 64
+	MinMissileChance 40
+	ReactionTime 1
 	Monster
 	+DROPOFF
 	+BOSS
