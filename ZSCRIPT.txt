@@ -3,6 +3,8 @@ version "3.2.4"
 #include "ZScript/Fountain.txt"
 #include "ZScript/HCPHUD.txt"
 
+#include "ZScript/StatScreen.zsc"
+
 #include "zscript/marisa/mk_ssm.zsc"
 #include "zscript/marisa/deco.zsc"
 #include "zscript/marisa/lighthelper.zsc"
