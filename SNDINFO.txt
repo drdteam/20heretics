@@ -482,3 +482,6 @@ hexen/whoosh	POP
 // Mine
 misc/knock	knock
 $pitchshift misc/knock 0
+
+// ******** Rachael: Credits Gallery
+credits/zxdouch	ZXD_OUCH
