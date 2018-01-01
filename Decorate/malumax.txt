@@ -37,7 +37,7 @@ actor Malumax 1010
 		loop
 	See:
 		MALM AABBAACC 4 A_Chase
-		MALM A 0 A_Jump(8, "Teleport")
+		MALM A 0 A_Jump(4, "Teleport")
 		loop
 	Pain:
 		MALM D 0 A_ChangeFlag("FRIGHTENED", 1)
@@ -52,7 +52,7 @@ actor Malumax 1010
 				ACS_Execute(996, 0, 1);
 			}
 		}
-		MALM E 0 A_Jump(32, "Teleport")
+		MALM E 0 A_Jump(12, "Teleport")
 		MALM E 0 A_Jump(256, "Hydra", "HomingAttack", "FlameNova")
 		goto See
 	Teleport:
