@@ -42,6 +42,7 @@ actor Malumax 1010
 	Pain:
 		MALM D 0 A_ChangeFlag("FRIGHTENED", 1)
 		MALM D 0 A_Jump(64, "Teleport")
+		MALM D 0 A_ChangeFlag("FRIGHTENED", 0)
 		MALM D 3
 		MALM D 3 A_Pain
 		goto See
