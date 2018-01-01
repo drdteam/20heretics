@@ -53,7 +53,7 @@ actor Malumax 1010
 			}
 		}
 		MALM E 0 A_Jump(32, "Teleport")
-		MALM E 0 A_Jump(256, "Hydra", "HomingAttack")
+		MALM E 0 A_Jump(256, "Hydra", "HomingAttack", "FlameNova")
 		goto See
 	Teleport:
 		MALM AAAFFFAAAGGGAAAFFFAAAGGG 2 {
@@ -99,10 +99,46 @@ actor Malumax 1010
 		MALM E 4 A_FaceTarget
 		MALM E 12 A_SpawnProjectile("BawssHoming")
 		goto See
+	FlameNova:
+		MALM E 4 A_FaceTarget
+		MALM AAAFFFAAAGGGAAAFFFAAAGGG 2 {
+			A_FaceTarget;
+			A_SpawnParticle("ff ff 00", SPF_FULLBRIGHT | SPF_RELATIVE, 60, 5, random(0,360), 0, 0, 0, frandom(0, 1.5), 0, frandom(0, 8.0), 0, 0, -0.5, frandom(0.5, 1.0), -1);
+		}
+		MALM E 12 {
+ 			for (user_x = 0; user_x < 360; user_x+=3)
+			{
+				A_SpawnProjectile("BawssFlameSpike", 32, 0, user_x);
+			}
+		}
+		goto See
 	Death:
 		FDTH C 6 { A_Scream; A_NoBlocking; }
 		FDTH DEFGHIJKLMNOPQR 6
 		TNT1 A 1 ACS_Execute(996, 0, 0)
+		Stop
+	}
+}
+
+actor BawssFlameSpike
+{
+	Radius 5
+	Height 12
+	Speed 14
+	FastSpeed 20
+	Damage 2
+	Projectile
+	+FLOORHUGGER
+	ExplosionDamage 16
+	DeathSound "minotaur/fx2hit"
+	States
+	{
+	Spawn:
+		FX13 BCDE 5 Bright
+		Loop
+	Death:
+		FX13 I 4 Bright A_Explode
+		FX13 JKLM 4 Bright
 		Stop
 	}
 }
