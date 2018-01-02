@@ -3,15 +3,27 @@ Class mkSilencer : Actor
 	override void PostBeginPlay()
 	{
 		ActiveSound = target.ActiveSound;
+		SeeSound = target.SeeSound;
 		Super.PostBeginPlay();
 	}
 
 	void A_UpdateSound()
 	{
-		if ( !target || target.health <= 0 ) Destroy();
+		if ( !target || (target.health <= 0) )
+		{
+			Destroy();
+			return;
+		}
 		if ( target.target && !target.target.CheckClass("PatrolPoint") )
+		{
 			target.ActiveSound = ActiveSound;
-		else target.ActiveSound = "";
+			target.SeeSound = SeeSound;
+		}
+		else
+		{
+			target.ActiveSound = "";
+			target.SeeSound = "";
+		}
 	}
 
 	Default
@@ -37,7 +49,7 @@ Class mkSilencerManager : Actor
 		mkSilencer shutup;
 		while ( a = Actor(alist.Next()) )
 		{
-			if ( !a.ActiveSound ) continue;
+			if ( !a.ActiveSound && !a.SeeSound ) continue;
 			shutup = mkSilencer(Spawn("mkSilencer"));
 			if ( shutup ) shutup.target = a;
 		}
