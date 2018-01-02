@@ -1453,6 +1453,7 @@ ACTOR TornCeilingBanner 6295
   +DONTBLAST
   +NOGRAVITY
   +RANDOMIZE
+  +CEILINGHUGGER
   //$Category "Mor'ladim"
   States
   {
