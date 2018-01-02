@@ -1,25 +1,165 @@
 /* Marisa "I shouldn't be let anywhere near ZScript" Kirisame */
+Class mkMariParticles : Actor
+{
+	int i, ptype;
+
+	Vector3 RotateVec3( Vector3 vin, double x, double y, double z )
+	{
+		Vector3 vout = vin;
+		// x rotation
+		vout.y = vin.y*cos(x)-vin.z*sin(x);
+		vout.z = vin.y*sin(x)+vin.z*cos(x);
+		// y rotation
+		vin = vout;
+		vout.x = vin.x*cos(y)+vin.z*sin(y);
+		vout.z = -vin.x*sin(y)+vin.z*cos(y);
+		// z rotation
+		vin = vout;
+		vout.x = vin.x*cos(z)-vin.y*sin(z);
+		vout.y = vin.x*sin(z)+vin.y*cos(z);
+		return vout;
+	}
+
+	void A_FireParticles()
+	{
+		Vector3 ppos;
+		if ( ptype == 0 ) // cube
+		{
+			double x, y, z;
+			int c;
+			for ( x=-64; x<=64; x+=16 )
+			for ( y=-64; y<=64; y+=16 )
+			for ( z=-64; z<=64; z+=16 )
+			{
+				c = 0;
+				if ( abs(x) == 64 ) c++;
+				if ( abs(y) == 64 ) c++;
+				if ( abs(z) == 64 ) c++;
+				if ( c < 2 ) continue;
+				ppos = RotateVec3((x,y,z),0,i*5,i*5);
+				Spawn("GoldWandPuff1",pos+ppos+(0,0,64));
+			}
+		}
+		else if ( ptype == 1 ) // star
+		{
+			double x, y, z, j, k, l, m;
+			Vector3 va, vb, p;
+			for ( j=0; j<6; j++ )
+			{
+				va = (cos(j*60),0,sin(j*60))*64;
+				vb = (cos((j+2)*60),0,sin((j+2)*60))*64;
+				p = (vb-va).unit();
+				l = (vb-va).length();
+				m = l*0.125;
+				for ( k=0; k<l; k+=m )
+				{
+					ppos = RotateVec3(va+p*k,0,i*10,90+i*5);
+					Spawn("GoldWandPuff1",pos+ppos+(0,0,64));
+				}
+			}
+		}
+		else if ( ptype == 2 ) // sphere
+		{
+			double x, y, z, t, p;
+			for ( t=-60; t<=60; t+=30 )
+			for ( p=0; p<360; p+=60 )
+			{
+				x = cos(t)*cos(p)*64;
+				y = cos(t)*sin(p)*64;
+				z = sin(t)*64;
+				ppos = RotateVec3((x,y,z),0,i*5,i*5);
+				Spawn("GoldWandPuff1",pos+ppos+(0,0,64));
+			}
+		}
+		else if ( ptype == 3 ) // ring
+		{
+			double a;
+			for ( a=0; a<360; a+=15 )
+			{
+				ppos = RotateVec3((cos(a)*64,sin(a)*64,0),cos(i*8)*15,sin(i*8)*15,i*5);
+				Spawn("GoldWandPuff1",pos+ppos+(0,0,64));
+			}
+		}
+		else if ( ptype == 4 ) // feather explosion
+		{
+			if ( i == 0 ) A_PlaySound("chicken/death");
+			int j;
+			Actor a;
+			for ( j=0; j<10; j++ )
+			{
+				ppos = RotateVec3((Random(48,64),0,0),0,Random(0,360),Random(0,360));
+				a = Spawn("Feather",pos+ppos+(0,0,64));
+				if ( a )
+				{
+					a.vel = Vec3To(a).unit()*Random(2,5);
+				}
+			}
+		}
+		if ( ++i >= 50 ) SetStateLabel("Null");
+	}
+
+	override void PostBeginPlay()
+	{
+		i = 0;
+		ptype = Random(0,4);
+		Super.PostBeginPlay();
+	}
+
+	Default
+	{
+		+NOGRAVITY
+	}
+
+	States
+	{
+	Spawn:
+		TNT1 A 2 A_FireParticles;
+		Loop;
+	}
+}
+
 Class mkMarisa : Actor
 {
+	int cooldown;
+
 	void A_MarisaSpecial()
 	{
-		// Nothing here yet
+		Spawn("mkMariParticles",pos);
 	}
 
 	override void Activate( Actor activator )
 	{
+		if ( cooldown > 0 ) return;
+		cooldown = 100;
 		SetStateLabel("Magic");
+	}
+
+	override void Tick()
+	{
+		if ( cooldown > 0 ) cooldown--;
+		Super.Tick();
+	}
+
+	override void PostBeginPlay()
+	{
+		cooldown = 0;
+		Super.PostBeginPlay();
 	}
 
 	Default
 	{
 		//$Title "Marisa Kirisame"
 		//$Category "Marisa Kirisame"
-		Radius 15;
-		Height 50;
+		Radius 25;
+		Height 60;
 		Scale 0.35;
+		PainChance 255;
+		Mass 0x7FFFFFFF;
+		BloodType "";
 		+NOGRAVITY
 		+SOLID
+		+SHOOTABLE
+		+NODAMAGE
 	}
 
 	States
@@ -28,9 +168,16 @@ Class mkMarisa : Actor
 		MARI ABCDEFGHIJKLMNO 3;
 		Loop;
 	Magic:
+		MARI P 0 A_PlaySound("misc/invuse");
 		MARI PQR 3;
 		MARI S 3 A_MarisaSpecial;
 		MARI TUVWXY 3;
+		Goto Spawn;
+	Pain:
+		MAR2 IJKLM 3;
+		Goto Spawn;
+	Pain.Fire:
+		MAR2 ABCDEFGH 3;
 		Goto Spawn;
 	}
 }
