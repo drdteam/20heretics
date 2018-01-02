@@ -1,0 +1,77 @@
+class NukeExplosion : Actor
+{
+	Default { +FORCERADIUSDMG }
+	
+	States
+	{
+		Spawn:
+			TNT1 A 200 NODELAY
+			{
+				A_Quake(6, 70, 0, 1024);
+				A_Quake(5, 90, 0, 1024);
+				A_Quake(4, 110, 0, 1024);
+				A_Quake(3, 140, 0, 1024);
+				A_PlaySound("credits/ludnuke", CHAN_7, 1.0, 0, ATTN_NONE);
+				A_Explode(1500, 1024, 0, true, 512, 0, 0, null, "Fire");
+				
+				//NUCLEAR LAUNCH DETECTED!
+				//Lots of lines, because it's kinda hard to automate everything precisely, so I draw the nuke by hand. Bear with me. My maths are bad.
+				float SideMove = -0.25;
+				float GrowSpeed = 1.0;
+				int Size = 80;
+				int BaseLifetime = 140;
+				
+				//Base.
+				for (int i = 0; i < 360; i += 10)
+				{
+					A_SpawnParticle("FF9200", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 26, Size, i, 208, 0, 0, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF9000", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 25, Size, i, 192, 0, 2, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF8800", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 24, Size, i, 176, 0, 4, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF8600", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 23, Size, i, 160, 0, 8, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF8400", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 22, Size, i, 144, 0, 11, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF8200", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 21, Size, i, 128, 0, 15, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF8000", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 20, Size, i, 112, 0, 23, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+				}
+				
+				//Middle.
+				for (int i = 0; i < 360; i += 18)
+				{
+					A_SpawnParticle("FF7800", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 19, Size, i, 96, 0, 33, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF7600", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 18, Size, i, 86, 0, 43, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF7400", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 17, Size, i, 77, 0, 53, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF7200", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 16, Size, i, 69, 0, 63, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF7000", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 15, Size, i, 63, 0, 73, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF6800", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 14, Size, i, 58, 0, 83, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF6600", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 13, Size, i, 54, 0, 93, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF6400", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 12, Size, i, 51, 0, 103, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF6200", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 11, Size, i, 49, 0, 113, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF5800", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 10, Size, i, 47, 0, 123, SideMove, 0, 0, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF5500", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 9, Size, i, 54, 0, 133, SideMove, 0, 0.25, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF5400", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 8, Size, i, 58, 0, 143, SideMove, 0, 0.50, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF5300", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 7, Size, i, 63, 0, 153, SideMove, 0, 0.75, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF5200", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 6, Size, i, 69, 0, 163, SideMove, 0, 1.0, 0, 0, 0, 1.0, -1, GrowSpeed);
+				}
+				
+				//Top.
+				for (int i = 0; i < 360; i += 16)
+				{
+					A_SpawnParticle("FF5200", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 5, 128, i, 32 * 2, 0, 183, 0.50, 0, 1, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF5300", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 4, 160, i, 32 * 3, 0, 183, 0.75, 0, 1, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF5400", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 3, 192, i, 32 * 4, 0, 183, 1.00, 0, 1, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF5500", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 2, 224, i, 32 * 5, 0, 183, 1.25, 0, 1, 0, 0, 0, 1.0, -1, GrowSpeed);
+					A_SpawnParticle("FF5600", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 3 * 1, 256, i, 32 * 6, 0, 183, 1.50, 0, 1, 0, 0, 0, 1.0, -1, GrowSpeed);
+				}
+				
+				//Shockwaves.
+				for (int i = 0; i < 360; i += 2)
+				{
+					//Middle.
+					A_SpawnParticle("FF9800", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 35, 64, i, 32 * 1, 0, 113, 8, 0, 0, -0.05);
+					
+					//Top.
+					A_SpawnParticle("FF9800", SPF_RELATIVE | SPF_FULLBRIGHT, BaseLifetime - 70, 192, i, 32 * 8, 0, 183, 16, 0, 0, -0.1);
+				}
+			}
+			Stop;
+	}
+}

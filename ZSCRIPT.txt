@@ -12,3 +12,5 @@ version "3.2.4"
 #include "zscript/marisa/bosshelper.zsc"
 #include "zscript/marisa/silencer.zsc"
 #include "zscript/marisa/marisa.zsc"
+
+#include "zscript/lud/nukeexplosion.zsc"
