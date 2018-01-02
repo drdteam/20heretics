@@ -15,6 +15,7 @@ DefaultMap
 	Music = "MUS_E1M1"
 	ResetInventory
 	ResetHealth
+	ClipMidtextures
 }
 
 ClearEpisodes
