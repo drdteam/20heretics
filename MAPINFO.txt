@@ -199,4 +199,5 @@ map CREDITS "The 20 Heretics Team Gallery - by: Rachael"
 {
 	pixelratio = 1.0
 	music = ""
+	AllowRespawn
 }
