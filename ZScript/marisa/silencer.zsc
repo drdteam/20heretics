@@ -10,7 +10,7 @@ Class mkSilencer : Actor
 	{
 		if ( !target || target.health <= 0 ) Destroy();
 		if ( target.target && !target.target.CheckClass("PatrolPoint") )
-			Console.Printf("%s at (%d,%d,%d) has valid target %s",target.GetClassName(),target.pos.x,target.pos.y,target.pos.z,target.target.GetClassName());
+			target.ActiveSound = ActiveSound;
 		else target.ActiveSound = "";
 	}
 
