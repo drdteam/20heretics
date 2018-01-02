@@ -1,0 +1,53 @@
+Class mkSilencer : Actor
+{
+	override void PostBeginPlay()
+	{
+		ActiveSound = target.ActiveSound;
+		Super.PostBeginPlay();
+	}
+
+	void A_UpdateSound()
+	{
+		if ( !target || target.health <= 0 ) Destroy();
+		if ( target.target && !target.target.CheckClass("PatrolPoint") )
+			Console.Printf("%s at (%d,%d,%d) has valid target %s",target.GetClassName(),target.pos.x,target.pos.y,target.pos.z,target.target.GetClassName());
+		else target.ActiveSound = "";
+	}
+
+	Default
+	{
+		+NOGRAVITY
+		+NOBLOCKMAP
+	}
+
+	States
+	{
+	Spawn:
+		TNT1 A 30 A_UpdateSound;
+		Loop;
+	}
+}
+
+Class mkSilencerManager : Actor
+{
+	override void PostBeginPlay()
+	{
+		ThinkerIterator alist = ThinkerIterator.Create("Actor");
+		Actor a;
+		mkSilencer shutup;
+		while ( a = Actor(alist.Next()) )
+		{
+			if ( !a.ActiveSound ) continue;
+			shutup = mkSilencer(Spawn("mkSilencer"));
+			if ( shutup ) shutup.target = a;
+		}
+	}
+
+	Default
+	{
+		+NOGRAVITY
+		+NOBLOCKMAP
+		+NOINTERACTION
+		+DONTSPLASH
+	}
+}

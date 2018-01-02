@@ -149,6 +149,7 @@ DoomEdNums
 	6404 = mkHeart
 	6405 = mkDSparilCorpse
 	6406 = mkBossManager
+	6407 = mkSilencerManager
 	6414 = mkKeyGizmoYellow
 	6415 = mkKeyGizmoGreen
 	6416 = mkKeyGizmoBlue
