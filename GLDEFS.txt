@@ -205,3 +205,9 @@ brightmap sprite CHDLC0
 	map "brightmaps/CHDLC0.png"
 	iwad
 }
+
+HardwareShader PostProcess scene {
+	name "RippleShader"
+	shader "Shaders/Ripple.frag" 330
+	uniform float timer
+}

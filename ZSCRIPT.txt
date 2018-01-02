@@ -4,6 +4,7 @@ version "3.2.4"
 #include "ZScript/HCPHUD.txt"
 
 #include "ZScript/StatScreen.zsc"
+#include "ZScript/GutaRipple.zsc"
 
 #include "zscript/marisa/mk_ssm.zsc"
 #include "zscript/marisa/deco.zsc"

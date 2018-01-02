@@ -1,0 +1,23 @@
+class RippleTimer : StaticEventHandler {
+	int startTick;
+	
+	static void startEffect(Actor mo) {
+		if (mo != NULL && mo.player != NULL) {
+			RippleTimer handler = RippleTimer(EventHandler.find("RippleTimer"));
+			handler.startTick = level.time;
+			Shader.setUniform1f(players[consoleplayer], "RippleShader", "timer", level.time - 70);
+			Shader.setEnabled(mo.player, "RippleShader", true);
+		}
+	}
+	
+	static void endEffect(Actor mo) {
+		if (mo != NULL && mo.player != NULL) {
+			Shader.setEnabled(mo.player, "RippleShader", false);
+		}
+	}
+	
+	override void RenderOverlay(RenderEvent e) {
+		// set the player's timer up correctly (more-than-1-tick precision)
+		Shader.setUniform1f(players[consoleplayer], "RippleShader", "timer", level.time + e.FracTic - 70 - startTick);
+	}
+}
