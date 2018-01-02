@@ -485,3 +485,4 @@ $pitchshift misc/knock 0
 
 // ******** Rachael: Credits Gallery
 credits/zxdouch	ZXD_OUCH
+credits/ludnuke	LUD_NUKE
