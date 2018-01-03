@@ -1,0 +1,195 @@
+ACTOR KenTree 7445
+{
+	+SOLID
+	+MOVEWITHSECTOR
+	Radius 21
+	Height 64
+	States
+	{
+	Spawn:
+		KLPR B -1
+		Stop
+	}
+}
+
+ACTOR KenDownLadder 7446
+{
+	+MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		KLPR A -1
+		Stop
+	}
+}
+
+ACTOR KenBarrel 7447
+{
+	+SOLID
+	+MOVEWITHSECTOR
+	Radius 24
+	Height 64
+	States
+	{
+	Spawn:
+		KLPR C -1
+		Stop
+	}
+}
+
+ACTOR KenLightBulb 7448
+{
+	+MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		KLPR D -1
+		Stop
+	}
+}
+
+ACTOR KenPottedPlants 7449
+{
+	+SOLID
+	+MOVEWITHSECTOR
+	Radius 30
+	Height 64
+	States
+	{
+	Spawn:
+		KLPR E -1
+		Stop
+	}
+}
+
+ACTOR KenPole 7450
+{
+	+SOLID
+	+MOVEWITHSECTOR
+	Radius 2
+	Height 64
+	States
+	{
+	Spawn:
+		KPOL ABCD 3
+		Loop
+	}
+}
+
+ACTOR KenFanBase 7451
+{
+	+MOVEWITHSECTOR
+	+FLATSPRITE
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		KLPR F -1
+		Stop
+	}
+}
+
+ACTOR KenFanBlades 7452
+{
+	+MOVEWITHSECTOR
+	+FLATSPRITE
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		KFAN A 1 A_SetRoll(roll + 8)
+		Loop
+	}
+}
+
+ACTOR KenBasket 7453
+{
+	+MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		KLPR G -1
+		Stop
+	}
+}
+
+ACTOR KenTable 7454
+{
+	+SOLID
+	+MOVEWITHSECTOR
+	Radius 27
+	Height 64
+	States
+	{
+	Spawn:
+		KTAB AB 3
+		Loop
+	}
+}
+
+ACTOR KenLamp 7455
+{
+	+SOLID
+	+MOVEWITHSECTOR
+	Radius 24
+	Height 64
+	States
+	{
+	Spawn:
+		KLPR H -1
+		Loop
+	}
+}
+
+ACTOR KenPillar 7456
+{
+	+SOLID
+	+MOVEWITHSECTOR
+	Radius 15
+	Height 64
+	States
+	{
+	Spawn:
+		KLPR I -1
+		Loop
+	}
+}
+
+ACTOR Knight64 : Knight 7457
+{
+	Height 64
+}
+
+ACTOR Snake64 : Snake 7458
+{
+	Height 64
+}
+
+ACTOR KenTableLamp 7459
+{
+	+SOLID
+	+MOVEWITHSECTOR
+	Radius 15
+	Height 64
+	States
+	{
+	Spawn:
+		KLPR J -1
+		Loop
+	}
+}
+
+ACTOR KenFanHurt 7460
+{
+  +NODAMAGETHRUST
+  States
+  {
+	Spawn:
+	  TNT1 A 0
+	  TNT1 A 1 A_Explode(1, 24, false, false, 24, 0, 0)
+	  Loop
+	Death:
+	  TNT1 A -1
+	  Stop
+	}
+}

@@ -1,6 +1,7 @@
 #include "decorate/map02.txt"
 #include "decorate/map12.txt"
 #include "decorate/malumax.txt"
+#include "decorate/zxd_credits.txt"
 // MOR'LADIM'S HERETIC PROP PACK
 
 ACTOR BrownStonePillar 6250

@@ -490,3 +490,14 @@ creditseasteregg/fishy1 CREDFCW1
 creditseasteregg/fishy2 CREDFCW2
 $pitchshift creditseasteregg/fishy1 0
 $pitchshift creditseasteregg/fishy2 0
+
+// KEN'S LABYRINTH
+
+KLDoorOpen			DOOROPEN
+KLDoorClose			DOORCLOS
+WelcomeToKL			WELCOME
+BlowUpWall			KILLCUBE
+DrinkingFountain	WATER
+KLUnlock			UNLOCK
+KLBuzz				NOTNOW
+KLNiceJob			NICEJOB
