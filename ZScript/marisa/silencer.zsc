@@ -14,15 +14,15 @@ Class mkSilencer : Actor
 			Destroy();
 			return;
 		}
-		if ( target.target && !target.target.CheckClass("PatrolPoint") )
-		{
-			target.ActiveSound = ActiveSound;
-			target.SeeSound = SeeSound;
-		}
-		else
+		if ( !target.target || (target.target is "PatrolPoint") )
 		{
 			target.ActiveSound = "";
 			target.SeeSound = "";
+		}
+		else
+		{
+			target.ActiveSound = ActiveSound;
+			target.SeeSound = SeeSound;
 		}
 	}
 
@@ -44,6 +44,7 @@ Class mkSilencerManager : Actor
 {
 	override void PostBeginPlay()
 	{
+		int cnt = 0;
 		ThinkerIterator alist = ThinkerIterator.Create("Actor");
 		Actor a;
 		mkSilencer shutup;
@@ -51,7 +52,9 @@ Class mkSilencerManager : Actor
 		{
 			if ( !a.ActiveSound && !a.SeeSound ) continue;
 			shutup = mkSilencer(Spawn("mkSilencer"));
-			if ( shutup ) shutup.target = a;
+			if ( !shutup ) continue;
+			shutup.target = a;
+			cnt++;
 		}
 	}
 
