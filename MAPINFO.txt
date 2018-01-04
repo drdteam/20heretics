@@ -171,7 +171,7 @@ map MAP15 "Thievery at the Forsaken Manor - by: Marisa Kirisame"
 {
 	Next = FINAL
 	SecretNext = FINAL
-	Music = "NOMUSIC"
+	Music = "D_MAP15"
 	Sky1 = "SKY1"
 	par = 420
 	lightmode = 3
