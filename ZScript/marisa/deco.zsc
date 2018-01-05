@@ -219,25 +219,38 @@ Class mkChandelier : SwitchableDecoration
 		Stop;
 	}
 }
+Class mkHeartPedestal : SwitchingDecoration
+{
+	Default
+	{
+		//$Title "Heart of D'Sparil (Pedestal)"
+		//$Category "Marisa Kirisame"
+		Radius 10;
+		Height 40;
+		+SOLID
+	}
+	States
+	{
+	Spawn:
+		GMPD B 0;
+		GMPD B 1 A_PlaySound("thief/egglp1",CHAN_BODY,1.0,true,3.0);
+		GMPD B -1;
+		Stop;
+	Active:
+		GMPD A 0;
+		GMPD A 1 A_StopSound(CHAN_BODY);
+		GMPD A -1;
+		Stop;
+	}
+}
 Class mkHeart : Inventory
 {
 	Default
 	{
-		//$Title "Heart of D'Sparil"
-		//$Category "Marisa Kirisame"
-		Radius 10;
-		Height 15;
-		Scale 0.75;
-		FloatBobStrength 0.25;
 		Inventory.PickupMessage "You have the heart of D'Sparil!";
-		Inventory.PickupSound "misc/k_pkup";
-		Inventory.Icon "DSPHART";
+		Inventory.Icon "ARTIBGEM";
 		Tag "Heart of D'Sparil";
-		+COUNTITEM
-		+FLOATBOB
-		+NOGRAVITY
 		+INVENTORY.INVBAR
-		+INVENTORY.FANCYPICKUPSOUND
 		+INVENTORY.UNDROPPABLE
 		+INVENTORY.UNTOSSABLE
 		+INVENTORY.NEVERRESPAWN
@@ -245,9 +258,9 @@ Class mkHeart : Inventory
 	States
 	{
 	Spawn:
-		DSPH A 0;
-		DSPH A 1 A_PlaySound("thief/egglp1",CHAN_BODY,1.0,true,3.0);
-		DSPH A -1;
+		ABGM A 0;
+		ABGM A 1 A_PlaySound("thief/egglp1",CHAN_BODY,1.0,true,3.0);
+		ABGM A -1;
 		Stop;
 	}
 }

@@ -146,7 +146,7 @@ DoomEdNums
 	6401 = mkSerpentTorch
 	6402 = mkWallTorch
 	6403 = mkChandelier
-	6404 = mkHeart
+	6404 = mkHeartPedestal
 	6405 = mkDSparilCorpse
 	6406 = mkBossManager
 	6407 = mkSilencerManager
