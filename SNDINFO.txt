@@ -486,6 +486,7 @@ $pitchshift misc/knock 0
 // ******** Rachael: Credits Gallery
 credits/zxdouch	ZXD_OUCH
 credits/ludnuke	LUD_NUKE
+credits/ludnukewarn tadUPD04
 creditseasteregg/fishy1 CREDFCW1
 creditseasteregg/fishy2 CREDFCW2
 $pitchshift creditseasteregg/fishy1 0
