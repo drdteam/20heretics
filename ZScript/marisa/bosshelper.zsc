@@ -54,6 +54,7 @@ Class mkBossHelper : Actor
 		dknight.bDONTHARMSPECIES = true;
 		dknight.bNOINFIGHTSPECIES = true;
 		dknight.species = "Dark Knight";
+		dknight.A_SetSize(dknight.radius*1.2,dknight.height*1.2);
 		Super.PostBeginPlay();
 	}
 
