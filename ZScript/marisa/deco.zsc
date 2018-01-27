@@ -309,7 +309,7 @@ Class mkHeart : Actor
 			for ( int i=0; i<64; i++ ) A_SpawnParticle("Red",SPF_FULLBRIGHT,100,FRandom(4,16),zoff:7,velx:FRandom(-4,4),vely:FRandom(-4,4),velz:FRandom(-4,4),accelz:0.05);
 			for ( int i=0; i<360; i++ ) A_SpawnParticle("Red",SPF_FULLBRIGHT,80,5,zoff:7,velx:cos(i)*4.0,vely:sin(i)*4.0,sizestep:0.2);
 			A_PlaySound("heart/ring",CHAN_7,0.6);
-			level.ExecuteSpecial(special,activator,null,0,args[0],args[1],args[2],args[3],args[4]);
+			level.ExecuteSpecial(special,myactivator,null,0,args[0],args[1],args[2],args[3],args[4]);
 		}
 		TNT1 B 4;
 		TNT1 C 2;
