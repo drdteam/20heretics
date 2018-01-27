@@ -124,6 +124,27 @@ pulselight MKHEART
 	attenuate 1
 }
 
+pointlight MKHEARTSPLODE
+{
+	color 1.0 0.25 0.25
+	size 300
+	attenuate 1
+}
+
+pointlight MKHEARTSPLODE2
+{
+	color 0.8 0.2 0.2
+	size 300
+	attenuate 1
+}
+
+pointlight MKHEARTSPLODE3
+{
+	color 0.4 0.1 0.1
+	size 300
+	attenuate 1
+}
+
 object mkHeartPedestal
 {
 	frame GMPDB { light MKHEARTPEDESTAL }
@@ -132,6 +153,14 @@ object mkHeartPedestal
 object mkHeart
 {
 	frame ABGM { light MKHEART }
+}
+
+object mkCutsceneHeart
+{
+	frame ABGM { light MKHEART }
+	frame TNT1A { light MKHEARTSPLODE }
+	frame TNT1B { light MKHEARTSPLODE2 }
+	frame TNT1C { light MKHEARTSPLODE3 }
 }
 
 // Brightmaps for my decorations - MK

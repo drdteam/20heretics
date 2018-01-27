@@ -512,6 +512,11 @@ hexen/whoosh	POP
 misc/knock	knock
 $pitchshift misc/knock 0
 
+// Heart of D'Sparil (sounds from Unreal I)
+heart/float	gemFloat
+heart/ring	gemRing
+heart/burst	gemGTFO
+
 // ******** Rachael: Credits Gallery
 credits/zxdouch	ZXD_OUCH
 credits/ludnuke	LUD_NUKE
