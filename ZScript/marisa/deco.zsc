@@ -252,46 +252,25 @@ Class mkHeartPedestal : Actor
 		Stop;
 	}
 }
-Class mkHeart : Inventory
+Class mkHeart : Actor
 {
-	Default
-	{
-		Inventory.PickupMessage "You have the heart of D'Sparil!";
-		Inventory.Icon "ARTIBGEM";
-		Tag "Heart of D'Sparil";
-		+INVENTORY.INVBAR
-		+INVENTORY.UNDROPPABLE
-		+INVENTORY.UNTOSSABLE
-		+INVENTORY.NEVERRESPAWN
-	}
-	States
-	{
-	Spawn:
-		ABGM A 0;
-		ABGM A 1 A_PlaySound("thief/egglp1",CHAN_BODY,1.0,true,3.0);
-		ABGM A -1;
-		Stop;
-	}
-}
-// for FINAL
-Class mkCutsceneHeart : SwitchingDecoration
-{
-	Actor activator;
+	Actor myactivator;
 	bool activated;
 	int i;
 
-	override bool Used( Actor user )
+	override void Activate( Actor activator )
 	{
-		if ( activated ) return false;
-		Activate(user);
+		if ( activated ) return;
 		activated = true;
-		activator = user;
-		return true;
+		myactivator = activator;
+		SetStateLabel("Active");
 	}
 	Default
 	{
-		//$Title "Heart of D'Sparil (Banish)"
+		//$Title "Heart of D'Sparil"
 		//$Category "Marisa Kirisame"
+		Radius 12;
+		Height 10;
 	}
 	States
 	{
@@ -309,11 +288,11 @@ Class mkCutsceneHeart : SwitchingDecoration
 		}
 		ABGM A 3 Bright
 		{
-			for ( int i=0; i<16; i++ ) A_SpawnParticle("Red",SPF_FULLBRIGHT|SPF_RELPOS,30,FRandom(1,5),FRandom(0,360),FRandom(-8,8),0,FRandom(0,12),accelz:0.1);
+			for ( int i=0; i<16; i++ ) A_SpawnParticle("Red",SPF_FULLBRIGHT|SPF_RELPOS,30,FRandom(1,5),FRandom(0,360),FRandom(0,8),0,FRandom(0,12),accelz:0.1);
 			if ( i++ > 100 ) return ResolveState("GTFO");
 			if ( !(i%30) )
 			{
-				for ( int i=0; i<360; i++ ) A_SpawnParticle("Red",SPF_FULLBRIGHT,40,5,zoff:8,velx:cos(i)*2.0,vely:sin(i)*2.0,sizestep:0.2);
+				for ( int i=0; i<360; i++ ) A_SpawnParticle("Red",SPF_FULLBRIGHT,40,5,zoff:7,velx:cos(i)*2.0,vely:sin(i)*2.0,sizestep:0.2);
 				A_PlaySound("heart/ring",CHAN_7,0.3);
 			}
 			return ResolveState(null);
@@ -327,8 +306,8 @@ Class mkCutsceneHeart : SwitchingDecoration
 		}
 		TNT1 AAAAA 1
 		{
-			for ( int i=0; i<64; i++ ) A_SpawnParticle("Red",SPF_FULLBRIGHT,100,FRandom(4,16),zoff:8,velx:FRandom(-4,4),vely:FRandom(-4,4),velz:FRandom(-4,4),accelz:0.05);
-			for ( int i=0; i<360; i++ ) A_SpawnParticle("Red",SPF_FULLBRIGHT,80,5,zoff:8,velx:cos(i)*4.0,vely:sin(i)*4.0,sizestep:0.2);
+			for ( int i=0; i<64; i++ ) A_SpawnParticle("Red",SPF_FULLBRIGHT,100,FRandom(4,16),zoff:7,velx:FRandom(-4,4),vely:FRandom(-4,4),velz:FRandom(-4,4),accelz:0.05);
+			for ( int i=0; i<360; i++ ) A_SpawnParticle("Red",SPF_FULLBRIGHT,80,5,zoff:7,velx:cos(i)*4.0,vely:sin(i)*4.0,sizestep:0.2);
 			A_PlaySound("heart/ring",CHAN_7,0.6);
 			level.ExecuteSpecial(special,activator,null,0,args[0],args[1],args[2],args[3],args[4]);
 		}

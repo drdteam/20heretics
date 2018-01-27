@@ -153,11 +153,6 @@ object mkHeartPedestal
 object mkHeart
 {
 	frame ABGM { light MKHEART }
-}
-
-object mkCutsceneHeart
-{
-	frame ABGM { light MKHEART }
 	frame TNT1A { light MKHEARTSPLODE }
 	frame TNT1B { light MKHEARTSPLODE2 }
 	frame TNT1C { light MKHEARTSPLODE3 }

@@ -157,6 +157,8 @@ DoomEdNums
 	// credits
 	6499 = mkMarisa
 
+	// for epilogue
+	6500 = mkHeart
 }
 
 
