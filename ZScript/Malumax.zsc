@@ -1,0 +1,335 @@
+class Malumax : Actor
+{
+	Default
+	{
+		//$Category "Monsters"
+		Health 3500;
+		Radius 16;
+		Height 64;
+		Scale 1;
+		Mass 300;
+		Speed 20;
+		PainChance 64;
+		MinMissileChance 40;
+		ReactionTime 1;
+		Monster;
+		+DROPOFF;
+		+BOSS;
+		+DONTMORPH;
+		+FULLVOLACTIVE;
+		+NORADIUSDMG;
+		+NOTARGET;
+		+NOICEDEATH;
+		+FLOORCLIP;
+		+BOSSDEATH;
+		SeeSound "Malumax/Sight";
+		PainSound "Malumax/Pain";
+		ActiveSound "Malumax/Active";
+		DeathSound "Malumax/Die";
+
+		Obituary "%o had an encounter with Malumax.";
+	}
+
+	int cataclysm_state;
+
+	States
+	{
+		Spawn:
+			MALM A 0 NoDelay { cataclysm_state = 0; }
+			MALM AB 12 A_Look;
+			Loop;
+		See:
+			MALM AABBAACC 4 A_Chase;
+			MALM A 0 A_Jump(4, "Teleport");
+			Loop;
+		Pain:
+			MALM D 0 A_ChangeFlag("FRIGHTENED", 1);
+			MALM D 0 A_Jump(64, "Teleport");
+			MALM D 0 A_ChangeFlag("FRIGHTENED", 0);
+			MALM D 3;
+			MALM D 3 A_Pain;
+			Goto See;
+		Missile:
+			MALM E 0
+			{
+				if (cataclysm_state == 0 && ((1.0 * health / GetSpawnHealth()) < .8))
+				{
+					A_PlaySound("Malumax/Cataclysm", 6, 1.0, false, 0);
+					ACS_Execute(996, 0, 1);
+				}
+			}
+			MALM E 0 A_Jump(12, "Teleport");
+			MALM E 0 A_Jump(256, "Hydra", "HomingAttack", "FlameNova");
+			Goto See;
+		Teleport:
+			MALM AAAFFFAAAGGGAAAFFFAAAGGG 2
+			{
+				A_PlaySound("Malumax/Teleport", 7);
+				A_FaceTarget();
+				for (int i = random(-5, 22); i < 360; i+=random(22, 65))
+				{
+					A_SpawnProjectile("PhoenixFX2", 5, 0, i, CMF_ABSOLUTEPITCH);
+				}
+			}
+			MALM E 0
+			{
+				A_SpawnItem("TeleportFog", 0, 32);
+				A_ChangeFlag("INVISIBLE", 1);
+				A_ChangeFlag("SHOOTABLE", 0);
+			}
+			MALM E 70;
+			MALM EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 0 A_Chase(null, null, CHF_NOPLAYACTIVE);
+			MALM EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 0 A_Chase(null, null, CHF_NOPLAYACTIVE);
+			MALM EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 0 A_Chase(null, null, CHF_NOPLAYACTIVE);
+			MALM EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 0 A_Chase(null, null, CHF_NOPLAYACTIVE);
+			MALM EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 0 A_Chase(null, null, CHF_NOPLAYACTIVE);
+			MALM EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 0 A_Chase(null, null, CHF_NOPLAYACTIVE);
+			MALM E 0
+			{
+				A_SpawnItem("TeleportFog", 0, 32);
+				A_ChangeFlag("INVISIBLE", 0);
+				A_ChangeFlag("SHOOTABLE", 1);
+			}
+			MALM AAAFFFAAAGGGAAAFFFAAAGGG 2
+			{
+				A_RadiusThrust(50, 128, RTF_NOTMISSILE | RTF_THRUSTZ, 1);
+				A_FaceTarget();
+				for (int i = random(-5, 22); i < 360; i+=random(22, 65))
+				{
+					A_SpawnProjectile("PhoenixFX2", 5, 0, i, CMF_ABSOLUTEPITCH);
+				}
+			}
+			MALM A 0 A_ChangeFlag("FRIGHTENED", 0);
+			Goto See		;
+		Hydra:
+			MALM E 0 A_PlaySound("Malumax/Hydra", 7);
+			MALM E 0 A_CheckRange(512, "HomingAttack");
+			MALM E 4 A_FaceTarget;
+			MALM E 12 A_SpawnProjectile("BawssHydra", 32, 0, random(0, 360), CMF_ABSOLUTEPITCH, 60);
+			Goto See;
+		HomingAttack:
+			MALM E 0 A_PlaySound("Malumax/Homing", 7);
+			MALM E 4 A_FaceTarget;
+			MALM E 12 A_SpawnProjectile("BawssHoming");
+			Goto See;
+		FlameNova:
+			MALM E 0 A_PlaySound("Malumax/Nova", 7);
+			MALM E 4 A_FaceTarget;
+			MALM AAAFFFAAAGGGAAAFFFAAAGGG 2
+			{
+				A_FaceTarget();
+				for (int i = 0; i < 30; i+=1)
+				{
+					A_SpawnParticle("ff ff 00", SPF_FULLBRIGHT | SPF_RELATIVE, 60, 5, random(0,360), 0, 0, 0, frandom(1.0, 3.5), 0, frandom(0, frandom(0, 10.0)), 0, 0, -0.5, frandom(0.5, 1.0), -1);
+					A_SpawnParticle("ff 80 00", SPF_FULLBRIGHT | SPF_RELATIVE, 60, 5, random(0,360), 0, 0, 0, frandom(1.0, 3.5), 0, frandom(0, frandom(0, 10.0)), 0, 0, -0.5, frandom(0.5, 1.0), -1);
+					A_SpawnParticle("ff 00 00", SPF_FULLBRIGHT | SPF_RELATIVE, 60, 5, random(0,360), 0, 0, 0, frandom(1.0, 3.5), 0, frandom(0, frandom(0, 10.0)), 0, 0, -0.5, frandom(0.5, 1.0), -1);
+				}
+			}
+			MALM E 12
+			{
+				for (int i = 0; i < 360; i+=3)
+				{
+					A_SpawnProjectile("BawssFlameSpike", 32, 0, i);
+				}
+			}
+			Goto See;
+		Death:
+			MALM D 165 { A_FaceTarget(); A_Scream(); }
+			TNT1 A 0
+			{
+				for (int i = 0; i <= 14; ++i)
+					A_SpawnItemEx("MalumaxGib"..i, 0, 0, Height / 1.5, random(4, 13), 0, random(4, 18), random(0, 360), 0);
+				
+				ACS_Execute(996, 0, 0);
+			}
+			Stop;
+	}
+}
+
+class BawssFlameSpike : Actor
+{
+	Default
+	{
+		Radius 5;
+		Height 12;
+		Speed 14;
+		FastSpeed 20;
+		Damage 2;
+		Projectile;
+		+FLOORHUGGER;
+		ExplosionDamage 16;
+		DeathSound "minotaur/fx2hit";
+	}
+	States
+	{
+	Spawn:
+		FX13 BCDE 5 Bright;
+		Loop;
+	Death:
+		FX13 I 4 Bright A_Explode;
+		FX13 JKLM 4 Bright;
+		Stop;
+	}
+}
+
+class BawssHoming : Actor
+{
+	Default
+	{
+		Radius 10;
+		Height 6;
+		Speed 10;
+		FastSpeed 15;
+		Damage 9;
+		Projectile;
+		-ACTIVATEIMPACT;
+		-ACTIVATEPCROSS;
+		+SEEKERMISSILE;
+		RenderStyle "Normal";
+		DamageType "Fire";
+		SeeSound "weapons/phoenixshoot";
+		DeathSound "weapons/phoenixhit";
+	}
+
+	States
+	{
+		Spawn:
+			SBS1 ABCD 3 Bright A_SeekerMissile(5, 10, SMF_PRECISE);
+			Loop;
+		Death:
+			FX06 DEFG 5 Bright;
+			Stop;
+	}
+}
+
+class BawssHydra : Actor
+{
+	Default
+	{
+		Radius 10;
+		Height 6;
+		Speed 10;
+		FastSpeed 15;
+		Damage 9;
+		Projectile;
+		-ACTIVATEIMPACT;
+		-ACTIVATEPCROSS;
+		RenderStyle "Normal";
+	}
+
+	States
+	{
+		Spawn:
+			SBS1 ABCD 3 Bright;
+			Loop;
+		Death:
+			FX06 DEFG 5 Bright;
+			FX06 G 0 A_SpawnItem("Hydra1");
+			Stop;
+	}
+}
+
+class Hydra1 : Actor
+{
+	Default
+	{
+		Health 10;
+		Speed 0;
+		Monster;
+		+NODAMAGE;
+		-SOLID;
+		-SHOOTABLE;
+		-COUNTKILL;
+		RenderStyle "Add";
+		Translation "0:255=%[0.00,0.00,0.00]:[2.00,1.50,0.25]";
+		+ALWAYSFAST;
+	}
+
+	States
+	{
+		Spawn:
+			SSDV JJJJJJJJJJ 1 A_Look;
+			SSDV J 1 A_Die;
+			Goto Death;
+		See:
+			SSDV JIHEA 5;
+		See2:
+			SSDV AAAAAAAAAAAAAAAAA 5 A_Chase;
+			SSDV A 1 A_Die;
+			Goto Death;
+		Missile:
+			SSDV ABC 10 A_FaceTarget;
+			SSDV DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD 2 A_SpawnProjectile("PhoenixFX2", 24);
+			SSDV D 0 A_Die;
+			Goto Death;
+		Death:
+			SSDV AEHIJ 5;
+			Stop;
+	}
+}
+
+//CREDITS FOR THE CODE BELOW: LUD
+//TAKEN FROM HEARTS OF DEMONS - BARON'S NEW GORE SYSTEM
+class BaseBodyPart : Actor
+{
+	override void BeginPlay()
+	{
+		TrailSpawnDuration = 35;
+		
+		Super.BeginPlay();
+	}
+	
+	override void Tick()
+	{
+		TrailSpawnDuration--;
+		if (TrailSpawnDuration > 0)
+		{
+			A_SpawnParticle("DarkGreen", SPF_RELATIVE, 40, 16, 0, 0, 0, 0, 0, 0, 2, 0, 0, -0.2, 1.0, -1, 0.5);
+		}
+		
+		Super.Tick();
+	}
+	
+	int TrailSpawnDuration;
+
+	Default
+	{
+		Radius 3;
+		Height 4;
+		+MISSILE
+		+NOBLOCKMAP
+		+ROLLSPRITE
+		+ROLLCENTER
+		+USEBOUNCESTATE
+		+MOVEWITHSECTOR
+		BounceType "Doom";
+		BounceCount 5;
+		BounceFactor 0.5;
+	}
+		
+	States
+	{
+		Spawn:
+			#### # 2 A_SetRoll(roll + random(10, 20));
+			Loop;
+		Death:
+			#### # -1 A_SetRoll(randompick(0, 180) + random(-5, 5));
+			Stop;
+	}
+}
+
+class MalumaxGib0 : BaseBodyPart {States { Spawn: MLMG A 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib1 : BaseBodyPart {States { Spawn: MLMG B 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib2 : BaseBodyPart {States { Spawn: MLMG C 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib3 : BaseBodyPart {States { Spawn: MLMG D 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib4 : BaseBodyPart {States { Spawn: MLMG E 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib5 : BaseBodyPart {States { Spawn: MLMG F 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib6 : BaseBodyPart {States { Spawn: MLMG G 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib7 : BaseBodyPart {States { Spawn: MLMG H 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib8 : BaseBodyPart {States { Spawn: MLMG I 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib9 : BaseBodyPart {States { Spawn: MLMG J 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib10 : BaseBodyPart {States { Spawn: MLMG K 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib11 : BaseBodyPart {States { Spawn: MLMG L 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib12 : BaseBodyPart {States { Spawn: MLMG M 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib13 : BaseBodyPart {States { Spawn: MLMG N 2 A_SetRoll(roll + random(10, 20)); Loop; } }
+class MalumaxGib14 : BaseBodyPart {States { Spawn: MLMG O 2 A_SetRoll(roll + random(10, 20)); Loop; } }

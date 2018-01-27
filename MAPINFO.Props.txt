@@ -158,3 +158,11 @@ DoomEdNums
 	6499 = mkMarisa
 
 }
+
+
+// Misc
+
+DoomEdNums
+{
+	1010 = Malumax
+}

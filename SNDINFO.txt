@@ -43,6 +43,35 @@ PigDeath                pigdth2
 // Fire Demon
 FireDemonDeath          fired3
 
+//Malumax
+Malumax/Sight						MMAXSIT
+
+Malumax/Active1					MMAXACT0
+Malumax/Active2					MMAXACT1
+Malumax/Active3					MMAXACT2
+Malumax/Active4					MMAXACT3
+Malumax/Active5					MMAXACT4
+Malumax/Active6					MMAXACT5
+Malumax/Active7					MMAXACT6
+Malumax/Active8					MMAXACT7
+Malumax/Active9					MMAXACT8
+Malumax/Active10				MMAXACT9
+$random Malumax/Active { Malumax/Active1 Malumax/Active2 Malumax/Active3 Malumax/Active4 Malumax/Active5 Malumax/Active6 Malumax/Active7 Malumax/Active8 Malumax/Active9 Malumax/Active10 }
+
+Malumax/Pain1						MMAXPAI1
+Malumax/Pain2						MMAXPAI2
+Malumax/Pain3						MMAXPAI3
+$random Malumax/Pain { Malumax/Pain1 Malumax/Pain2 Malumax/Pain3 }
+
+Malumax/Die							MMAXDETH
+
+Malumax/Hydra						MMAXSUMN
+Malumax/Teleport				MMAXTELE
+Malumax/Nova						MMAXNOVA
+Malumax/Homing					MMAXHOMN
+
+Malumax/Cataclysm				MMAXCTCL
+
 //===========================================================================
 //
 // MISCELLANEOUS SOUNDS

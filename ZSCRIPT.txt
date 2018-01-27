@@ -14,3 +14,5 @@ version "3.2.4"
 #include "zscript/marisa/marisa.zsc"
 
 #include "zscript/lud/nukeexplosion.zsc"
+
+#include "zscript/Malumax.zsc"
