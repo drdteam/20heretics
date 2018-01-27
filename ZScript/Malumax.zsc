@@ -54,7 +54,6 @@ class Malumax : Actor
 			{
 				if (cataclysm_state == 0 && ((1.0 * health / GetSpawnHealth()) < .8))
 				{
-					A_PlaySound("Malumax/Cataclysm", 6, 1.0, false, 0);
 					ACS_Execute(996, 0, 1);
 				}
 			}
