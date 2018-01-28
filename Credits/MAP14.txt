@@ -1,0 +1,47 @@
+Music:
+
+Main Music: "Alien Incident - Entity (alien_incident_-_entity.s3m)" by Purple Motion
+Boss Music: "Nightmare Creatures Boss #1 (boss1.xm)" by _moby_ (volume tweaked by ZXD)
+Computer Core Trap Music: "destructive power (destructive_power.mod)" by siracon/defiance
+
+
+Sprites:
+Wizard Anatomy Charts by Leonardo da Vinci, edited by ZXD
+Laboratory jars by Raven Software (Hexen 2), edited by ZXD
+Hacky test tubes by Raven Software (Shadowcaster)
+CPU Core Head by Leppee (Turbosquid), converted to voxel by Lud and edited by ZXD
+Hacky conveyor crystals by 3D Realms (Shadow Warrior)
+Floor trap and fan blade by ZXD, edited from textures by iD Software and Raven Software respectively
+CPU crystals by Apogee Software (Rise of the Triad)
+CPU crystal shards by Raven Software (Hexen)
+
+
+Textures:
+Quake (iD Software)
+Hexen (Raven Software)
+Doom (iD Software)
+Community Chest 4 (Various)
+Heretic 2 (Raven Software)
+Cage (Scratched edit of metal texture from Heretic 2)
+Redfield (Quake-style consoles from ad_paradise)
+Take No Prisoners (Raven Software)
+ZZYZX (Sliding skull doors)
+
+Sounds:
+Hexen (Raven Software)
+Return to Castle Wolfenstein (iD Software)
+Rise of the Triad, Boppin' (Apogee Software)
+Sinistar (Midway)
+
+COMPYOFF, METLSCRP, FANLOOP and part of C_ITMBRK courtesy of Freesound.org
+
+Computer ambience ripped from "Music for the Undead (a-0n3.it)" by Necros
+Malumax's Organ Recital (E1M1 - "The Docks" by Kevin Schilder) arranged by ZXD
+Elevator Muzak (E1M2 - "The Dungeons" by Kevin Schilder) arranged by ZXD
+
+Computer voices created with chipspeech
+Shit wizard and Malumax voiced by ZXD
+
+DECORATE:
+
+Fake Malumax coded with the help of Lud based partially on code by Rachael

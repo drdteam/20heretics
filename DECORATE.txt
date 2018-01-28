@@ -1,5 +1,6 @@
 #include "decorate/map02.txt"
 #include "decorate/map12.txt"
+#include "decorate/map14.txt"
 #include "decorate/zxd_credits.txt"
 // MOR'LADIM'S HERETIC PROP PACK
 

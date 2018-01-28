@@ -158,13 +158,16 @@ map MAP13 "The Best Weapon - by: isaacpop23"
 	Music = "MUS_E2M9"
 }
 
-map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
+map MAP14 "The Wizard's Techbase"
 {
+	levelnum = 1
 	next = "MAP15"
-	secretnext = "MAP15"
+	secretnext = "SECRET"
 	sky1 = "MAGIKSKY"
+	cluster = 1
 	par = 60
 	music = "AIENTITY"
+	ActivateOwnDeathSpecials
 }
 
 map MAP15 "Thievery at the Forsaken Manor - by: Marisa Kirisame"

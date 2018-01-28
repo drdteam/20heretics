@@ -382,3 +382,17 @@ texture optional GRYFALL1 RANGE GRYFALL4 tics 10
 //
 //-----------------------------------------------
 texture optional W_256 RANGE W_264 tics 3
+
+//-----------------------------------------------
+//
+// MAP14
+//
+//-----------------------------------------------
+TEXTURE Q1FFCMP1 RANGE Q1FFCMP4 tics 5
+TEXTURE ADPCON11 RANGE ADPCON14 tics 5
+TEXTURE ADPCON21 RANGE ADPCON24 tics 5
+TEXTURE W_256 RANGE W_264 tics 4
+SWITCH Q1UPSW01 on sound switches/normbutn pic Q1UPSW02 tics 0
+SWITCH Q1UPSW02 off sound switches/normbutn pic Q1UPSW01 tics 0
+TEXTURE Q1SNCMP1 RANGE Q1SNCMP4 tics 5
+TEXTURE Q1FECMP1 RANGE Q1FECMP4 tics 5

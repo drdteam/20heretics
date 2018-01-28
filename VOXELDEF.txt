@@ -1,0 +1,18 @@
+CPUC="CPUC" {
+	Spin = 50
+}
+
+FTRP="FTRP" {
+}
+
+FBLD="FBLD" {
+	Spin = 720
+}
+
+CPUSA="CPUSA" {
+	Scale = 0.5
+}
+
+CPUSB="CPUSB" {
+	Scale = 0.5
+}
