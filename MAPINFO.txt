@@ -158,7 +158,7 @@ map MAP13 "The Best Weapon - by: isaacpop23"
 	Music = "MUS_E2M9"
 }
 
-map MAP14 "The Wizard's Techbase"
+map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
 {
 	levelnum = 1
 	next = "MAP15"
