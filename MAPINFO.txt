@@ -26,21 +26,21 @@ episode MAP01
 	Name = "20 Heretics"
 }
 
-Map MAP01 "Malignant - by: Elm Yin"
+Map MAP10 "Malignant - by: Elm Yin"
 {
 	Cluster = 0
-	Next = "MAP02"
-	SecretNext = "MAP02"
+	Next = "MAP11"
+	SecretNext = "MAP11"
 	Music = "MUS_E1M3"
 	Sky1 = "sky1"
 	Par = 40
 }
 
-Map MAP02 "Night of the Translucent Dead - by: Gothic"
+Map MAP07 "Night of the Translucent Dead - by: Gothic"
 {
 	Cluster = 0
-	Next = "MAP03"
-	SecretNext = "MAP03"
+	Next = "MAP08"
+	SecretNext = "MAP08"
 	Music = "D_MAP02"
 	sky1 = "bludsky"
 	IronlichSpecial
@@ -48,50 +48,50 @@ Map MAP02 "Night of the Translucent Dead - by: Gothic"
 	Par = 120
 }
 
-Map MAP03 "House Cleaning - by: Li'l Devil"
+Map MAP08 "House Cleaning - by: Li'l Devil"
 {
 	Cluster = 0
-	Next = "MAP04"
-	SecretNext = "MAP04"
+	Next = "MAP09"
+	SecretNext = "MAP09"
 	Music = "D_MAP03"
 	Sky1 = "sky0"
 	Par = 105
 }
 
-Map MAP04 "A Hell of a Sewer - by: lwks"
+Map MAP12 "A Hell of a Sewer - by: lwks"
 {
 	Cluster = 0
-	Next = "MAP05"
-	SecretNext = "MAP05"
+	Next = "MAP13"
+	SecretNext = "MAP13"
 	Music = "D_MAP04"
 	Par = 45
 }
 
-Map MAP05 "Elementary - by: Rachael"
+Map MAP09 "Elementary - by: Rachael"
 {
 	Cluster = 0
-	Next = "MAP06"
-	SecretNext = "MAP06"
+	Next = "MAP10"
+	SecretNext = "MAP10"
 	Music = "MUS_E1M7"
 	Par = 20
 }
 
-Map MAP06 "Holy Water - by: Gutawer"
+Map MAP11 "Holy Water - by: Gutawer"
 {
 	Cluster = 0
-	Next = "MAP07"
-	SecretNext = "MAP07"
+	Next = "MAP12"
+	SecretNext = "MAP12"
 	Music = "D_MAP06"
 	Par = 50
 }
 
-Map MAP07 "Dead River - by: Impie"
+Map MAP13 "Dead River - by: Impie"
 {
 	Cluster = 0
 	NoCrouch
 	NoJump
-	Next = "MAP08"
-	SecretNext = "MAP08"
+	Next = "MAP14"
+	SecretNext = "MAP14"
 	Sky1 = "SKY1"
 	Music = "BGMCHAOS"
 	MinotaurSpecial
@@ -99,11 +99,11 @@ Map MAP07 "Dead River - by: Impie"
 	Par = 100
 }
 
-Map MAP08 "The Downward Spiral - by: Zero X. Diamond"
+Map MAP03 "The Downward Spiral - by: Zero X. Diamond"
 {
 	Cluster = 0
-	Next = "MAP09"
-	Secretnext = "MAP09"
+	Next = "MAP04"
+	Secretnext = "MAP04"
 	Sky1 = "SKY1"
 	Par = 60
 	Music = "DARK"
@@ -112,38 +112,42 @@ Map MAP08 "The Downward Spiral - by: Zero X. Diamond"
 	SkyFog = 156
 }
 
-Map MAP09 "Oceania - by: Crazy Toni"
+Map MAP01 "Oceania - by: Crazy Toni"
 {
-	Next = "MAP10"
-	SecretNext = "MAP10"
+	Cluster = 0
+	Next = "MAP02"
+	SecretNext = "MAP02"
 	Par = 180
 	Sky1 = "SKY1", 0
 	Music = "LEVELR"
 }
 
-Map MAP10 "Preserved Catacombs - by: leodoom85"
+Map MAP04 "Preserved Catacombs - by: leodoom85"
 {
-	Next = "MAP11"
-	SecretNext = "MAP11"
+	Cluster = 0
+	Next = "MAP05"
+	SecretNext = "MAP05"
 	Music = "TULKU"
 	Sky1 = "SKY1" , 0.0
 	Par = 135
-	SndSeq = "SndSeq/M10SSEQ.txt"
+	SndSeq = "SndSeq/M04SSEQ.txt"
 }
 
-Map MAP11 "Trial of the Maulotaur - by: Zedonk"
+Map MAP05 "Trial of the Maulotaur - by: Zedonk"
 {
-	Next = "MAP12"
-	SecretNext = "MAP12"
+	Cluster = 0
+	Next = "MAP06"
+	SecretNext = "MAP06"
 	Sky1 = "SKY1"
 	Par = 190
 	Music = "MUS_E2M8"
 }
 
-map MAP12 "Desecrated Shrines - by: Mor'ladim"
+map MAP06 "Desecrated Shrines - by: Mor'ladim"
 {
-	Next = "MAP13"
-	SecretNext = "MAP13"
+	Cluster = 0
+	Next = "MAP07"
+	SecretNext = "MAP07"
 	sky1 = "AVRSKY1", 0
 	music = "01-SHRIN"
 	IronLichSpecial
@@ -151,21 +155,21 @@ map MAP12 "Desecrated Shrines - by: Mor'ladim"
 	Par = 45
 }
 
-map MAP13 "The Best Weapon - by: isaacpop23"
+map MAP02 "The Best Weapon - by: isaacpop23"
 {
-	Next = "MAP14"
-	SecretNext = "MAP14"
+	Cluster = 0
+	Next = "MAP03"
+	SecretNext = "MAP03"
 	par = 105
 	Music = "MUS_E2M9"
 }
 
 map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
 {
-	levelnum = 1
+	Cluster = 0
 	next = "MAP15"
 	secretnext = "SECRET"
 	sky1 = "MAGIKSKY"
-	cluster = 1
 	par = 60
 	music = "AIENTITY"
 	ActivateOwnDeathSpecials
@@ -174,6 +178,7 @@ map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
 
 map MAP15 "Thievery at the Forsaken Manor - by: Marisa Kirisame"
 {
+	Cluster = 0
 	Next = FINAL
 	SecretNext = FINAL
 	Music = "D_MAP15"
@@ -194,10 +199,10 @@ Map FINAL "You'll Only Live To Twenty - by: Rachael"
 
 map SECRET "Through The Portal Of Time - by: Zero X. Diamond"
 {
+	Cluster = 0
 	next = "SECRET"
 	secretnext = "SECRET"
 	sky1 = "FUTURSKY"
-	cluster = 1
 	par = 60
 	music = "PLACHLDR"
 }
