@@ -167,6 +167,38 @@ DoorCloseMetal          drstp2
 // ROBOVOICE ANNOUNCEMENTS
 
 MechanicalFailure		MECHFAIL
+AccessDenied			ACDENIED
+PleaseStandBy			PSTANDBY
+UnauthorizedPersonnel	UNATHRZD
+SterilizationComplete	STRLIZAT
+ForceFieldsDeactivated	FFDEACTV
+
+$random SecretErrors { DamageElevatorSubsystem CorruptionDatabase GeneralProtectionFault CoreProtectionOverride ContactSystemAdmin }
+$random SecretErrors2 { GeneralProtectionFault ContactSystemAdmin }
+
+DamageElevatorSubsystem	ELVTRDMG
+CorruptionDatabase		ACCDATAB
+GeneralProtectionFault	GENPROTF
+CoreProtectionOverride	COREPROT
+ContactSystemAdmin		SYSADMIN
+
+ElevatorRestricted		ELACREST
+SanitationViolation		SANIVIOL
+SterilizationProtocol	STERPROT
+NoSterilization			STNOTREQ
+IntruderPacification	INTPACIF
+UnauthorizedAccess		UNATHRZ2
+SelfDefenseProtocol		SELFDEFN
+
+$random CrystalErrors { ErrorCrystalMatrix CrystalSubstructure IntentionalDestruction NoCrystalFoundInSlot }
+
+ErrorCrystalMatrix		ERRCMTRX
+CrystalSubstructure		CRYSUBDM
+IntentionalDestruction	INTDESTR
+NoCrystalFoundInSlot	NOCRYFND
+
+SystemCompromised		SAFEMODE
+
 
 // ALARM
 
@@ -175,6 +207,63 @@ KlaxonAlarm				KLAXON
 // COMPUTER
 
 ComputerAmbience		COMPUTER
+SlamKeyboard			SLAMKEYS
+ComputerOff				COMPYOFF
+ComputerDing			COMPDING
+
+// METAL SLIDING
+
+MetalScrape				METLSCRP
+
+// FACTORY
+
+FactoryAmbience			FCTRYAMB
+
+// WIZARD
+
+WizardTaunt				WIZTAUNT
+
+// FAN
+
+BigFanLoop				FANLOOP
+
+// MALUMAX'S ORGAN RECITAL
+
+E1M1Organ				E1M1ORGN
+OrganSlam				ORGNSLAM
+
+$pitchshift E1M1Organ 0
+$pitchshift OrganSlam 0
+
+// CPU CRYSTALS
+
+CrystalBreak			C_ITMBRK
+
+// MALUMAX'S MONOLOGUE
+
+MalumaxMonologue		MMAXMONO
+
+$pitchshift MalumaxMonologue 0
+
+// EYE OBELISK
+
+BoppinFlash				BOPFLASH
+
+// SECRET ELEVATOR
+
+ElevatorChime			ELVCHIME
+E1M2Muzak				E1M2MUZK
+CentralAccess			CNTRLACC
+CPUCoreTunnel			CPUCTUNL
+GoingDown				GOINDOWN
+GoingUp					GOINUP
+
+$pitchshift E1M2Muzak 0
+
+// COMPUTER CORE
+
+ComputerCoreHum			COREHUM
+DefenseSkullsDie		WAAAAUGH
 
 // ******** Marisa Kirisame: Thievery at the Forsaken Manor
 // Sounds for my map - MK
