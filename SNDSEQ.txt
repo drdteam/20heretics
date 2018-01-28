@@ -5,33 +5,3 @@
    play GateOpen
    nostopcutoff
 end
-
-// leodoom85 - catacomb
-:StoneDoor
-	Door 1
-	playuntildone	doorslide/start
-	playrepeat		doorslide/start
-	stopsound		doorslide/stop
-end
-
-// zero x diamond - wizard's techbase
-:DoorMetal
-	Door 0
-	Attenuation Idle
-	playtime  	DoorOpenMetal 35
-	playrepeat      MetalMove
-	stopsound	DoorCloseMetal
-end
-
-:MetalObjectMoving
-	Door 1
-	Attenuation Idle
-	playrepeat		MetalScrape
-end
-
-// marisa kirisame - thievery at the forsaken manor
-:GenericPolyobjMove
-	Door 1
-	PlayUntilDone   plats/pt1_strt
-	StopSound	plats/pt1_stop
-End

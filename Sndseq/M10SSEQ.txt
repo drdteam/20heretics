@@ -1,0 +1,7 @@
+// leodoom85 - catacomb
+:StoneDoor
+	Door 1
+	playuntildone	doorslide/start
+	playrepeat		doorslide/start
+	stopsound		doorslide/stop
+end

@@ -128,6 +128,7 @@ Map MAP10 "Preserved Catacombs - by: leodoom85"
 	Music = "TULKU"
 	Sky1 = "SKY1" , 0.0
 	Par = 135
+	SndSeq = M10SSEQ
 }
 
 Map MAP11 "Trial of the Maulotaur - by: Zedonk"
@@ -168,6 +169,7 @@ map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
 	par = 60
 	music = "AIENTITY"
 	ActivateOwnDeathSpecials
+	SndSeq = M14SSEQ
 }
 
 map MAP15 "Thievery at the Forsaken Manor - by: Marisa Kirisame"
@@ -178,6 +180,7 @@ map MAP15 "Thievery at the Forsaken Manor - by: Marisa Kirisame"
 	Sky1 = "SKY1"
 	par = 420
 	lightmode = 3
+	SndSeq = M15SSEQ
 }
 
 Map FINAL "You'll Only Live To Twenty - by: Rachael"
