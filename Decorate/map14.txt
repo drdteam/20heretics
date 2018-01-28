@@ -331,61 +331,61 @@ ACTOR FakeMalumax : SwitchableDecoration 7410
 
 ACTOR CPUCoreSkulls : SwitchableDecoration 7411
 {
-	RenderStyle "Translucent"
-	Alpha 0.5
-	FloatBobStrength 0.25
-	+NOINTERACTION
-	+FLOATBOB
-	//$Category "Wizard's Techbase"
-	States
-	{
-	Spawn:
-		CPUS A 1 A_Look
-		Loop
-	See:
-		CPUS A 1 A_FaceTarget
-		Loop
-	Active:
-		CPUS B 1 A_FaceTarget
-		CPUS B 1 A_Jump(256, "SerpentFire", "Ripper", "HornRod", "Sorcerer")
-	SerpentFire:
-		CPUS B 0 A_PlaySound("dsparilserpent/attack",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
-		CPUS B 2 A_CustomMissile("SorcererFX1",0)
-		Goto See
-	Ripper:
-		CPUS B 0 A_PlaySound("weapons/blastershoot",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
-		CPUS B 2 A_CustomMissile("Ripper",0)
-		CPUS A 2 A_FaceTarget
-		CPUS B 0 A_PlaySound("weapons/blastershoot",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
-		CPUS B 2 A_CustomMissile("Ripper",0)
-		CPUS A 2 A_FaceTarget
-		CPUS B 0 A_PlaySound("weapons/blastershoot",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
-		CPUS B 2 A_CustomMissile("Ripper",0)
-		CPUS A 2 A_FaceTarget
-		CPUS B 0 A_PlaySound("weapons/blastershoot",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
-		CPUS B 2 A_CustomMissile("Ripper",0)
-		CPUS A 2 A_FaceTarget
-		Goto See
-	HornRod:
-		CPUS B 2 A_CustomMissile("HornRodFX1",0)
-		CPUS A 2 A_FaceTarget
-		CPUS B 2 A_CustomMissile("HornRodFX1",0)
-		CPUS A 2 A_FaceTarget
-		CPUS B 2 A_CustomMissile("HornRodFX1",0)
-		CPUS A 2 A_FaceTarget
-		CPUS B 2 A_CustomMissile("HornRodFX1",0)
-		CPUS A 2 A_FaceTarget
-		Goto See
-	Sorcerer:
-		CPUS B 0 A_PlaySound("weapons/gauntletsuse",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
-		CPUS B 2 A_CustomMissile("Sorcerer2FX1",0)
-		Goto See
-	Inactive:
-		CPUS B 0 A_PlaySound("DefenseSkullsDie",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
-		CPUS ABABABABAB 5
-		Goto Death
-	Death:
-		TNT1 A -1
-		Stop
-	}
+    RenderStyle "Translucent"
+    Alpha 0.5
+    FloatBobStrength 0.25
+    +NOINTERACTION
+    +FLOATBOB
+    //$Category "Wizard's Techbase"
+    States
+    {
+    Spawn:
+        CPUS A 1 A_Look
+        Loop
+    See:
+        CPUS A 1 A_FaceTarget
+        Loop
+    Active:
+        CPUS B 1 A_FaceTarget
+        CPUS B 1 A_Jump(256, "SerpentFire", "Ripper", "HornRod", "Sorcerer")
+    SerpentFire:
+        CPUS B 0 A_PlaySound("dsparilserpent/attack",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
+        CPUS B 2 A_CustomMissile("SorcererFX1",0)
+        Goto Spawn
+    Ripper:
+        CPUS B 0 A_PlaySound("weapons/blastershoot",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
+        CPUS B 2 A_CustomMissile("Ripper",0)
+        CPUS A 2 A_FaceTarget
+        CPUS B 0 A_PlaySound("weapons/blastershoot",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
+        CPUS B 2 A_CustomMissile("Ripper",0)
+        CPUS A 2 A_FaceTarget
+        CPUS B 0 A_PlaySound("weapons/blastershoot",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
+        CPUS B 2 A_CustomMissile("Ripper",0)
+        CPUS A 2 A_FaceTarget
+        CPUS B 0 A_PlaySound("weapons/blastershoot",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
+        CPUS B 2 A_CustomMissile("Ripper",0)
+        CPUS A 2 A_FaceTarget
+        Goto Spawn
+    HornRod:
+        CPUS B 2 A_CustomMissile("HornRodFX1",0)
+        CPUS A 2 A_FaceTarget
+        CPUS B 2 A_CustomMissile("HornRodFX1",0)
+        CPUS A 2 A_FaceTarget
+        CPUS B 2 A_CustomMissile("HornRodFX1",0)
+        CPUS A 2 A_FaceTarget
+        CPUS B 2 A_CustomMissile("HornRodFX1",0)
+        CPUS A 2 A_FaceTarget
+        Goto Spawn
+    Sorcerer:
+        CPUS B 0 A_PlaySound("weapons/gauntletsuse",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
+        CPUS B 2 A_CustomMissile("Sorcerer2FX1",0)
+        Goto Spawn
+    Inactive:
+        CPUS B 0 A_PlaySound("DefenseSkullsDie",CHAN_AUTO,1.0,FALSE,ATTN_NORM)
+        CPUS ABABABABAB 5
+        Goto Death
+    Death:
+        TNT1 A -1
+        Stop
+    }
 }
