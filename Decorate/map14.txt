@@ -207,7 +207,6 @@ ACTOR CPUCrystals 7409
 		MNKC ABCDEFG 5
 		Loop
 	Death:
-		TNT1 A 0
 		TNT1 A 0 ACS_Execute(63,0,0,0,0)
 		TNT1 A 0 A_PlaySound("CrystalBreak",CHAN_AUTO,1.0,FALSE,ATTN_NORM,FALSE)
 		TNT1 A 0 A_SpawnItemEX("CPUCrystalShard",0,0,random(20,60),random(4,16),0,random(4,16),random(0,360))
@@ -260,6 +259,7 @@ ACTOR CPUCrystals 7409
 		TNT1 A 0 A_SpawnItemEX("CPUCrystalShard",0,0,random(20,60),random(4,16),0,random(4,16),random(0,360))
 		TNT1 A 0 A_SpawnItemEX("CPUCrystalShard",0,0,random(20,60),random(4,16),0,random(4,16),random(0,360))
 		TNT1 A 0 A_SpawnItemEX("CPUCrystalShard",0,0,random(20,60),random(4,16),0,random(4,16),random(0,360))
+		TNT1 A 0 10
 		Stop
 	}
 }
