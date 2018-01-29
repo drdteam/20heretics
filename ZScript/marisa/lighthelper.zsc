@@ -1,7 +1,7 @@
 /* Utility actor for spawning lights */
 Class mkLightHelper : Actor
 {
-	static void MakeLight( int tid, int r, int g, int b, float rad,
+	static void MakeLight( int tid, int r, int g, int b, int rad,
 		bool attenuated = false, float x = 0.0, float y = 0.0,
 		float z = 0.0 )
 	{
