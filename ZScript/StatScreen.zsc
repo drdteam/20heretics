@@ -8,8 +8,9 @@
 class TwentyHCPStatusScreenBase : StatusScreen {
 
 	String exittext;
-	bool textdone;
-	int textpos;
+	double textpos;
+	bool textdone[MAXPLAYERS];
+	bool present[MAXPLAYERS];
 
 	void ConstructLines( int skip = 0 )
 	{
@@ -66,13 +67,16 @@ class TwentyHCPStatusScreenBase : StatusScreen {
 		else if ( wbs.next ~== "MAP15" ) ConstructLines(13);
 		else if ( wbs.next ~== "FINAL" ) ConstructLines(16);
 		else if ( wbs.next ~== "CREDITS" ) ConstructLines(17);
+		present[wbs.pnum] = true;
 	}
 
 	override void updateShowNextLoc()
 	{
-		if ( textdone || acceleratestage ) initNoState();
+		bool alldone = true;
+		for ( int i=0; i<MAXPLAYERS; i++ ) if ( present[i] && !textdone[i] ) alldone = false;
+		if ( alldone || acceleratestage ) initNoState();
 		else snl_pointeron = (cnt & 31) < 20;
-		textpos++;
+		textpos += CleanYfac*0.3;
 	}
 
 	override void drawShowNextLoc()
@@ -99,7 +103,7 @@ class TwentyHCPStatusScreenBase : StatusScreen {
 			alph = clamp(cos((abs(basey-clipmid)/clipheight)*200.0),0.0,1.0);
 			Screen.DrawText(SmallFont,Font.CR_White,(screen.GetWidth()-longest*CleanXfac)/2,basey,lines.StringAt(i),DTA_CleanNoMove,true,DTA_ClipTop,cliptop,DTA_ClipBottom,clipbottom,DTA_ClipLeft,clipleft,DTA_ClipRight,clipright,DTA_Alpha,alph);
 			basey += height;
-			if ( (i == count-1) && (basey < -30) ) textdone = true;
+			if ( (i == count-1) && (basey <= 0) ) textdone[wbs.pnum] = true;
 		}
 	}
 
