@@ -86,7 +86,7 @@ class TwentyHCPStatusScreenBase : StatusScreen {
 		clipright = screen.GetWidth()-8*CleanXfac;
 		double clipmid = (cliptop+clipbottom)/2;
 		double clipheight = clipbottom-cliptop;
-		int basey = screen.GetHeight()-textpos;
+		int basey = clipbottom-textpos;
 		BrokenLines lines = SmallFont.BreakLines(exittext,Screen.GetWidth()/CleanXfac - clipleft*2);
 		// draw text scroll
 		int count = lines.Count();
