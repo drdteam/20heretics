@@ -83,7 +83,7 @@ class TwentyHCPStatusScreenBase : StatusScreen {
 		for ( int i=0; i<MAXPLAYERS; i++ ) if ( present[i] && !textdone[i] ) alldone = false;
 		if ( alldone || acceleratestage ) initNoState();
 		else snl_pointeron = (cnt & 31) < 20;
-		textpos += CleanYfac*0.3;
+		textpos += CleanYfac*0.2;
 	}
 
 	override void drawShowNextLoc()
