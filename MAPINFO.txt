@@ -184,7 +184,6 @@ map MAP15 "Thievery at the Forsaken Manor - by: Marisa Kirisame"
 	Music = "D_MAP15"
 	Sky1 = "SKY1"
 	par = 420
-	lightmode = 3
 	SndSeq = "SndSeq/M15SSEQ.txt"
 }
 
