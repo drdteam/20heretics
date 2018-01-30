@@ -1,0 +1,35 @@
+/*	
+------------------------------------------------------------
+	20 Heretics Community Project
+	Particle Splash; ZScript
+	Code © Lud 2018
+------------------------------------------------------------
+*/
+
+class HCPSewerSplash : Actor
+{	
+	Default
+	{
+		//$Title "Sewer Splash"
+		//$Category "Lud"
+		Radius 6;
+		Height 6;
+		+NOINTERACTION
+		+NOGRAVITY
+	}
+	
+	States
+	{
+		Inactive:
+			TNT1 A -1;
+			Loop;
+		Active:
+		Spawn:
+			TNT1 A 2
+			{
+				for (int i = -90; i <= 90; i += 4)
+					A_SpawnParticle(randompick(0x2B372B, 0x4A2513, 0x1B231B, 0x734323), SPF_FULLBRIGHT | SPF_RELATIVE, 15, random(4, 6), i, random(0, 12), 0, 0, frandom(1.0, 2.0), 0, frandom(2.0, 4.0), 0, 0, -1.0, 1.0, 0, frandom(0.25, 0.75));
+			}
+			Loop;
+	}
+}

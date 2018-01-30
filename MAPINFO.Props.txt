@@ -136,6 +136,7 @@ DoomEdNums
   7133 = FlameLargeTemp
   7134 = FlameLarge
   1000 = HCPParticleFountain //Particle fountains. -Lud
+	1001 = HCPSewerSplash //SECRET sewer splashes. -Lud
 }
 
 // Marisa Kirisame - Thievery at the Forsaken Manor
