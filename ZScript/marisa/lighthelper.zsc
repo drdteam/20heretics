@@ -48,6 +48,7 @@ Class mkDarklight : DynamicLight
 		args[LIGHT_GREEN] = 0;
 		args[LIGHT_BLUE] = 0;
 		args[LIGHT_INTENSITY] = 120;
+		charge = 0;
 	}
 	override void Tick()
 	{

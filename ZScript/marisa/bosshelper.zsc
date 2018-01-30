@@ -47,6 +47,8 @@ Class mkBossHelper : Actor
 
 	override void PostBeginPlay()
 	{
+		infastmode = false;
+		fastfiring = false;
 		dknight.health *= 3;
 		dknight.scale *= 1.2;
 		dknight.speed *= 1.2;
