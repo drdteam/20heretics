@@ -51,7 +51,7 @@ class TwentyHCPStatusScreenBase : StatusScreen {
 		// load text scroll
 		exittext = "";
 		textpos = 0.0;
-		for ( int i=0; i<MAXPLAYERS )
+		for ( int i=0; i<MAXPLAYERS; i++ )
 		{
 			textdone[i] = false;
 			present[i] = false;
