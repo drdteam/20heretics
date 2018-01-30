@@ -200,7 +200,7 @@ All you can do is keep trudging onward.
 Having climbed up out of the sewers, you step into the misty
 woods and make your way to the nearby village.  Fortunately,
 it seems they haven't been attacked by the New Order, and the
-people are safe and sound.  But unfortunately, that means the
+people are safe and sound.  Unfortunately, that means the
 trail's gone cold.
 
 Refusing to give up, you head to the local tavern and fish
@@ -226,7 +226,7 @@ affair may have been another dead end.
 As you step through the secret exit door revealed by your
 victory, however, you find yourself in the presence of a
 rather strange sight: a tunnel through nothingness ending
-at a dark portal that shifts like water.  This must be an
+in a dark portal that shifts like water.  This must be an
 ancient form of magic, totally unfamiliar to you.
 
 Reluctantly, you step inside.  Immediately, you feel what
@@ -236,7 +236,7 @@ from the obelisk make sense.  Everything is clear now.
 And in that moment of clarity, the portal sends you to
 where your mind's eye sees.
 
-You whiz out the other side in a blinding flash, and find
+You pop out the other side in a blinding flash, and find
 yourself in a place that defies description.  Machines of
 some manner with flickering images dancing behind panes of
 glass flank you on either side, and posts that make light
@@ -269,7 +269,7 @@ glowing ghost head deep within the base a sound thrashing.
 You step through Malumax's machine-controlled portal with a
 smug sense of satisfaction.
 
-However, it quickly becomes clear that you've maybe done a bit
+However, it quickly becomes clear that you may have done a bit
 too much damage.  The sensation of traveling this portal in
 particular is gut-wrenching, like sea sickness grew a fist and
 punched you in the stomach.  It feels like forever before you
@@ -313,7 +313,7 @@ going to happen...
 
 //YOU'LL ONLY LIVE TO TWENTY
 
-Against all the odds, you've achieved final victory.  The
+Against all odds, you've achieved your final victory.  The
 accursed lich Malumax has been slain by your hand, and with
 him dies any chance of a resurrection of D'Sparil.  His
 wicked ambitions foiled, you step confidently through the
