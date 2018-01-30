@@ -22,4 +22,60 @@ Class mkLightHelper : Actor
 			l.args[3] = rad;
 		}
 	}
+
+	static void AddSelfLight( Actor a )
+	{
+		if ( !(a is "PlayerPawn") ) return;
+		let l = Spawn("mkDarkLight");
+		l.target = a;
+	}
+}
+
+// ported from spooktime with minor tweaks
+Class mkDarklight : DynamicLight
+{
+	float charge;
+
+	Default
+	{
+		DynamicLight.Type "Point";
+		+DynamicLight.ATTENUATE;
+	}
+	override void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+		args[LIGHT_RED] = 0;
+		args[LIGHT_GREEN] = 0;
+		args[LIGHT_BLUE] = 0;
+		args[LIGHT_INTENSITY] = 120;
+	}
+	override void Tick()
+	{
+		Super.Tick();
+		if ( !PlayerPawn(target) )
+		{
+			Destroy();
+			return;
+		}
+		SetOrigin(target.vec3Offset(0,0,target.player.viewheight),true);
+		args[LIGHT_RED] = int(24*charge);
+		args[LIGHT_GREEN] = int(24*charge);
+		args[LIGHT_BLUE] = int(64*charge);
+		bDORMANT = (target.player != players[consoleplayer]);
+		if ( target.CurSector.lightLevel > 64 )
+		{
+			charge -= 0.15;
+			if ( charge < 0.0 ) charge = 0.0;
+		}
+		else if ( target.vel.length() > 0 )
+		{
+			charge -= 0.0015*target.vel.length();
+			if ( charge < 0.0 ) charge = 0.0;
+		}
+		else
+		{
+			charge += 0.012;
+			if ( charge > 1.0 ) charge = 1.0;
+		}
+	}
 }
