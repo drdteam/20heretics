@@ -27,7 +27,7 @@ Class mkLightHelper : Actor
 	{
 		if ( !(a is "PlayerPawn") ) return;
 		let l = Spawn("mkDarkLight");
-		l.target = a;
+		mkDarklight(l).tplayer = a.player;
 	}
 }
 
@@ -35,6 +35,7 @@ Class mkLightHelper : Actor
 Class mkDarklight : DynamicLight
 {
 	float charge;
+	PlayerInfo tplayer;
 
 	Default
 	{
@@ -53,24 +54,24 @@ Class mkDarklight : DynamicLight
 	override void Tick()
 	{
 		Super.Tick();
-		if ( !PlayerPawn(target) )
+		if ( !tplayer.mo )
 		{
 			Destroy();
 			return;
 		}
-		SetOrigin(target.vec3Offset(0,0,target.player.viewheight),true);
+		SetOrigin(tplayer.mo.vec3Offset(0,0,tplayer.viewheight),true);
 		args[LIGHT_RED] = int(24*charge);
 		args[LIGHT_GREEN] = int(24*charge);
 		args[LIGHT_BLUE] = int(64*charge);
-		bDORMANT = (target.player != players[consoleplayer]);
-		if ( target.CurSector.lightLevel > 64 )
+		bDORMANT = (tplayer != players[consoleplayer]);
+		if ( tplayer.mo.CurSector.lightLevel > 64 )
 		{
 			charge -= 0.15;
 			if ( charge < 0.0 ) charge = 0.0;
 		}
-		else if ( target.vel.length() > 0 )
+		else if ( tplayer.mo.vel.length() > 0 )
 		{
-			charge -= 0.0015*target.vel.length();
+			charge -= 0.0015*tplayer.mo.vel.length();
 			if ( charge < 0.0 ) charge = 0.0;
 		}
 		else
