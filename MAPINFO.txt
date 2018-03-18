@@ -169,7 +169,7 @@ map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
 	Cluster = 0
 	next = "MAP15"
 	//secretnext = "SECRET"
-	next = "MAP15"
+	secretnext = "MAP15"
 	sky1 = "MAGIKSKY"
 	par = 60
 	music = "AIENTITY"
