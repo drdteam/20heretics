@@ -29,10 +29,10 @@ texture optional WLLBLOD1
  pic WLLBLOD2 tics 8
  pic WLLBLOD3 tics 8
 
-//texture optional WLLSLIM1
-// pic WLLSLIM1 tics 8
-// pic WLLSLIM2 tics 8
-// pic WLLSLIM3 tics 8
+texture optional WLLSLIM1
+ pic WLLSLIM1 tics 8
+ pic WLLSLIM2 tics 8
+ pic WLLSLIM3 tics 8
 
 texture optional CANDLES1
  pic CANDLES1 tics 8
