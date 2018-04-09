@@ -207,7 +207,8 @@ Class mkSndManager : Actor
 		Array<String> ssnd;
 		Array<Int> stim;
 		if ( !(lump = Wads.FindLump("AMBSEQ")) )  return;
-		Wads.ReadLump(lump).Split(data,"\n",0);
+		string temp = Wads.ReadLump(lump);
+		temp.Split(data,"\n",0);
 		for ( int i=0; i<data.size(); i++ )
 		{
 			if ( (data[i].CharAt(0) == "#")
