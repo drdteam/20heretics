@@ -33,7 +33,7 @@ Class mkAfterimage : Actor
 
 Class mkBossHelper : Actor
 {
-	Knight dknight;
+	Actor dknight;
 	Vector2 strafevect;
 	double chargeangle;
 	bool infastmode, fastfiring;
