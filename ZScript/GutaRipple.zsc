@@ -3,7 +3,7 @@ class RippleTimer : StaticEventHandler {
 	
 	static void startEffect(Actor mo) {
 		if (mo != NULL && mo.player != NULL) {
-			RippleTimer handler = RippleTimer(EventHandler.find("RippleTimer"));
+			RippleTimer handler = RippleTimer(StaticEventHandler.find("RippleTimer"));
 			handler.startTick[mo.playerNumber()] = level.time;
 			Shader.setUniform1f(players[consoleplayer], "RippleShader", "timer", level.time - 70);
 			Shader.setEnabled(mo.player, "RippleShader", true);
