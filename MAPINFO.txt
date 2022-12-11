@@ -4,9 +4,9 @@ gameinfo
 {
 	StatusbarClass = "HCPHUD"
 	BorderFlat = "BRDRFLAT"
-	StatScreen_Single = "TwentyHCPStatusScreenSP"
-	StatScreen_Coop = "TwentyHCPStatusScreenCoop"
-	StatScreen_DM = "TwentyHCPStatusScreenDM"
+	//StatScreen_Single = "TwentyHCPStatusScreenSP"
+	//StatScreen_Coop = "TwentyHCPStatusScreenCoop"
+	//StatScreen_DM = "TwentyHCPStatusScreenDM"
 	AddEventHandlers = "RippleTimer"
 }
 
@@ -26,8 +26,9 @@ episode MAP01
 	Name = "20 Heretics"
 }
 
-Map MAP10 "Malignant - by: Elm Yin"
+Map MAP10 "Malignant"
 {
+	Author = "Elm Yin"
 	Cluster = 0
 	Next = "MAP11"
 	SecretNext = "MAP11"
@@ -36,8 +37,9 @@ Map MAP10 "Malignant - by: Elm Yin"
 	Par = 40
 }
 
-Map MAP07 "Night of the Translucent Dead - by: Gothic"
+Map MAP07 "Night of the Translucent Dead"
 {
+	Author = "Gothic"
 	Cluster = 0
 	Next = "MAP08"
 	SecretNext = "MAP08"
@@ -48,8 +50,9 @@ Map MAP07 "Night of the Translucent Dead - by: Gothic"
 	Par = 120
 }
 
-Map MAP08 "House Cleaning - by: Li'l Devil"
+Map MAP08 "House Cleaning"
 {
+	Author = "Li'l Devil"
 	Cluster = 0
 	Next = "MAP09"
 	SecretNext = "MAP09"
@@ -58,8 +61,9 @@ Map MAP08 "House Cleaning - by: Li'l Devil"
 	Par = 105
 }
 
-Map MAP12 "A Hell of a Sewer - by: lwks"
+Map MAP12 "A Hell of a Sewer"
 {
+	Author = "lwks"
 	Cluster = 0
 	Next = "MAP13"
 	SecretNext = "MAP13"
@@ -67,8 +71,9 @@ Map MAP12 "A Hell of a Sewer - by: lwks"
 	Par = 45
 }
 
-Map MAP09 "Elementary - by: Rachael"
+Map MAP09 "Elementary"
 {
+	Author = "Rachael"
 	Cluster = 0
 	Next = "MAP10"
 	SecretNext = "MAP10"
@@ -76,8 +81,9 @@ Map MAP09 "Elementary - by: Rachael"
 	Par = 20
 }
 
-Map MAP11 "Holy Water - by: Gutawer"
+Map MAP11 "Holy Water"
 {
+	Author = "Gutawer"
 	Cluster = 0
 	Next = "MAP12"
 	SecretNext = "MAP12"
@@ -85,8 +91,9 @@ Map MAP11 "Holy Water - by: Gutawer"
 	Par = 50
 }
 
-Map MAP13 "Dead River - by: Impie"
+Map MAP13 "Dead River"
 {
+	Author = "Impie"
 	Cluster = 0
 	NoCrouch
 	NoJump
@@ -99,8 +106,9 @@ Map MAP13 "Dead River - by: Impie"
 	Par = 100
 }
 
-Map MAP03 "The Downward Spiral - by: Zero X. Diamond"
+Map MAP03 "The Downward Spiral"
 {
+	Author = "Zero X. Diamond"
 	Cluster = 0
 	Next = "MAP04"
 	Secretnext = "MAP04"
@@ -112,8 +120,9 @@ Map MAP03 "The Downward Spiral - by: Zero X. Diamond"
 	SkyFog = 156
 }
 
-Map MAP01 "Oceania - by: Crazy Toni"
+Map MAP01 "Oceania"
 {
+	Author = "Crazy Toni"
 	Cluster = 0
 	Next = "MAP02"
 	SecretNext = "MAP02"
@@ -122,8 +131,9 @@ Map MAP01 "Oceania - by: Crazy Toni"
 	Music = "LEVELR"
 }
 
-Map MAP04 "Preserved Catacombs - by: leodoom85"
+Map MAP04 "Preserved Catacombs"
 {
+	Author = "leodoom85"
 	Cluster = 0
 	Next = "MAP05"
 	SecretNext = "MAP05"
@@ -133,8 +143,9 @@ Map MAP04 "Preserved Catacombs - by: leodoom85"
 	SndSeq = "SndSeq/M04SSEQ.txt"
 }
 
-Map MAP05 "Trial of the Maulotaur - by: Zedonk"
+Map MAP05 "Trial of the Maulotaur"
 {
+	Author = "Zedonk"
 	Cluster = 0
 	Next = "MAP06"
 	SecretNext = "MAP06"
@@ -143,8 +154,9 @@ Map MAP05 "Trial of the Maulotaur - by: Zedonk"
 	Music = "MUS_E2M8"
 }
 
-map MAP06 "Desecrated Shrines - by: Mor'ladim"
+map MAP06 "Desecrated Shrines"
 {
+	Author = "Mor'ladim"
 	Cluster = 0
 	Next = "MAP07"
 	SecretNext = "MAP07"
@@ -155,8 +167,9 @@ map MAP06 "Desecrated Shrines - by: Mor'ladim"
 	Par = 45
 }
 
-map MAP02 "The Best Weapon - by: isaacpop23"
+map MAP02 "The Best Weapon"
 {
+	Author = "isaacpop23"
 	Cluster = 0
 	Next = "MAP03"
 	SecretNext = "MAP03"
@@ -164,8 +177,9 @@ map MAP02 "The Best Weapon - by: isaacpop23"
 	Music = "MUS_E2M9"
 }
 
-map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
+map MAP14 "The Wizard's Techbase"
 {
+	Author = "Zero X. Diamond"
 	Cluster = 0
 	next = "MAP15"
 	//secretnext = "SECRET"
@@ -177,8 +191,9 @@ map MAP14 "The Wizard's Techbase - by: Zero X. Diamond"
 	SndSeq = "SndSeq/M14SSEQ.txt"
 }
 
-map MAP15 "Thievery at the Forsaken Manor - by: Marisa Kirisame"
+map MAP15 "Thievery at the Forsaken Manor"
 {
+	Author = "Marisa Kirisame"
 	Cluster = 0
 	Next = FINAL
 	SecretNext = FINAL
@@ -189,8 +204,9 @@ map MAP15 "Thievery at the Forsaken Manor - by: Marisa Kirisame"
 	SndSeq = "SndSeq/M15SSEQ.txt"
 }
 
-Map FINAL "You'll Only Live To Twenty - by: Rachael"
+Map FINAL "You'll Only Live To Twenty"
 {
+	Author = "Rachael"
 	Cluster = 0
 	Next = "CREDITS"
 	SecretNext = "CREDITS"
@@ -198,8 +214,9 @@ Map FINAL "You'll Only Live To Twenty - by: Rachael"
 	Par = 355
 }
 
-map SECRET "Through The Portal Of Time - by: Zero X. Diamond"
+map SECRET "Through The Portal Of Time"
 {
+	Author = "Zero X. Diamond"
 	Cluster = 0
 	next = "SECRET"
 	secretnext = "SECRET"
@@ -208,8 +225,9 @@ map SECRET "Through The Portal Of Time - by: Zero X. Diamond"
 	music = "PLACHLDR"
 }
 
-map CREDITS "The 20 Heretics Team Gallery - by: Rachael"
+map CREDITS "The 20 Heretics Team Gallery"
 {
+	Author = "Rachael"
 	pixelratio = 1.0
 	music = ""
 	AllowRespawn
